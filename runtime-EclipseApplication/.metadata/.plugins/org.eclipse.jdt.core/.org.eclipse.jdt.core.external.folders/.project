@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.jdt.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link1</name>
+			<type>2</type>
+			<location>C:/Users/tanzc/Downloads/ObeoDesigner/ObeoDesigner-Community/workspace/ching.ProblemFrame/bin</location>
+		</link>
+		<link>
+			<name>.link2</name>
+			<type>2</type>
+			<location>C:/Users/tanzc/Downloads/ObeoDesigner/ObeoDesigner-Community/workspace/ching.ProblemFrame</location>
+		</link>
+		<link>
+			<name>.link7</name>
+			<type>2</type>
+			<location>C:/Users/tanzc/Desktop/状态机工具/状态机工具/final/workspace/org.eclipse.gemoc.statemachine.model/bin</location>
+		</link>
+		<link>
+			<name>.link8</name>
+			<type>2</type>
+			<location>C:/Users/tanzc/Desktop/状态机工具/状态机工具/final/workspace/org.eclipse.gemoc.statemachine.model</location>
+		</link>
+	</linkedResources>
+</projectDescription>

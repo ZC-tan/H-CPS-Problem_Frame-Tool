@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_HysrQKYKEe2las4yGIen_A" selectedViews="_Sl9ZgKYKEe2las4yGIen_A" version="15.0.0.202209061200">
+    <semanticResources>车速辅助问题框架.problemframe</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_Sl9ZgKYKEe2las4yGIen_A">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_UaDNUKYKEe2las4yGIen_A" name="车速辅助需求模型" repPath="#_UaCmQKYKEe2las4yGIen_A" changeId="f368f561-ee08-4ff5-96f3-8926e0150605">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']"/>
+        <target xmi:type="ProblemFrame:ProblemDiagram" href="车速辅助问题框架.problemframe#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_UaCmQKYKEe2las4yGIen_A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_UaDNUqYKEe2las4yGIen_A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_UaDNU6YKEe2las4yGIen_A" type="Sirius" element="_UaCmQKYKEe2las4yGIen_A" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_UaDNVKYKEe2las4yGIen_A"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_UaFCgKYKEe2las4yGIen_A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_UaFCgaYKEe2las4yGIen_A"/>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_UaCmQaYKEe2las4yGIen_A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer"/>
+    <target xmi:type="ProblemFrame:ProblemDiagram" href="车速辅助问题框架.problemframe#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

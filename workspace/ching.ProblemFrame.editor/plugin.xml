@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ProblemFrame -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ching.ProblemFrame.presentation.ProblemFrameModelWizardID"
+            name="%_UI_ProblemFrameModelWizard_label"
+            class="ching.ProblemFrame.presentation.ProblemFrameModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ProblemFrameModelFile.gif">
+         <description>%_UI_ProblemFrameModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ProblemFrame -->
+      <editor
+            id="ching.ProblemFrame.presentation.ProblemFrameEditorID"
+            name="%_UI_ProblemFrameEditor_label"
+            icon="icons/full/obj16/ProblemFrameModelFile.gif"
+            extensions="problemframe"
+            class="ching.ProblemFrame.presentation.ProblemFrameEditor"
+            contributorClass="ching.ProblemFrame.presentation.ProblemFrameActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ProblemFrame -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="UML.presentation.UMLModelWizardID"
+            name="%_UI_UMLModelWizard_label"
+            class="UML.presentation.UMLModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UMLModelFile.gif">
+         <description>%_UI_UMLModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ProblemFrame -->
+      <editor
+            id="UML.presentation.UMLEditorID"
+            name="%_UI_UMLEditor_label"
+            icon="icons/full/obj16/UMLModelFile.gif"
+            extensions="uml"
+            class="UML.presentation.UMLEditor"
+            contributorClass="UML.presentation.UMLActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
