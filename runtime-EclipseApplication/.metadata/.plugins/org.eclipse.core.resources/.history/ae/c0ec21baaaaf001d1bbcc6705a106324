@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProblemFrame:ProblemDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame" xmlns:StateMachineModel="http://www.example.org/StateMachineModel" problemName="PF1">
+  <domain xsi:type="ProblemFrame:Machine" name="防撞辅助"/>
+  <domain xsi:type="ProblemFrame:CausalDomain" name="摄像头和传感器"/>
+  <domain xsi:type="ProblemFrame:CausalDomain" name="制动踏板"/>
+  <domain xsi:type="ProblemFrame:BiddableDomain" name="障碍物（行人/车辆/物体）"/>
+  <domain xsi:type="ProblemFrame:LexicalDomain" name="预警装置(声响/仪表板)"/>
+  <domain xsi:type="ProblemFrame:BiddableDomain" name="驾驶员"/>
+  <requirement name="自动紧急制动">
+    <statemachine name="车辆">
+      <region name="xxx">
+        <transition source="//@requirement.0/@statemachine.0/@region.0/@subvertex.1"/>
+        <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.2" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.1"/>
+        <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.3" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.2"/>
+        <transition source="//@requirement.0/@statemachine.0/@region.0/@subvertex.3"/>
+        <transition source="//@requirement.0/@statemachine.0/@region.0/@subvertex.0"/>
+        <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.1"/>
+        <transition name="tryName" target="//@requirement.0/@statemachine.0/@region.0/@subvertex.1" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.0"/>
+        <subvertex xsi:type="StateMachineModel:Pseudostate" name="初始" outgoing="//@requirement.0/@statemachine.0/@region.0/@transition.4 //@requirement.0/@statemachine.0/@region.0/@transition.6"/>
+        <subvertex xsi:type="StateMachineModel:State" name="巡航状态" incoming="//@requirement.0/@statemachine.0/@region.0/@transition.5 //@requirement.0/@statemachine.0/@region.0/@transition.6" outgoing="//@requirement.0/@statemachine.0/@region.0/@transition.0 //@requirement.0/@statemachine.0/@region.0/@transition.1" isComposite="true" isSimple="false">
+          <region name="区域">
+            <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@subvertex.1" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@subvertex.0"/>
+            <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@subvertex.0" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@subvertex.1"/>
+            <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@subvertex.0" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@subvertex.1"/>
+            <subvertex xsi:type="StateMachineModel:State" name="驾驶员控制巡航状态" incoming="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@transition.1" outgoing="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@transition.0"/>
+            <subvertex xsi:type="StateMachineModel:State" name="辅助驾驶系统控制巡航状态" incoming="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@transition.0" outgoing="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@transition.1 //@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@transition.2"/>
+            <subvertex xsi:type="StateMachineModel:Pseudostate" name="浅历史" incoming="//@requirement.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@transition.1" kind="shallowHistory"/>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="前撞预警状态" incoming="//@requirement.0/@statemachine.0/@region.0/@transition.1" outgoing="//@requirement.0/@statemachine.0/@region.0/@transition.2"/>
+        <subvertex xsi:type="StateMachineModel:State" name="制动状态" incoming="//@requirement.0/@statemachine.0/@region.0/@transition.2" outgoing="//@requirement.0/@statemachine.0/@region.0/@transition.3" isComposite="true" isSimple="false">
+          <region name="区域">
+            <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@subvertex.0" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@subvertex.1"/>
+            <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@subvertex.2" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@subvertex.0"/>
+            <subvertex xsi:type="StateMachineModel:State" name="防撞辅助自动制动状态" incoming="//@requirement.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@transition.0 //@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@transition.2" outgoing="//@requirement.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@transition.1"/>
+            <subvertex xsi:type="StateMachineModel:State" name="驾驶员主动制动状态" outgoing="//@requirement.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@transition.0"/>
+          </region>
+        </subvertex>
+      </region>
+    </statemachine>
+  </requirement>
+  <requirement name="前撞预警"/>
+  <interfaces targetDomain="//@domain.1" sourceDomain="//@domain.0" beginControlSharedPhenomena="CA!a" endControlSharedPhenomena="SE!a">
+    <sharedPhenomena name="CA!a" type="event" description="Collision Avoidance Assist analyses environmental information sensed by sensors."/>
+    <sharedPhenomena name="SE!a" type="event" description="Sensors sends environmental information to the driverless Collision Avoidance Assist for processing."/>
+  </interfaces>
+  <interfaces targetDomain="//@domain.2" sourceDomain="//@domain.0" beginControlSharedPhenomena="CA!d">
+    <sharedPhenomena name="CA!d" type="event" description="Collision Avoidance Assist uses brakes to slow down car."/>
+  </interfaces>
+  <interfaces targetDomain="//@domain.4" sourceDomain="//@domain.0" beginControlSharedPhenomena="CA!b">
+    <sharedPhenomena name="CA!b" type="event" description="Collision Avoidance Assist sends warning to Warning Systems, e.g. Audio, Display Screen."/>
+  </interfaces>
+  <interfaces targetDomain="//@domain.3" sourceDomain="//@domain.1" beginControlSharedPhenomena="SE!b">
+    <sharedPhenomena name="SE!b" type="event" description="Sense obstacles on the road."/>
+  </interfaces>
+  <interfaces targetDomain="//@domain.5" sourceDomain="//@domain.4" beginControlSharedPhenomena="WA!a" endControlSharedPhenomena="DR!a"/>
+  <interfaces targetDomain="//@domain.2" sourceDomain="//@domain.5" beginControlSharedPhenomena="DR!d"/>
+  <interfaces targetDomain="//@domain.3" sourceDomain="//@domain.5" beginControlSharedPhenomena="DR!c"/>
+  <interfaces targetDomain="//@domain.0" sourceDomain="//@domain.5" beginControlSharedPhenomena="DR!b"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.0" constrains="//@domain.2"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@domain.3"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.1" constrains="//@domain.4"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.1" reqReference="//@domain.3"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0"/>
+</ProblemFrame:ProblemDiagram>

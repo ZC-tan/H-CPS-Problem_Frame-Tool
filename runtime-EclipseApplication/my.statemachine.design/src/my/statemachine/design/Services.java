@@ -1,8 +1,14 @@
 package my.statemachine.design;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.gemoc.statemachine.model.UML.Pseudostate;
-import org.eclipse.gemoc.statemachine.model.UML.PseudostateKind;
+
+import UML.*;
+
+
+
 
 /**
  * The services class used by VSM.
@@ -15,6 +21,10 @@ public class Services {
     public EObject myService(EObject self, String arg) {
        // TODO Auto-generated code
       return self;
+    }
+    
+    public String tryService(UML.Transition transition) {
+    	return transition.eClass().toString()+"tryService";
     }
     
     public boolean isExitPointState(Pseudostate state) {
@@ -51,5 +61,22 @@ public class Services {
 	
 	public boolean isTerminateState(Pseudostate state) {
 		return state.getKind().equals(PseudostateKind.TERMINATE);
+	}
+	
+	public String computeTransitionLable(UML.Transition transition) {
+		List<String> result = new ArrayList<>();
+		for (UML.Trigger i : transition.getTrigger()) {
+			result.add(i.getName());
+		}
+		String tmp = String.join(",", result);
+		result = new ArrayList<>();
+		result.add(tmp);
+		if (transition.getGuard() != null) {
+			result.add("[" + transition.getGuard().getName() + "]");
+		}
+		if (transition.getEffect() != null) {
+			result.add("/" + transition.getEffect().getName());
+		}
+		return String.join("", result);
 	}
 }

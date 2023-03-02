@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProblemFrame:ProblemDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame" xmlns:StateMachineModel="http://www.example.org/StateMachineModel">
+  <domain xsi:type="ProblemFrame:Machine" name="车速辅助">
+    <statemachine>
+      <region>
+        <transition target="//@domain.0/@statemachine.0/@region.0/@subvertex.1" source="//@domain.0/@statemachine.0/@region.0/@subvertex.0"/>
+        <subvertex xsi:type="StateMachineModel:State" name="状态" outgoing="//@domain.0/@statemachine.0/@region.0/@transition.0" isComposite="true" isSimple="false">
+          <region name="区域">
+            <subvertex xsi:type="StateMachineModel:State" name="状态" isComposite="true" isSimple="false">
+              <region name="区域"/>
+              <region name="区域"/>
+              <region name="区域"/>
+            </subvertex>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="状态" incoming="//@domain.0/@statemachine.0/@region.0/@transition.0"/>
+      </region>
+    </statemachine>
+  </domain>
+  <domain xsi:type="ProblemFrame:LexicalDomain" name="仪表盘"/>
+  <domain xsi:type="ProblemFrame:BiddableDomain" name="驾驶员"/>
+  <domain xsi:type="ProblemFrame:CausalDomain" name="警报"/>
+  <domain xsi:type="ProblemFrame:CausalDomain" name="车速计"/>
+  <requirement name="超速报警"/>
+  <interfaces targetDomain="//@domain.3" sourceDomain="//@domain.0"/>
+  <interfaces targetDomain="//@domain.2" sourceDomain="//@domain.0"/>
+  <interfaces targetDomain="//@domain.1" sourceDomain="//@domain.0"/>
+  <interfaces targetDomain="//@domain.4" sourceDomain="//@domain.0"/>
+  <interfaces targetDomain="//@domain.2" sourceDomain="//@domain.3"/>
+  <interfaces targetDomain="//@domain.1" sourceDomain="//@domain.2"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@domain.4"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.0" constrains="//@domain.3"/>
+</ProblemFrame:ProblemDiagram>

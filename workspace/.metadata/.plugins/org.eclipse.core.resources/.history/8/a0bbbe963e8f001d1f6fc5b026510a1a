@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ProblemFrame" nsURI="http://www.example.org/ProblemFrame" nsPrefix="ProblemFrame">
+  <eClassifiers xsi:type="ecore:EClass" name="ProblemDiagram">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="domain" upperBound="-1"
+        eType="#//Domain" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requirement" upperBound="-1"
+        eType="#//Requirement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="problemName" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaces" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reference" upperBound="-1"
+        eType="#//Reference" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Domain" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="phenomena" upperBound="-1"
+        eType="#//Phenomenon" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//DType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Machine" eSuperTypes="#//Domain"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LexicalDomain" eSuperTypes="#//CausalDomain"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BiddableDomain" eSuperTypes="#//Domain"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CausalDomain" eSuperTypes="#//Domain"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sharedPhenomena" lowerBound="1"
+        upperBound="-1" eType="#//Phenomenon" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetDomain" eType="#//Domain"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceDomain" eType="#//Domain"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="beginControlSharedPhenomena"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endControlSharedPhenomena"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Phenomenon">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//PType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RequirementReference" eSuperTypes="#//Reference">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="phenomenon" upperBound="-1"
+        eType="#//Phenomenon" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reqReference" eType="#//Domain"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConstrainingRequirementReference" eSuperTypes="#//Reference">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constrains" eType="#//Domain"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Requirement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DType" instanceClassName="">
+    <eLiterals name="given"/>
+    <eLiterals name="designed" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PType">
+    <eLiterals name="state"/>
+    <eLiterals name="event" value="1"/>
+    <eLiterals name="entity" value="2"/>
+    <eLiterals name="behavior" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Reference" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//Requirement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PFStateMachine"/>
+</ecore:EPackage>

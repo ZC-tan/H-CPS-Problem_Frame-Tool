@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:properties-ext-widgets-reference="http://www.eclipse.org/sirius/properties/1.0.0/ext/widgets/reference" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="statemachine" version="12.0.0.2017041100">
+  <ownedViewpoints name="MyViewpoint">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="StateMachine Diagram" domainClass="UML::StateMachine">
+      <defaultLayer name="Default">
+        <edgeMappings name="Transition" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='FinalState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="UML::Transition" useDomainElement="true">
+          <style routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="service:computeTransitionLable()">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="StateMachineContainer" semanticCandidatesExpression="var:self" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::StateMachine" childrenPresentation="HorizontalStack">
+          <borderedNodeMappings name="Connection Point" semanticCandidatesExpression="feature:connectionPoint" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::Pseudostate">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" workspacePath="/org.eclipse.gemoc.statemachine.design/images/InitNode.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+            <conditionnalStyles predicateExpression="service:isExitPointState()">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" workspacePath="/org.eclipse.gemoc.statemachine.design/images/FlowNode.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <subContainerMappings name="Region" semanticCandidatesExpression="feature:region" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::Region">
+            <subNodeMappings name="PseudoState" semanticCandidatesExpression="feature:subvertex" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::Pseudostate">
+              <conditionnalStyles predicateExpression="service:isInitialState()">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" workspacePath="/org.eclipse.gemoc.statemachine.design/images/InitNode.png">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isJoinState()">
+                <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" resizeKind="NSEW" width="10" height="1">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isForkState()">
+                <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" resizeKind="NSEW" width="10" height="1">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isChoiceState()">
+                <style xsi:type="style:LozengeNodeDescription" labelSize="12" showIcon="false" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isDeepHistoryState()">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" workspacePath="/org.eclipse.gemoc.statemachine.design/images/deepNode.png">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isShallowHistoryState()">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" workspacePath="/org.eclipse.gemoc.statemachine.design/images/shallowNode.png">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isJuncitonState()">
+                <style xsi:type="style:EllipseNodeDescription" labelSize="12" showIcon="false" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="service:isTerminateState()">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" workspacePath="/org.eclipse.gemoc.statemachine.design/images/TerminateNode.png">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subNodeMappings>
+            <subNodeMappings name="FinalState" semanticCandidatesExpression="feature:subvertex" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::FinalState">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" workspacePath="/org.eclipse.gemoc.statemachine.design/images/FinalNode.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subContainerMappings name="SimpleState" preconditionExpression="aql:not self.oclIsTypeOf(UML::FinalState) and self.isSimple" semanticCandidatesExpression="feature:subvertex" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::State" childrenPresentation="List">
+              <subNodeMappings name="Entry" semanticCandidatesExpression="feature:entry" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='状态机']" domainClass="UML::Behavior">
+                <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:'进入行为/ '+self.name" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="Do" semanticCandidatesExpression="feature:doActivity" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='状态机']" domainClass="UML::Behavior">
+                <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:'执行行为/ '+self.name" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="Exit" semanticCandidatesExpression="feature:exit" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='状态机']" domainClass="UML::Behavior">
+                <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:'退出行为/ '+self.name" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                </style>
+              </subNodeMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" roundedCorner="true">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </subContainerMappings>
+            <subContainerMappings name="CompositeState" preconditionExpression="aql:self.isComposite and not self.BehaviorExist()" semanticCandidatesExpression="feature:subvertex" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::State" reusedBorderedNodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@borderedNodeMappings[name='Connection%20Point']" reusedContainerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']" childrenPresentation="HorizontalStack">
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" roundedCorner="true">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </subContainerMappings>
+            <subContainerMappings name="CompositeState with Behavior" preconditionExpression="aql:self.isComposite and self.BehaviorExist()" semanticCandidatesExpression="feature:subvertex" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::State" childrenPresentation="VerticalStack">
+              <subContainerMappings name="Behavior Container" semanticCandidatesExpression="var:self" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::State" reusedNodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@subNodeMappings[name='Do'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@subNodeMappings[name='Entry'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@subNodeMappings[name='Exit']" childrenPresentation="List">
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelAlignment="LEFT" hideLabelByDefault="true" roundedCorner="true">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                </style>
+              </subContainerMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" roundedCorner="true">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" borderLineStyle="dash" labelSize="12" showIcon="false" hideLabelByDefault="true">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="aql:self.eContainer().oclIsTypeOf(UML::State)">
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" borderLineStyle="dash" labelSize="12" showIcon="false" hideLabelByDefault="true">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="20" arcHeight="20" borderSizeComputationExpression="1" labelSize="12" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Types" label="元素">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="State" label="状态" precondition="aql:if self.oclIsTypeOf(UML::State) and self.oclAsType(UML::State).isSubmachineState() then false else true endif" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::State" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="状态"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create State">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Region" label="区域" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']" extraMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Switch">
+                <cases conditionExpression="aql:self.oclIsTypeOf(UML::State)">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Region" referenceName="region">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="区域"/>
+                    <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Region">
+                      <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                        <initialOperation/>
+                      </buttons>
+                      <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                        <initialOperation/>
+                      </buttons>
+                      <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                    <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.isSimpleState()">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="isSimple" valueExpression="false"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="isComposite" valueExpression="true"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </cases>
+                <cases conditionExpression="aql:self.oclIsTypeOf(UML::Region)">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:eContainer">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Region" referenceName="region">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="区域"/>
+                      <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Region">
+                        <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                          <initialOperation/>
+                        </buttons>
+                        <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                          <initialOperation/>
+                        </buttons>
+                        <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </cases>
+                <cases conditionExpression="aql:self.oclIsKindOf(UML::StateMachine)">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Region" referenceName="region">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="区域"/>
+                    <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Region">
+                      <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                        <initialOperation/>
+                      </buttons>
+                      <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                        <initialOperation/>
+                      </buttons>
+                      <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </cases>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <subSections name="pseudo states" label=" 伪状态">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Initial" label="初始状态" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="initial"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="初始"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Initial">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Final" label="最终状态" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/FinalState.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::FinalState" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="最终"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Final">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Fork" label="分叉" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_fork.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="fork"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="分叉"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Fork">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Join" label="联合" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_join.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="join"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="联合"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Join">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Choice" label="选择" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_choice.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="choice"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="选择"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Choice">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Junction" label="连接" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_junction.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="junction"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="连接"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Join">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Terminate" label="终结" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_terminate.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="terminate"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="终结"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Terminate">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Shallow History" label="浅历史" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_shallowHistory.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="shallowHistory"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="浅历史"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create History">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Deep History" label="深历史" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_deepHistory.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="subvertex">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="deepHistory"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="深历史"/>
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create History">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Entry Point" label="进入点" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_entryPoint.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:Switch">
+                  <cases conditionExpression="aql:self.oclIsTypeOf(UML::StateMachine)">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="connectionPoint">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="entryPoint"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="进入点"/>
+                      <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Entry Point">
+                        <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                          <initialOperation/>
+                        </buttons>
+                        <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                          <initialOperation/>
+                        </buttons>
+                        <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </cases>
+                  <cases conditionExpression="aql:self.oclIsTypeOf(UML::Region)">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:eContainer">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="connectionPoint">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="entryPoint"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="进入点"/>
+                        <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Entry Point">
+                          <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                            <initialOperation/>
+                          </buttons>
+                          <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                            <initialOperation/>
+                          </buttons>
+                          <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                        </subModelOperations>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </cases>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Exit Point" label="退出点" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_exitPoint.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:Switch">
+                  <cases conditionExpression="aql:self.oclIsTypeOf(UML::StateMachine)">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="connectionPoint">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="exitPoint"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="退出点"/>
+                      <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Exit Point">
+                        <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                          <initialOperation/>
+                        </buttons>
+                        <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                          <initialOperation/>
+                        </buttons>
+                        <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </cases>
+                  <cases conditionExpression="aql:self.oclIsTypeOf(UML::Region)">
+                    <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:eContainer">
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Pseudostate" referenceName="connectionPoint">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="kind" valueExpression="exitPoint"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="退出点"/>
+                        <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Exit Point">
+                          <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                            <initialOperation/>
+                          </buttons>
+                          <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                            <initialOperation/>
+                          </buttons>
+                          <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                        </subModelOperations>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </cases>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+          </subSections>
+        </toolSections>
+        <toolSections name="Relationships" label="关系">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Transition" label="转移" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="service:createTransition(source,target)"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="双击">
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Open properties wizard" mappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@borderedNodeMappings[name='Connection%20Point'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@subContainerMappings[name='Behavior%20Container'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='FinalState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Edit">
+                  <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                    <initialOperation/>
+                  </buttons>
+                  <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                    <initialOperation/>
+                  </buttons>
+                  <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="状态机" mappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@subNodeMappings[name='Do'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@subNodeMappings[name='Entry'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@subNodeMappings[name='Exit']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <additionalLayers name="Animation">
+        <containerMappings name="Statemachine Event Pool" semanticCandidatesExpression="var:self" domainClass="UML::StateMachine" childrenPresentation="List">
+          <subNodeMappings name="EventPool" semanticCandidatesExpression="var:self" domainClass="UML::StateMachine">
+            <style xsi:type="style:BundledImageDescription" labelSize="12" showIcon="false" labelExpression="aql: '事件池: '+self.eventPool" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:self.name">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <decorationDescriptionsSet>
+          <decorationDescriptions xsi:type="description_1:MappingBasedDecoration" name="CurrentVertex" position="SOUTH_EAST" preconditionExpression="service:self.isCurrentVertex()" imageExpression="/org.eclipse.gemoc.statemachine.design/images/cursor-3-24.png" mappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='FinalState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']"/>
+        </decorationDescriptionsSet>
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="service:self.hasBeenActivated()">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']/@style" referenceName="strokeColor" value="//@userColorsPalettes[name='StateMachine%20Diagram%20Palette']/@entries[name='hasBeanAnimated']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.3/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.4/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.2/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.0/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.1/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.6/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.5/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.7/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@subContainerMappings[name='Behavior%20Container']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='FinalState']/@style" referenceName="borderColor" value="//@userColorsPalettes[name='StateMachine%20Diagram%20Palette']/@entries[name='hasBeanAnimated']"/>
+          </vsmElementCustomizations>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="service:self.isCurrentVertex()">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']/@style" applyOnAll="true" referenceName="strokeColor" value="//@userColorsPalettes[name='StateMachine%20Diagram%20Palette']/@entries[name='hasBeanAnimated']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.3/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.4/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.2/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.0/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.1/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.6/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.5/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.7/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@subContainerMappings[name='Behavior%20Container']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='FinalState']/@style" applyOnAll="true" referenceName="borderColor" value="//@userColorsPalettes[name='StateMachine%20Diagram%20Palette']/@entries[name='hasBeanAnimated']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.3/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.4/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.2/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.0/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.1/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.6/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.5/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.7/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@subContainerMappings[name='Behavior%20Container']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='FinalState']/@style" applyOnAll="true" referenceName="labelColor" value="//@userColorsPalettes[name='StateMachine%20Diagram%20Palette']/@entries[name='hasBeanAnimated']"/>
+          </vsmElementCustomizations>
+        </customization>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="org.eclipse.gemoc.statemachine.design.Services"/>
+  </ownedViewpoints>
+  <userColorsPalettes name="StateMachine Diagram Palette">
+    <entries xsi:type="description:UserFixedColor" red="255" green="0" blue="0" name="current instruction"/>
+    <entries xsi:type="description:UserFixedColor" red="255" green="192" blue="203" name="hasBeanAnimated"/>
+  </userColorsPalettes>
+  <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
+    <metamodels href="http://www.example.org/ProblemFrame#/"/>
+    <categories name="Default">
+      <pages name="Properties Page" label="属性" labelExpression="属性" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.2 //@extensions.0/@categories.0/@groups.3 //@extensions.0/@categories.0/@groups.1 //@extensions.0/@categories.0/@groups.4 //@extensions.0/@categories.0/@groups.5"/>
+      <groups name="General Group" labelExpression="属性" semanticCandidateExpression="var:self" preconditionExpression="">
+        <controls xsi:type="properties:DynamicMappingForDescription" name="sirius_default_rules_structural_features_for" iterator="eStructuralFeature" iterableExpression="aql:input.emfEditServices(self).getEStructuralFeatures()">
+          <ifs name="sirius_default_rules_mono_string_if" predicateExpression="aql:input.emfEditServices(self).needsTextWidget(eStructuralFeature) and not input.emfEditServices(self).isMultiline(eStructuralFeature)">
+            <widget xsi:type="properties:TextDescription" name="sirius_default_rules_mono_string" labelExpression="aql:input.emfEditServices(self).getText(eStructuralFeature)+':'" helpExpression="aql:input.emfEditServices(self).getDescription(eStructuralFeature)" isEnabledExpression="aql:eStructuralFeature.changeable" valueExpression="aql:self.eGet(eStructuralFeature.name)">
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:input.emfEditServices(self).setValue(eStructuralFeature, newValue)"/>
+              </initialOperation>
+              <conditionalStyles preconditionExpression="aql:eStructuralFeature.lowerBound==1">
+                <style>
+                  <labelFontFormat>bold</labelFontFormat>
+                </style>
+              </conditionalStyles>
+            </widget>
+          </ifs>
+          <ifs name="sirius_default_rules_multi_string_if" predicateExpression="aql:input.emfEditServices(self).needsTextWidget(eStructuralFeature) and input.emfEditServices(self).isMultiline(eStructuralFeature)">
+            <widget xsi:type="properties:TextAreaDescription" name="sirius_default_rules_multi_string" labelExpression="aql:input.emfEditServices(self).getText(eStructuralFeature)+':'" helpExpression="aql:input.emfEditServices(self).getDescription(eStructuralFeature)" isEnabledExpression="aql:eStructuralFeature.changeable" valueExpression="aql:self.eGet(eStructuralFeature.name)">
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:input.emfEditServices(self).setValue(eStructuralFeature, newValue)"/>
+              </initialOperation>
+              <conditionalStyles preconditionExpression="aql:eStructuralFeature.lowerBound==1">
+                <style>
+                  <labelFontFormat>bold</labelFontFormat>
+                </style>
+              </conditionalStyles>
+            </widget>
+          </ifs>
+          <ifs name="sirius_default_rules_mono_boolean" predicateExpression="aql:input.emfEditServices(self).needsCheckboxWidget(eStructuralFeature)">
+            <widget xsi:type="properties:CheckboxDescription" name="sirius_default_rules_mono_boolean" labelExpression="aql:input.emfEditServices(self).getText(eStructuralFeature)" helpExpression="aql:input.emfEditServices(self).getDescription(eStructuralFeature)" isEnabledExpression="aql:eStructuralFeature.changeable" valueExpression="aql:self.eGet(eStructuralFeature.name)">
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:input.emfEditServices(self).setValue(eStructuralFeature, newValue)"/>
+              </initialOperation>
+              <conditionalStyles preconditionExpression="aql:eStructuralFeature.lowerBound==1">
+                <style>
+                  <labelFontFormat>bold</labelFontFormat>
+                </style>
+              </conditionalStyles>
+            </widget>
+          </ifs>
+          <ifs name="sirius_default_rules_enum_if" predicateExpression="aql:eStructuralFeature.eType.oclIsKindOf(ecore::EEnum) and not(eStructuralFeature.many)">
+            <widget xsi:type="properties:RadioDescription" name="sirius_default_rules_enum" labelExpression="aql:input.emfEditServices(self).getText(eStructuralFeature)+':'" helpExpression="aql:input.emfEditServices(self).getDescription(eStructuralFeature)" isEnabledExpression="aql:eStructuralFeature.changeable" valueExpression="aql:eStructuralFeature.eType.oclAsType(ecore::EEnum).getEEnumLiteralByLiteral(self.eGet(eStructuralFeature.name).toString())" candidatesExpression="aql:eStructuralFeature.eType.oclAsType(ecore::EEnum).eLiterals" candidateDisplayExpression="aql:candidate.name" numberOfColumns="5">
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:input.emfEditServices(self).setValue(eStructuralFeature, newValue.instance)"/>
+              </initialOperation>
+              <conditionalStyles preconditionExpression="aql:eStructuralFeature.lowerBound==1">
+                <style>
+                  <labelFontFormat>bold</labelFontFormat>
+                </style>
+              </conditionalStyles>
+            </widget>
+          </ifs>
+          <ifs name="sirius_default_rules_eattribute_many_if" predicateExpression="aql:eStructuralFeature.oclIsKindOf(ecore::EAttribute) and eStructuralFeature.many">
+            <widget xsi:type="properties:ListDescription" name="sirius_default_rules_eattribute_many" labelExpression="aql:input.emfEditServices(self).getText(eStructuralFeature)+':'" helpExpression="aql:input.emfEditServices(self).getDescription(eStructuralFeature)" isEnabledExpression="aql:eStructuralFeature.changeable" valueExpression="aql:self.eGet(eStructuralFeature.name)" displayExpression="var:value"/>
+          </ifs>
+        </controls>
+      </groups>
+      <groups name="Relationships Group" labelExpression="关系" domainClass="UML::Vertex" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ListDescription" name="Relationship Origination" labelExpression="源：" valueExpression="feature:outgoing" displayExpression="aql:value.computeRelationshipLabel()">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </onClickOperation>
+        </controls>
+        <controls xsi:type="properties:ListDescription" name="Relationship Tageting" labelExpression="目标：" valueExpression="feature:incoming" displayExpression="aql:value.computeRelationshipLabel()">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </onClickOperation>
+        </controls>
+      </groups>
+      <groups name="Behavior Gourp" labelExpression="行为" domainClass="UML::State" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Entry" labelExpression="进入行为：" referenceNameExpression="entry">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:entry">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Behavior">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Do Activity" labelExpression="执行行为：" referenceNameExpression="doActivity">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:doActivity">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Behavior">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Exit" labelExpression="退出行为：" referenceNameExpression="exit">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:exit">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Behavior">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+      </groups>
+      <groups name="Transition Properties" labelExpression="转移" domainClass="UML::Transition" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Trigger" labelExpression="触发器：" referenceNameExpression="trigger">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:selection->first()">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Trigger">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Guard" labelExpression="条件：" referenceNameExpression="guard">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:guard">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Guard">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Effect" labelExpression="效果：" referenceNameExpression="effect">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:effect">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Effect">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+      </groups>
+      <groups name="StateMachine Group" labelExpression="状态机属性" domainClass="UML::StateMachine" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Property" labelExpression="属性" referenceNameExpression="property">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:selection->first()">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Property">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <controls xsi:type="properties:TextAreaDescription" name="Input" labelExpression="输入" valueExpression="service:computeInput()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="service:self.setInput(newValue)"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextAreaDescription" name="Event Pool" labelExpression="事件池" valueExpression="service:computeEventPool()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="service:self.setEventPool(newValue)"/>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="ValueSpecification Group" labelExpression="条件" domainClass="UML::Constraint" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="ValueSpecification" labelExpression="表达式" referenceNameExpression="specification">
+          <onClickOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:specification">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create specification">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+      </groups>
+    </categories>
+  </extensions>
+</description:Group>

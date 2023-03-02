@@ -19,6 +19,6 @@ public class Services {
     }
     
     public String addStateMachineLabel(Domain domain) {
-    	return "Trying Services";
+    	return domain.getName()+"tryingservices";
     }
 }

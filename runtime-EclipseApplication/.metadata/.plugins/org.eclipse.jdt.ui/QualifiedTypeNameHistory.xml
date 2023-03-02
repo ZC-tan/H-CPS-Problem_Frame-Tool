@@ -2,4 +2,14 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="ching.ProblemFrame.Domain"/>
     <fullyQualifiedTypeName name="org.eclipse.gemoc.statemachine.model.UML.Vertex"/>
+    <fullyQualifiedTypeName name="UML.Transition"/>
+    <fullyQualifiedTypeName name="UML.util.UMLAdapterFactory"/>
+    <fullyQualifiedTypeName name="UML.PseudostateKind"/>
+    <fullyQualifiedTypeName name="UML.Pseudostate"/>
+    <fullyQualifiedTypeName name="org.eclipse.gemoc.statemachine.model.UML.Trigger"/>
+    <fullyQualifiedTypeName name="org.eclipse.gemoc.statemachine.model.UML.StatemachineFactory"/>
+    <fullyQualifiedTypeName name="UML.UMLFactory"/>
+    <fullyQualifiedTypeName name="UML.impl.StateMachineImpl"/>
+    <fullyQualifiedTypeName name="org.eclipse.gemoc.statemachine.model.UML.impl.StatemachineFactoryImpl"/>
+    <fullyQualifiedTypeName name="UML.impl.UMLFactoryImpl"/>
 </qualifiedTypeNameHistroy>

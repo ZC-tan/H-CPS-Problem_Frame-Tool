@@ -1,0 +1,18 @@
+/**
+ */
+package ching.ProblemFrame;
+
+import UML.StateMachine;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>PF State Machine</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see ching.ProblemFrame.ProblemFramePackage#getPFStateMachine()
+ * @model
+ * @generated
+ */
+public interface PFStateMachine extends StateMachine {
+} // PFStateMachine

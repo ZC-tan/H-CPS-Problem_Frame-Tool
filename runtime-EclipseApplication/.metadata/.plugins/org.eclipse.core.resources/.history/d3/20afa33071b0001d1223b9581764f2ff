@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProblemFrame:ProblemDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame" xmlns:StateMachineModel="http://www.example.org/StateMachineModel">
+  <domain xsi:type="ProblemFrame:Machine" name="便利照明系统"/>
+  <domain xsi:type="ProblemFrame:BiddableDomain" name="驾驶员"/>
+  <domain xsi:type="ProblemFrame:CausalDomain" name="触摸屏"/>
+  <domain xsi:type="ProblemFrame:CausalDomain" name="车灯">
+    <statemachine>
+      <region name="区域">
+        <transition target="//@domain.3/@statemachine.0/@region.0/@subvertex.0" source="//@domain.3/@statemachine.0/@region.0/@subvertex.2"/>
+        <transition target="//@domain.3/@statemachine.0/@region.0/@subvertex.1" source="//@domain.3/@statemachine.0/@region.0/@subvertex.0">
+          <trigger name="驾驶员通过触摸屏打开车灯"/>
+          <trigger name="便利照明系统根据驾驶员行为（打开车门，换入驻车档）打开车灯"/>
+        </transition>
+        <transition target="//@domain.3/@statemachine.0/@region.0/@subvertex.0" source="//@domain.3/@statemachine.0/@region.0/@subvertex.1">
+          <trigger name="驾驶员通过触摸屏关闭车灯"/>
+          <trigger name="便利照明系统根据驾驶员行为（计时器，换档）关闭车灯"/>
+        </transition>
+        <transition target="//@domain.3/@statemachine.0/@region.0/@subvertex.3" source="//@domain.3/@statemachine.0/@region.0/@subvertex.0"/>
+        <subvertex xsi:type="StateMachineModel:State" name="关闭状态" incoming="//@domain.3/@statemachine.0/@region.0/@transition.0 //@domain.3/@statemachine.0/@region.0/@transition.2" outgoing="//@domain.3/@statemachine.0/@region.0/@transition.1 //@domain.3/@statemachine.0/@region.0/@transition.3"/>
+        <subvertex xsi:type="StateMachineModel:State" name="开启状态" incoming="//@domain.3/@statemachine.0/@region.0/@transition.1" outgoing="//@domain.3/@statemachine.0/@region.0/@transition.2"/>
+        <subvertex xsi:type="StateMachineModel:Pseudostate" name="初始" outgoing="//@domain.3/@statemachine.0/@region.0/@transition.0"/>
+        <subvertex xsi:type="StateMachineModel:Pseudostate" name="终结" incoming="//@domain.3/@statemachine.0/@region.0/@transition.3" kind="terminate"/>
+      </region>
+    </statemachine>
+  </domain>
+  <requirement name="自动控制车灯（根据驾驶员行为）"/>
+  <interfaces targetDomain="//@domain.0" sourceDomain="//@domain.1" beginControlSharedPhenomena="" endControlSharedPhenomena="系统检测驾驶员行为"/>
+  <interfaces targetDomain="//@domain.2" sourceDomain="//@domain.0" beginControlSharedPhenomena="返回触摸屏响应信息" endControlSharedPhenomena="发送用户指令给系统"/>
+  <interfaces targetDomain="//@domain.3" sourceDomain="//@domain.0" beginControlSharedPhenomena="根据驾驶员行为自动控制车灯"/>
+  <interfaces targetDomain="//@domain.2" sourceDomain="//@domain.1" beginControlSharedPhenomena="在触摸屏使用操作面板" endControlSharedPhenomena="显示操作面板"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@domain.1"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.0" constrains="//@domain.3"/>
+</ProblemFrame:ProblemDiagram>
