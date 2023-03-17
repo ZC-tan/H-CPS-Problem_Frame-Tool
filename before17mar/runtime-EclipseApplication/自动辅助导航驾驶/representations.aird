@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame" xmlns:StateMachineModel="http://www.example.org/StateMachineModel" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_AiUM4KYVEe2las4yGIen_A" selectedViews="_e_9hMKueEe2PhIe0Y-1lrw _fPJMsKueEe2PhIe0Y-1lrw" version="15.0.0.202209061200">
+    <semanticResources>自动辅助导航驾驶.problemframe</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign</semanticResources>
+    <semanticResources>environment:/viewpoint</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_GyUyYKYVEe2las4yGIen_A">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IJL3oKYVEe2las4yGIen_A" name="自动辅助导航驾驶需求模型" repPath="#_IJJbYKYVEe2las4yGIen_A" changeId="01f83564-54fd-471f-83d0-17e496f3f3f1">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']"/>
+        <target xmi:type="ProblemFrame:ProblemDiagram" href="自动辅助导航驾驶.problemframe#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_e_9hMKueEe2PhIe0Y-1lrw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_WMKMcquiEe2PhIe0Y-1lrw" name="new ProblemDiagram" repPath="#_WMKMcKuiEe2PhIe0Y-1lrw" changeId="ae98fae1-a72e-4b2e-8ef4-f827b90e1b67">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']"/>
+        <target xmi:type="ProblemFrame:ProblemDiagram" href="自动辅助导航驾驶.problemframe#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_fPJMsKueEe2PhIe0Y-1lrw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_imWa8a-BEe2g0O4mBMAT6w" name="StateMachine Diagram" repPath="#_imVz4K-BEe2g0O4mBMAT6w" changeId="4d500507-0d0a-4064-95e0-1537bfa05dd5">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+        <target xmi:type="ProblemFrame:MyStateMachine" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_IJJbYKYVEe2las4yGIen_A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_IJMesKYVEe2las4yGIen_A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_IJMesaYVEe2las4yGIen_A" type="Sirius" element="_IJJbYKYVEe2las4yGIen_A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_JBJaYKYVEe2las4yGIen_A" type="2001" element="_JBIMQKYVEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_JBJaY6YVEe2las4yGIen_A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_JBJaZKYVEe2las4yGIen_A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JBKBcKYVEe2las4yGIen_A" type="3005" element="_JBIMQaYVEe2las4yGIen_A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_JBKBcaYVEe2las4yGIen_A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JBKBcqYVEe2las4yGIen_A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_JBJaYaYVEe2las4yGIen_A" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JBJaYqYVEe2las4yGIen_A" x="196" y="210" width="138" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_J_795KYVEe2las4yGIen_A" type="2001" element="_J_6vwKYVEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_J_8k8qYVEe2las4yGIen_A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_J_8k86YVEe2las4yGIen_A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J_8k9KYVEe2las4yGIen_A" type="3005" element="_J_7W0KYVEe2las4yGIen_A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_J_8k9aYVEe2las4yGIen_A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J_8k9qYVEe2las4yGIen_A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_J_8k8KYVEe2las4yGIen_A" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J_8k8aYVEe2las4yGIen_A" x="448" y="210" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_NHlEQKYVEe2las4yGIen_A" type="2001" element="_NHj2IKYVEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_NHlEQ6YVEe2las4yGIen_A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_NHlERKYVEe2las4yGIen_A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_NHlERaYVEe2las4yGIen_A" type="3005" element="_NHj2IaYVEe2las4yGIen_A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_NHlERqYVEe2las4yGIen_A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NHlER6YVEe2las4yGIen_A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_NHlEQaYVEe2las4yGIen_A" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NHlEQqYVEe2las4yGIen_A" x="448" y="84" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_3cBhUKYVEe2las4yGIen_A" type="2001" element="_3b_sIKYVEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_3cBhU6YVEe2las4yGIen_A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_3cBhVKYVEe2las4yGIen_A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3cBhVaYVEe2las4yGIen_A" type="3005" element="_3b_sIaYVEe2las4yGIen_A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3cBhVqYVEe2las4yGIen_A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3cBhV6YVEe2las4yGIen_A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_3cBhUaYVEe2las4yGIen_A" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3cBhUqYVEe2las4yGIen_A" x="213" y="343" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Na5zfaYWEe2las4yGIen_A" type="2001" element="_Na5zcKYWEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_Na5zgKYWEe2las4yGIen_A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Na5zgaYWEe2las4yGIen_A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Na5zgqYWEe2las4yGIen_A" type="3005" element="_Na5zcaYWEe2las4yGIen_A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Na5zg6YWEe2las4yGIen_A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Na5zhKYWEe2las4yGIen_A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Na5zfqYWEe2las4yGIen_A" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Na5zf6YWEe2las4yGIen_A" x="476" y="350" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Tj6ZH6YWEe2las4yGIen_A" type="2001" element="_Tj6ZEKYWEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_Tj6ZIqYWEe2las4yGIen_A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Tj6ZI6YWEe2las4yGIen_A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Tj6ZJKYWEe2las4yGIen_A" type="3005" element="_Tj6ZEaYWEe2las4yGIen_A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Tj6ZJaYWEe2las4yGIen_A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tj6ZJqYWEe2las4yGIen_A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Tj6ZIKYWEe2las4yGIen_A" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tj6ZIaYWEe2las4yGIen_A" x="756" y="179" width="141" height="92"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_PcL5RKYXEe2las4yGIen_A" type="2001" element="_PcKEEKYXEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_PcL5R6YXEe2las4yGIen_A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_PcL5SKYXEe2las4yGIen_A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PcL5SaYXEe2las4yGIen_A" type="3005" element="_PcKEEaYXEe2las4yGIen_A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_PcL5SqYXEe2las4yGIen_A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PcL5S6YXEe2las4yGIen_A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_PcL5RaYXEe2las4yGIen_A" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PcL5RqYXEe2las4yGIen_A" x="637" y="329" width="121" height="61"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_IJMesqYVEe2las4yGIen_A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_mRG4BqYWEe2las4yGIen_A" type="4001" element="_mRFC0KYWEe2las4yGIen_A" source="_JBJaYKYVEe2las4yGIen_A" target="_NHlEQKYVEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_mRHfEKYWEe2las4yGIen_A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mRHfEaYWEe2las4yGIen_A" x="-1" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mRHfEqYWEe2las4yGIen_A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mRHfE6YWEe2las4yGIen_A" x="3" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mRHfFKYWEe2las4yGIen_A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mRHfFaYWEe2las4yGIen_A" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mRG4B6YWEe2las4yGIen_A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mRG4CKYWEe2las4yGIen_A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mRG4CaYWEe2las4yGIen_A" points="[36, -13, -191, 65]$[227, -79, 0, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mRHfFqYWEe2las4yGIen_A" id="(0.6376811594202898,0.21311475409836064)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mRHfF6YWEe2las4yGIen_A" id="(0.5206611570247934,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mkVWAKYWEe2las4yGIen_A" type="4001" element="_mkS5xqYWEe2las4yGIen_A" source="_JBJaYKYVEe2las4yGIen_A" target="_J_795KYVEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_mkVWBKYWEe2las4yGIen_A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mkVWBaYWEe2las4yGIen_A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mkVWBqYWEe2las4yGIen_A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mkVWB6YWEe2las4yGIen_A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mkVWCKYWEe2las4yGIen_A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mkVWCaYWEe2las4yGIen_A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mkVWAaYWEe2las4yGIen_A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mkVWAqYWEe2las4yGIen_A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mkVWA6YWEe2las4yGIen_A" points="[0, 0, -114, 0]$[114, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mkVWCqYWEe2las4yGIen_A" id="(1.0,0.6557377049180327)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mkVWC6YWEe2las4yGIen_A" id="(0.0,0.6557377049180327)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_m0vwkKYWEe2las4yGIen_A" type="4001" element="_m0t7bKYWEe2las4yGIen_A" source="_JBJaYKYVEe2las4yGIen_A" target="_Na5zfaYWEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_m0vwlKYWEe2las4yGIen_A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m0vwlaYWEe2las4yGIen_A" x="-1" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_m0vwlqYWEe2las4yGIen_A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m0vwl6YWEe2las4yGIen_A" x="-9" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_m0vwmKYWEe2las4yGIen_A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m0vwmaYWEe2las4yGIen_A" x="-3" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_m0vwkaYWEe2las4yGIen_A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_m0vwkqYWEe2las4yGIen_A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_m0vwk6YWEe2las4yGIen_A" points="[0, 0, -245, -79]$[245, 79, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m0wXoKYWEe2las4yGIen_A" id="(0.6086956521739131,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m0wXoaYWEe2las4yGIen_A" id="(0.4049586776859504,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_nJOzDaYWEe2las4yGIen_A" type="4001" element="_nJOy4qYWEe2las4yGIen_A" source="_JBJaYKYVEe2las4yGIen_A" target="_3cBhUKYVEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_nJOzEaYWEe2las4yGIen_A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJOzEqYWEe2las4yGIen_A" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nJOzE6YWEe2las4yGIen_A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJOzFKYWEe2las4yGIen_A" x="7" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nJOzFaYWEe2las4yGIen_A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJOzFqYWEe2las4yGIen_A" x="7" y="-2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_nJOzDqYWEe2las4yGIen_A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_nJOzD6YWEe2las4yGIen_A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nJOzEKYWEe2las4yGIen_A" points="[-1, 3, 46, -115]$[-31, 76, 16, -42]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nJOzF6YWEe2las4yGIen_A" id="(0.463768115942029,0.9344262295081968)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nJOzGKYWEe2las4yGIen_A" id="(0.0,0.6885245901639344)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_uQnFXaYWEe2las4yGIen_A" type="4001" element="_uQnFMKYWEe2las4yGIen_A" source="_Tj6ZH6YWEe2las4yGIen_A" target="_NHlEQKYVEe2las4yGIen_A">
+          <children xmi:type="notation:Node" xmi:id="_uQnFYaYWEe2las4yGIen_A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uQnFYqYWEe2las4yGIen_A" x="4" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_uQnFY6YWEe2las4yGIen_A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uQnFZKYWEe2las4yGIen_A" x="-2" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_uQnFZaYWEe2las4yGIen_A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uQnFZqYWEe2las4yGIen_A" x="-2" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_uQnFXqYWEe2las4yGIen_A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_uQnFX6YWEe2las4yGIen_A" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uQnFYKYWEe2las4yGIen_A" points="[3, -7, 207, 81]$[-205, -88, -1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uQnFZ6YWEe2las4yGIen_A" id="(0.12056737588652482,0.22340425531914893)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uQnFaKYWEe2las4yGIen_A" id="(1.0,0.45901639344262296)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_IJNFwKYVEe2las4yGIen_A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_IJNFwaYVEe2las4yGIen_A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_JBIMQKYVEe2las4yGIen_A" name="自动辅助导航驾驶系统" outgoingEdges="_mRFC0KYWEe2las4yGIen_A _mkS5xqYWEe2las4yGIen_A _m0t7bKYWEe2las4yGIen_A _nJOy4qYWEe2las4yGIen_A" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:Machine" href="自动辅助导航驾驶.problemframe#//@domain.0"/>
+      <semanticElements xmi:type="ProblemFrame:Machine" href="自动辅助导航驾驶.problemframe#//@domain.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_JBIMQaYVEe2las4yGIen_A" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Machine.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Machine']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Machine']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_J_6vwKYVEe2las4yGIen_A" name="驾驶员" incomingEdges="_mkS5xqYWEe2las4yGIen_A" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:BiddableDomain" href="自动辅助导航驾驶.problemframe#//@domain.1"/>
+      <semanticElements xmi:type="ProblemFrame:BiddableDomain" href="自动辅助导航驾驶.problemframe#//@domain.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_J_7W0KYVEe2las4yGIen_A" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/BiddableDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_NHj2IKYVEe2las4yGIen_A" name="道路" incomingEdges="_mRFC0KYWEe2las4yGIen_A _uQnFMKYWEe2las4yGIen_A" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:BiddableDomain" href="自动辅助导航驾驶.problemframe#//@domain.2"/>
+      <semanticElements xmi:type="ProblemFrame:BiddableDomain" href="自动辅助导航驾驶.problemframe#//@domain.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_NHj2IaYVEe2las4yGIen_A" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/BiddableDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_3b_sIKYVEe2las4yGIen_A" name="信号灯" incomingEdges="_nJOy4qYWEe2las4yGIen_A" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.3"/>
+      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3b_sIaYVEe2las4yGIen_A" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Na5zcKYWEe2las4yGIen_A" name="方向盘" incomingEdges="_m0t7bKYWEe2las4yGIen_A" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.4"/>
+      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_Na5zcaYWEe2las4yGIen_A" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PcKEEKYXEe2las4yGIen_A" name="导航" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.5"/>
+      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.5"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PcKEEaYXEe2las4yGIen_A" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Tj6ZEKYWEe2las4yGIen_A" name="自动辅助导航驾驶" outgoingEdges="_uQnFMKYWEe2las4yGIen_A" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:Requirement" href="自动辅助导航驾驶.problemframe#//@requirement.0"/>
+      <semanticElements xmi:type="ProblemFrame:Requirement" href="自动辅助导航驾驶.problemframe#//@requirement.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_Tj6ZEaYWEe2las4yGIen_A" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Requirement.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Requirement']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Requirement']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mRFC0KYWEe2las4yGIen_A" sourceNode="_JBIMQKYVEe2las4yGIen_A" targetNode="_NHj2IKYVEe2las4yGIen_A">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.0"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mRFC0aYWEe2las4yGIen_A" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mRFC0qYWEe2las4yGIen_A" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_mRFC06YWEe2las4yGIen_A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mkS5xqYWEe2las4yGIen_A" sourceNode="_JBIMQKYVEe2las4yGIen_A" targetNode="_J_6vwKYVEe2las4yGIen_A">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.1"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mkTg0KYWEe2las4yGIen_A" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mkTg0aYWEe2las4yGIen_A" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_mkTg0qYWEe2las4yGIen_A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_m0t7bKYWEe2las4yGIen_A" sourceNode="_JBIMQKYVEe2las4yGIen_A" targetNode="_Na5zcKYWEe2las4yGIen_A">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.2"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_m0t7baYWEe2las4yGIen_A" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_m0t7bqYWEe2las4yGIen_A" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_m0t7b6YWEe2las4yGIen_A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_nJOy4qYWEe2las4yGIen_A" sourceNode="_JBIMQKYVEe2las4yGIen_A" targetNode="_3b_sIKYVEe2las4yGIen_A">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.3"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_nJOy46YWEe2las4yGIen_A" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_nJOy5KYWEe2las4yGIen_A" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_nJOy5aYWEe2las4yGIen_A" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_uQnFMKYWEe2las4yGIen_A" sourceNode="_Tj6ZEKYWEe2las4yGIen_A" targetNode="_NHj2IKYVEe2las4yGIen_A">
+      <target xmi:type="ProblemFrame:RequirementReference" href="自动辅助导航驾驶.problemframe#//@reference.0"/>
+      <semanticElements xmi:type="ProblemFrame:RequirementReference" href="自动辅助导航驾驶.problemframe#//@reference.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_uQnFMaYWEe2las4yGIen_A" lineStyle="dash" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_uQnFMqYWEe2las4yGIen_A" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_IJKCcKYVEe2las4yGIen_A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer"/>
+    <target xmi:type="ProblemFrame:ProblemDiagram" href="自动辅助导航驾驶.problemframe#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_WMKMcKuiEe2PhIe0Y-1lrw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_WMKzgKuiEe2PhIe0Y-1lrw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_WMKzgauiEe2PhIe0Y-1lrw" type="Sirius" element="_WMKMcKuiEe2PhIe0Y-1lrw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_WMVLkKuiEe2PhIe0Y-1lrw" type="2001" element="_WMN20KuiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMVLk6uiEe2PhIe0Y-1lrw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WMVLlKuiEe2PhIe0Y-1lrw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMXAwquiEe2PhIe0Y-1lrw" type="3005" element="_WMN20auiEe2PhIe0Y-1lrw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WMXAw6uiEe2PhIe0Y-1lrw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMXAxKuiEe2PhIe0Y-1lrw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WMVLkauiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMVLkquiEe2PhIe0Y-1lrw" x="350" y="119" width="138" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WMVLlauiEe2PhIe0Y-1lrw" type="2001" element="_WMOd4auiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMVLmKuiEe2PhIe0Y-1lrw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WMVLmauiEe2PhIe0Y-1lrw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMXAxauiEe2PhIe0Y-1lrw" type="3005" element="_WMOd4quiEe2PhIe0Y-1lrw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WMXAxquiEe2PhIe0Y-1lrw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMXAx6uiEe2PhIe0Y-1lrw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WMVLlquiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMVLl6uiEe2PhIe0Y-1lrw" x="546" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WMVyoKuiEe2PhIe0Y-1lrw" type="2001" element="_WMOd5KuiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMVyo6uiEe2PhIe0Y-1lrw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WMVypKuiEe2PhIe0Y-1lrw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMXn0KuiEe2PhIe0Y-1lrw" type="3005" element="_WMOd5auiEe2PhIe0Y-1lrw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WMXn0auiEe2PhIe0Y-1lrw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMXn0quiEe2PhIe0Y-1lrw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WMVyoauiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMVyoquiEe2PhIe0Y-1lrw" x="182" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WMVypauiEe2PhIe0Y-1lrw" type="2001" element="_WMOd56uiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMVyqKuiEe2PhIe0Y-1lrw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WMVyqauiEe2PhIe0Y-1lrw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMXn06uiEe2PhIe0Y-1lrw" type="3005" element="_WMOd6KuiEe2PhIe0Y-1lrw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WMXn1KuiEe2PhIe0Y-1lrw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMXn1auiEe2PhIe0Y-1lrw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WMVypquiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMVyp6uiEe2PhIe0Y-1lrw" x="364" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WMVyqquiEe2PhIe0Y-1lrw" type="2001" element="_WMOd6quiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMVyrauiEe2PhIe0Y-1lrw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WMVyrquiEe2PhIe0Y-1lrw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMXn1quiEe2PhIe0Y-1lrw" type="3005" element="_WMPE8KuiEe2PhIe0Y-1lrw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WMXn16uiEe2PhIe0Y-1lrw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMXn2KuiEe2PhIe0Y-1lrw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WMVyq6uiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMVyrKuiEe2PhIe0Y-1lrw" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WMVyr6uiEe2PhIe0Y-1lrw" type="2001" element="_WMPE8quiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMVysquiEe2PhIe0Y-1lrw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WMVys6uiEe2PhIe0Y-1lrw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMXn2auiEe2PhIe0Y-1lrw" type="3005" element="_WMPE86uiEe2PhIe0Y-1lrw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WMXn2quiEe2PhIe0Y-1lrw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMXn26uiEe2PhIe0Y-1lrw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WMVysKuiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMVysauiEe2PhIe0Y-1lrw" x="469" y="245" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WMWZsKuiEe2PhIe0Y-1lrw" type="2001" element="_WMPsAKuiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMWZs6uiEe2PhIe0Y-1lrw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WMWZtKuiEe2PhIe0Y-1lrw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMYO4KuiEe2PhIe0Y-1lrw" type="3005" element="_WMPsAauiEe2PhIe0Y-1lrw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WMYO4auiEe2PhIe0Y-1lrw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMYO4quiEe2PhIe0Y-1lrw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WMWZsauiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMWZsquiEe2PhIe0Y-1lrw" x="182" y="364" width="121" height="81"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_iKJAEK-BEe2g0O4mBMAT6w" type="2001" element="_iKF8wq-BEe2g0O4mBMAT6w">
+          <children xmi:type="notation:Node" xmi:id="_iKJAE6-BEe2g0O4mBMAT6w" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_iKJAFK-BEe2g0O4mBMAT6w" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_iKJAFa-BEe2g0O4mBMAT6w" type="3005" element="_iKF8w6-BEe2g0O4mBMAT6w">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_iKJAFq-BEe2g0O4mBMAT6w" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iKJAF6-BEe2g0O4mBMAT6w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_iKJAEa-BEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iKJAEq-BEe2g0O4mBMAT6w" x="385" y="392" width="121" height="61"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_WMKzgquiEe2PhIe0Y-1lrw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_WMYO5quiEe2PhIe0Y-1lrw" type="4001" element="_WMQ6IKuiEe2PhIe0Y-1lrw" source="_WMVLkKuiEe2PhIe0Y-1lrw" target="_WMVyoKuiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMYO6quiEe2PhIe0Y-1lrw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMYO66uiEe2PhIe0Y-1lrw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMY18KuiEe2PhIe0Y-1lrw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMY18auiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMY18quiEe2PhIe0Y-1lrw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMY186uiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WMYO56uiEe2PhIe0Y-1lrw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WMYO6KuiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMYO6auiEe2PhIe0Y-1lrw" points="[0, 0, 181, 60]$[-181, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMY19KuiEe2PhIe0Y-1lrw" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMY19auiEe2PhIe0Y-1lrw" id="(0.49586776859504134,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_WMY19quiEe2PhIe0Y-1lrw" type="4001" element="_WMQ6J6uiEe2PhIe0Y-1lrw" source="_WMVLkKuiEe2PhIe0Y-1lrw" target="_WMVLlauiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMY1-quiEe2PhIe0Y-1lrw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMY1-6uiEe2PhIe0Y-1lrw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMY1_KuiEe2PhIe0Y-1lrw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMY1_auiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMY1_quiEe2PhIe0Y-1lrw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMY1_6uiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WMY196uiEe2PhIe0Y-1lrw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WMY1-KuiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMY1-auiEe2PhIe0Y-1lrw" points="[0, 0, -181, 60]$[181, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMY2AKuiEe2PhIe0Y-1lrw" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMY2AauiEe2PhIe0Y-1lrw" id="(0.49586776859504134,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_WMY2AquiEe2PhIe0Y-1lrw" type="4001" element="_WMRhNquiEe2PhIe0Y-1lrw" source="_WMVLkKuiEe2PhIe0Y-1lrw" target="_WMVyqquiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMZdAKuiEe2PhIe0Y-1lrw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMZdAauiEe2PhIe0Y-1lrw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMZdAquiEe2PhIe0Y-1lrw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMZdA6uiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMZdBKuiEe2PhIe0Y-1lrw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMZdBauiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WMY2A6uiEe2PhIe0Y-1lrw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WMY2BKuiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMY2BauiEe2PhIe0Y-1lrw" points="[0, 0, 362, 60]$[-362, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMZdBquiEe2PhIe0Y-1lrw" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMZdB6uiEe2PhIe0Y-1lrw" id="(0.49586776859504134,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_WMZdCKuiEe2PhIe0Y-1lrw" type="4001" element="_WMRhPauiEe2PhIe0Y-1lrw" source="_WMVLkKuiEe2PhIe0Y-1lrw" target="_WMVypauiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMZdDKuiEe2PhIe0Y-1lrw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMZdDauiEe2PhIe0Y-1lrw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMZdDquiEe2PhIe0Y-1lrw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMZdD6uiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMZdEKuiEe2PhIe0Y-1lrw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMZdEauiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WMZdCauiEe2PhIe0Y-1lrw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WMZdCquiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMZdC6uiEe2PhIe0Y-1lrw" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMZdEquiEe2PhIe0Y-1lrw" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMZdE6uiEe2PhIe0Y-1lrw" id="(0.49586776859504134,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_WMZdFKuiEe2PhIe0Y-1lrw" type="4001" element="_WMRhRKuiEe2PhIe0Y-1lrw" source="_WMVyr6uiEe2PhIe0Y-1lrw" target="_WMVLkKuiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMaEEKuiEe2PhIe0Y-1lrw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMaEEauiEe2PhIe0Y-1lrw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMaEEquiEe2PhIe0Y-1lrw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMaEE6uiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMaEFKuiEe2PhIe0Y-1lrw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMaEFauiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WMZdFauiEe2PhIe0Y-1lrw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WMZdFquiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMZdF6uiEe2PhIe0Y-1lrw" points="[0, 0, 106, 60]$[-106, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMaEFquiEe2PhIe0Y-1lrw" id="(0.49586776859504134,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMaEF6uiEe2PhIe0Y-1lrw" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_WMaEGKuiEe2PhIe0Y-1lrw" type="4001" element="_WMRhS6uiEe2PhIe0Y-1lrw" source="_WMVLlauiEe2PhIe0Y-1lrw" target="_WMVyr6uiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMaEHKuiEe2PhIe0Y-1lrw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMaEHauiEe2PhIe0Y-1lrw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMaEHquiEe2PhIe0Y-1lrw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMaEH6uiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMaEIKuiEe2PhIe0Y-1lrw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMaEIauiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WMaEGauiEe2PhIe0Y-1lrw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WMaEGquiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMaEG6uiEe2PhIe0Y-1lrw" points="[0, 0, 75, -181]$[-75, 181, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMaEIquiEe2PhIe0Y-1lrw" id="(0.49586776859504134,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMaEI6uiEe2PhIe0Y-1lrw" id="(0.49586776859504134,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_WMarIKuiEe2PhIe0Y-1lrw" type="4001" element="_WMSIRquiEe2PhIe0Y-1lrw" source="_WMWZsKuiEe2PhIe0Y-1lrw" target="_WMVyqquiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMarJKuiEe2PhIe0Y-1lrw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMarJauiEe2PhIe0Y-1lrw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMarJquiEe2PhIe0Y-1lrw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMarJ6uiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMarKKuiEe2PhIe0Y-1lrw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMarKauiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WMarIauiEe2PhIe0Y-1lrw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WMarIquiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMarI6uiEe2PhIe0Y-1lrw" points="[0, 0, 181, 302]$[-181, -302, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMarKquiEe2PhIe0Y-1lrw" id="(0.49586776859504134,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMarK6uiEe2PhIe0Y-1lrw" id="(0.49586776859504134,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_WMarLKuiEe2PhIe0Y-1lrw" type="4001" element="_WMTWYKuiEe2PhIe0Y-1lrw" source="_WMWZsKuiEe2PhIe0Y-1lrw" target="_WMVyoKuiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMarMKuiEe2PhIe0Y-1lrw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMarMauiEe2PhIe0Y-1lrw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMarMquiEe2PhIe0Y-1lrw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMarM6uiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMarNKuiEe2PhIe0Y-1lrw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMarNauiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WMarLauiEe2PhIe0Y-1lrw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WMarLquiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMarL6uiEe2PhIe0Y-1lrw" points="[0, 0, 0, 302]$[0, -302, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMarNquiEe2PhIe0Y-1lrw" id="(0.49586776859504134,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMarN6uiEe2PhIe0Y-1lrw" id="(0.49586776859504134,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_WMarOKuiEe2PhIe0Y-1lrw" type="4001" element="_WMT9cquiEe2PhIe0Y-1lrw" source="_WMWZsKuiEe2PhIe0Y-1lrw" target="_WMVyr6uiEe2PhIe0Y-1lrw">
+          <children xmi:type="notation:Node" xmi:id="_WMarPKuiEe2PhIe0Y-1lrw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMarPauiEe2PhIe0Y-1lrw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMarPquiEe2PhIe0Y-1lrw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMarP6uiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WMarQKuiEe2PhIe0Y-1lrw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WMarQauiEe2PhIe0Y-1lrw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WMarOauiEe2PhIe0Y-1lrw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WMarOquiEe2PhIe0Y-1lrw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WMarO6uiEe2PhIe0Y-1lrw" points="[0, 0, -287, 60]$[287, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMarQquiEe2PhIe0Y-1lrw" id="(0.49586776859504134,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WMarQ6uiEe2PhIe0Y-1lrw" id="(0.49586776859504134,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_iKJAGK-BEe2g0O4mBMAT6w" type="4001" element="_iKIZAK-BEe2g0O4mBMAT6w" source="_WMWZsKuiEe2PhIe0Y-1lrw" target="_iKJAEK-BEe2g0O4mBMAT6w">
+          <children xmi:type="notation:Node" xmi:id="_iKJAHK-BEe2g0O4mBMAT6w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iKJAHa-BEe2g0O4mBMAT6w" x="-12" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_iKJAHq-BEe2g0O4mBMAT6w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iKJAH6-BEe2g0O4mBMAT6w" x="8" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_iKJAIK-BEe2g0O4mBMAT6w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iKJAIa-BEe2g0O4mBMAT6w" x="9" y="-2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_iKJAGa-BEe2g0O4mBMAT6w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_iKJAGq-BEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iKJAG6-BEe2g0O4mBMAT6w" points="[61, 5, -142, -13]$[143, 12, -60, -6]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iKJAIq-BEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iKJAI6-BEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_WMUkh6uiEe2PhIe0Y-1lrw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_WMUkiKuiEe2PhIe0Y-1lrw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WMN20KuiEe2PhIe0Y-1lrw" name="自动辅助导航驾驶系统" outgoingEdges="_WMQ6IKuiEe2PhIe0Y-1lrw _WMQ6J6uiEe2PhIe0Y-1lrw _WMRhNquiEe2PhIe0Y-1lrw _WMRhPauiEe2PhIe0Y-1lrw" incomingEdges="_WMRhRKuiEe2PhIe0Y-1lrw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:Machine" href="自动辅助导航驾驶.problemframe#//@domain.0"/>
+      <semanticElements xmi:type="ProblemFrame:Machine" href="自动辅助导航驾驶.problemframe#//@domain.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WMN20auiEe2PhIe0Y-1lrw" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Machine.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Machine']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Machine']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WMOd4auiEe2PhIe0Y-1lrw" name="驾驶员" outgoingEdges="_WMRhS6uiEe2PhIe0Y-1lrw" incomingEdges="_WMQ6J6uiEe2PhIe0Y-1lrw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:BiddableDomain" href="自动辅助导航驾驶.problemframe#//@domain.1"/>
+      <semanticElements xmi:type="ProblemFrame:BiddableDomain" href="自动辅助导航驾驶.problemframe#//@domain.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WMOd4quiEe2PhIe0Y-1lrw" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/BiddableDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WMOd5KuiEe2PhIe0Y-1lrw" name="道路" incomingEdges="_WMQ6IKuiEe2PhIe0Y-1lrw _WMTWYKuiEe2PhIe0Y-1lrw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:BiddableDomain" href="自动辅助导航驾驶.problemframe#//@domain.2"/>
+      <semanticElements xmi:type="ProblemFrame:BiddableDomain" href="自动辅助导航驾驶.problemframe#//@domain.2"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WMOd5auiEe2PhIe0Y-1lrw" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/BiddableDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WMOd56uiEe2PhIe0Y-1lrw" name="信号灯" incomingEdges="_WMRhPauiEe2PhIe0Y-1lrw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.3"/>
+      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.3"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WMOd6KuiEe2PhIe0Y-1lrw" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WMOd6quiEe2PhIe0Y-1lrw" name="方向盘" incomingEdges="_WMRhNquiEe2PhIe0Y-1lrw _WMSIRquiEe2PhIe0Y-1lrw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.4"/>
+      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.4"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WMPE8KuiEe2PhIe0Y-1lrw" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WMPE8quiEe2PhIe0Y-1lrw" name="导航" outgoingEdges="_WMRhRKuiEe2PhIe0Y-1lrw" incomingEdges="_WMRhS6uiEe2PhIe0Y-1lrw _WMT9cquiEe2PhIe0Y-1lrw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.5"/>
+      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="自动辅助导航驾驶.problemframe#//@domain.5"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WMPE86uiEe2PhIe0Y-1lrw" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WMPsAKuiEe2PhIe0Y-1lrw" name="自动辅助导航驾驶" outgoingEdges="_WMSIRquiEe2PhIe0Y-1lrw _WMTWYKuiEe2PhIe0Y-1lrw _WMT9cquiEe2PhIe0Y-1lrw _iKIZAK-BEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:Requirement" href="自动辅助导航驾驶.problemframe#//@requirement.0"/>
+      <semanticElements xmi:type="ProblemFrame:Requirement" href="自动辅助导航驾驶.problemframe#//@requirement.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WMPsAauiEe2PhIe0Y-1lrw" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Requirement.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Requirement']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Requirement']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WMQ6IKuiEe2PhIe0Y-1lrw" sourceNode="_WMN20KuiEe2PhIe0Y-1lrw" targetNode="_WMOd5KuiEe2PhIe0Y-1lrw">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.0"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WMQ6IauiEe2PhIe0Y-1lrw" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_WMQ6IquiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_WMQ6I6uiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WMQ6J6uiEe2PhIe0Y-1lrw" sourceNode="_WMN20KuiEe2PhIe0Y-1lrw" targetNode="_WMOd4auiEe2PhIe0Y-1lrw">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.1"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WMRhMKuiEe2PhIe0Y-1lrw" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_WMRhMauiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_WMRhMquiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WMRhNquiEe2PhIe0Y-1lrw" sourceNode="_WMN20KuiEe2PhIe0Y-1lrw" targetNode="_WMOd6quiEe2PhIe0Y-1lrw">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.2"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WMRhN6uiEe2PhIe0Y-1lrw" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_WMRhOKuiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_WMRhOauiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WMRhPauiEe2PhIe0Y-1lrw" sourceNode="_WMN20KuiEe2PhIe0Y-1lrw" targetNode="_WMOd56uiEe2PhIe0Y-1lrw">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.3"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WMRhPquiEe2PhIe0Y-1lrw" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_WMRhP6uiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_WMRhQKuiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WMRhRKuiEe2PhIe0Y-1lrw" sourceNode="_WMPE8quiEe2PhIe0Y-1lrw" targetNode="_WMN20KuiEe2PhIe0Y-1lrw">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.4"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WMRhRauiEe2PhIe0Y-1lrw" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_WMRhRquiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_WMRhR6uiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WMRhS6uiEe2PhIe0Y-1lrw" sourceNode="_WMOd4auiEe2PhIe0Y-1lrw" targetNode="_WMPE8quiEe2PhIe0Y-1lrw">
+      <target xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.5"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="自动辅助导航驾驶.problemframe#//@interfaces.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WMSIQKuiEe2PhIe0Y-1lrw" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_WMSIQauiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_WMSIQquiEe2PhIe0Y-1lrw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WMSIRquiEe2PhIe0Y-1lrw" sourceNode="_WMPsAKuiEe2PhIe0Y-1lrw" targetNode="_WMOd6quiEe2PhIe0Y-1lrw">
+      <target xmi:type="ProblemFrame:ConstrainingRequirementReference" href="自动辅助导航驾驶.problemframe#//@reference.2"/>
+      <semanticElements xmi:type="ProblemFrame:ConstrainingRequirementReference" href="自动辅助导航驾驶.problemframe#//@reference.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WMSvUKuiEe2PhIe0Y-1lrw" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqConstraint']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_WMSvUauiEe2PhIe0Y-1lrw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqConstraint']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WMTWYKuiEe2PhIe0Y-1lrw" sourceNode="_WMPsAKuiEe2PhIe0Y-1lrw" targetNode="_WMOd5KuiEe2PhIe0Y-1lrw">
+      <target xmi:type="ProblemFrame:RequirementReference" href="自动辅助导航驾驶.problemframe#//@reference.0"/>
+      <semanticElements xmi:type="ProblemFrame:RequirementReference" href="自动辅助导航驾驶.problemframe#//@reference.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WMTWYauiEe2PhIe0Y-1lrw" lineStyle="dash" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_WMTWYquiEe2PhIe0Y-1lrw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WMT9cquiEe2PhIe0Y-1lrw" sourceNode="_WMPsAKuiEe2PhIe0Y-1lrw" targetNode="_WMPE8quiEe2PhIe0Y-1lrw">
+      <target xmi:type="ProblemFrame:RequirementReference" href="自动辅助导航驾驶.problemframe#//@reference.1"/>
+      <semanticElements xmi:type="ProblemFrame:RequirementReference" href="自动辅助导航驾驶.problemframe#//@reference.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WMT9c6uiEe2PhIe0Y-1lrw" lineStyle="dash" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_WMT9dKuiEe2PhIe0Y-1lrw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_iKF8wq-BEe2g0O4mBMAT6w" incomingEdges="_iKIZAK-BEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:MyStateMachine" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0"/>
+      <semanticElements xmi:type="ProblemFrame:MyStateMachine" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_iKF8w6-BEe2g0O4mBMAT6w" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/sm_representation.drawio.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='StateMachine']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='StateMachine']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_iKIZAK-BEe2g0O4mBMAT6w" sourceNode="_WMPsAKuiEe2PhIe0Y-1lrw" targetNode="_iKF8wq-BEe2g0O4mBMAT6w">
+      <target xmi:type="ProblemFrame:Requirement" href="自动辅助导航驾驶.problemframe#//@requirement.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_iKIZAa-BEe2g0O4mBMAT6w" lineStyle="dash_dot" size="2" strokeColor="39,76,114">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='StateMachineReference']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_iKIZAq-BEe2g0O4mBMAT6w" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='StateMachineReference']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_WMKMcauiEe2PhIe0Y-1lrw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer"/>
+    <target xmi:type="ProblemFrame:ProblemDiagram" href="自动辅助导航驾驶.problemframe#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_imVz4K-BEe2g0O4mBMAT6w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_imdvsK-BEe2g0O4mBMAT6w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_imdvsa-BEe2g0O4mBMAT6w" type="Sirius" element="_imVz4K-BEe2g0O4mBMAT6w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_ime906-BEe2g0O4mBMAT6w" type="2002" element="_imeWwK-BEe2g0O4mBMAT6w">
+          <children xmi:type="notation:Node" xmi:id="_ime91q-BEe2g0O4mBMAT6w" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_ime916-BEe2g0O4mBMAT6w" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_jPllMK-BEe2g0O4mBMAT6w" type="3008" element="_jPfekK-BEe2g0O4mBMAT6w">
+              <children xmi:type="notation:Node" xmi:id="_jPllM6-BEe2g0O4mBMAT6w" visible="false" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_jPllNK-BEe2g0O4mBMAT6w" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_jPllNa-BEe2g0O4mBMAT6w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_jPllNq-BEe2g0O4mBMAT6w"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_jPllN6-BEe2g0O4mBMAT6w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_jPllMa-BEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jPllMq-BEe2g0O4mBMAT6w" width="264" height="167"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_j2i3gK-BEe2g0O4mBMAT6w" type="3008" element="_j2hCUq-BEe2g0O4mBMAT6w">
+              <children xmi:type="notation:Node" xmi:id="_j2i3g6-BEe2g0O4mBMAT6w" visible="false" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_j2i3hK-BEe2g0O4mBMAT6w" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_j2i3ha-BEe2g0O4mBMAT6w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_j2i3hq-BEe2g0O4mBMAT6w"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_j2i3h6-BEe2g0O4mBMAT6w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_j2i3ga-BEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j2i3gq-BEe2g0O4mBMAT6w" x="264" height="167"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ime92K-BEe2g0O4mBMAT6w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ime92a-BEe2g0O4mBMAT6w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ime91K-BEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ime91a-BEe2g0O4mBMAT6w" x="371" y="133"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_imdvsq-BEe2g0O4mBMAT6w"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ime90a-BEe2g0O4mBMAT6w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_ime90q-BEe2g0O4mBMAT6w"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_imeWwK-BEe2g0O4mBMAT6w" childrenPresentation="HorizontalStack">
+      <target xmi:type="ProblemFrame:MyStateMachine" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0"/>
+      <semanticElements xmi:type="ProblemFrame:MyStateMachine" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_imeWwa-BEe2g0O4mBMAT6w" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_jPfekK-BEe2g0O4mBMAT6w" name="区域">
+        <target xmi:type="StateMachineModel:Region" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0/@region.0"/>
+        <semanticElements xmi:type="StateMachineModel:Region" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0/@region.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_jPfek6-BEe2g0O4mBMAT6w"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_jPfeka-BEe2g0O4mBMAT6w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_j2hCUq-BEe2g0O4mBMAT6w" name="区域">
+        <target xmi:type="StateMachineModel:Region" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0/@region.1"/>
+        <semanticElements xmi:type="StateMachineModel:Region" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0/@region.1"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_j2hpYK-BEe2g0O4mBMAT6w"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_j2hCU6-BEe2g0O4mBMAT6w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_imWa8K-BEe2g0O4mBMAT6w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer"/>
+    <target xmi:type="ProblemFrame:MyStateMachine" href="自动辅助导航驾驶.problemframe#//@requirement.0/@statemachine.0"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ProblemFrame -->
+      <package
+            uri="http://www.example.org/ProblemFrame"
+            class="ching.ProblemFrame.ProblemFramePackage"
+            genModel="model/ProblemFrame.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ProblemFrame -->
+      <package
+            uri="http://www.example.org/StateMachineModel"
+            class="UML.UMLPackage"
+            genModel="model/ProblemFrame.genmodel"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,44 @@
+/**
+ */
+package UML;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Send Event</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link UML.SendEvent#getEvent <em>Event</em>}</li>
+ * </ul>
+ *
+ * @see UML.UMLPackage#getSendEvent()
+ * @model
+ * @generated
+ */
+public interface SendEvent extends Behavior {
+	/**
+	 * Returns the value of the '<em><b>Event</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Event</em>' attribute.
+	 * @see #setEvent(String)
+	 * @see UML.UMLPackage#getSendEvent_Event()
+	 * @model
+	 * @generated
+	 */
+	String getEvent();
+
+	/**
+	 * Sets the value of the '{@link UML.SendEvent#getEvent <em>Event</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Event</em>' attribute.
+	 * @see #getEvent()
+	 * @generated
+	 */
+	void setEvent(String value);
+
+} // SendEvent
