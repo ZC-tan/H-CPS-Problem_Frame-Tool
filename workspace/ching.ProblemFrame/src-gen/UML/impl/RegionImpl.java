@@ -5,6 +5,7 @@ package UML.impl;
 import UML.Region;
 import UML.State;
 import UML.StateMachine;
+import UML.TeamDiagram;
 import UML.Transition;
 import UML.UMLPackage;
 import UML.Vertex;
@@ -21,6 +22,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -39,6 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link UML.impl.RegionImpl#getState <em>State</em>}</li>
  *   <li>{@link UML.impl.RegionImpl#getCurrentVertex <em>Current Vertex</em>}</li>
  *   <li>{@link UML.impl.RegionImpl#getCurrentDirectVertex <em>Current Direct Vertex</em>}</li>
+ *   <li>{@link UML.impl.RegionImpl#getTeamdiagram <em>Teamdiagram</em>}</li>
  * </ul>
  *
  * @generated
@@ -83,6 +86,16 @@ public class RegionImpl extends NamespaceImpl implements Region {
 	 * @ordered
 	 */
 	protected Vertex currentDirectVertex;
+
+	/**
+	 * The cached value of the '{@link #getTeamdiagram() <em>Teamdiagram</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTeamdiagram()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<TeamDiagram> teamdiagram;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -302,6 +315,19 @@ public class RegionImpl extends NamespaceImpl implements Region {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<TeamDiagram> getTeamdiagram() {
+		if (teamdiagram == null) {
+			teamdiagram = new EObjectContainmentEList<TeamDiagram>(TeamDiagram.class, this,
+					UMLPackage.REGION__TEAMDIAGRAM);
+		}
+		return teamdiagram;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -338,6 +364,8 @@ public class RegionImpl extends NamespaceImpl implements Region {
 			return basicSetStatemachine(null, msgs);
 		case UMLPackage.REGION__STATE:
 			return basicSetState(null, msgs);
+		case UMLPackage.REGION__TEAMDIAGRAM:
+			return ((InternalEList<?>) getTeamdiagram()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -383,6 +411,8 @@ public class RegionImpl extends NamespaceImpl implements Region {
 			if (resolve)
 				return getCurrentDirectVertex();
 			return basicGetCurrentDirectVertex();
+		case UMLPackage.REGION__TEAMDIAGRAM:
+			return getTeamdiagram();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -416,6 +446,10 @@ public class RegionImpl extends NamespaceImpl implements Region {
 		case UMLPackage.REGION__CURRENT_DIRECT_VERTEX:
 			setCurrentDirectVertex((Vertex) newValue);
 			return;
+		case UMLPackage.REGION__TEAMDIAGRAM:
+			getTeamdiagram().clear();
+			getTeamdiagram().addAll((Collection<? extends TeamDiagram>) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -446,6 +480,9 @@ public class RegionImpl extends NamespaceImpl implements Region {
 		case UMLPackage.REGION__CURRENT_DIRECT_VERTEX:
 			setCurrentDirectVertex((Vertex) null);
 			return;
+		case UMLPackage.REGION__TEAMDIAGRAM:
+			getTeamdiagram().clear();
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -470,6 +507,8 @@ public class RegionImpl extends NamespaceImpl implements Region {
 			return currentVertex != null;
 		case UMLPackage.REGION__CURRENT_DIRECT_VERTEX:
 			return currentDirectVertex != null;
+		case UMLPackage.REGION__TEAMDIAGRAM:
+			return teamdiagram != null && !teamdiagram.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

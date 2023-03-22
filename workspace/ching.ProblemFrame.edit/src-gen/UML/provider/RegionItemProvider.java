@@ -96,6 +96,7 @@ public class RegionItemProvider extends NamespaceItemProvider {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(UMLPackage.Literals.REGION__TRANSITION);
 			childrenFeatures.add(UMLPackage.Literals.REGION__SUBVERTEX);
+			childrenFeatures.add(UMLPackage.Literals.REGION__TEAMDIAGRAM);
 		}
 		return childrenFeatures;
 	}
@@ -161,6 +162,7 @@ public class RegionItemProvider extends NamespaceItemProvider {
 		switch (notification.getFeatureID(Region.class)) {
 		case UMLPackage.REGION__TRANSITION:
 		case UMLPackage.REGION__SUBVERTEX:
+		case UMLPackage.REGION__TEAMDIAGRAM:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -192,6 +194,9 @@ public class RegionItemProvider extends NamespaceItemProvider {
 
 		newChildDescriptors.add(
 				createChildParameter(UMLPackage.Literals.REGION__SUBVERTEX, UMLFactory.eINSTANCE.createFinalState()));
+
+		newChildDescriptors.add(createChildParameter(UMLPackage.Literals.REGION__TEAMDIAGRAM,
+				UMLFactory.eINSTANCE.createTeamDiagram()));
 	}
 
 }

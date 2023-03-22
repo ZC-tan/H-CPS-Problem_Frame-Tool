@@ -18,6 +18,10 @@ public class Services {
       return self;
     }
     
+//    public Boolean isHuman(BiddableDomain bidabbleDomain) {
+//    	return bidabbleDomain.
+//    }
+    
     public String addStateMachineLabel(Domain domain) {
     	return domain.getName()+"tryingservices";
     }

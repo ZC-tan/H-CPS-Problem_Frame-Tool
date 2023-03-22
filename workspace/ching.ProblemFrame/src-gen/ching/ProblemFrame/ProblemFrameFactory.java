@@ -49,24 +49,6 @@ public interface ProblemFrameFactory extends EFactory {
 	LexicalDomain createLexicalDomain();
 
 	/**
-	 * Returns a new object of class '<em>Biddable Domain</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Biddable Domain</em>'.
-	 * @generated
-	 */
-	BiddableDomain createBiddableDomain();
-
-	/**
-	 * Returns a new object of class '<em>Causal Domain</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Causal Domain</em>'.
-	 * @generated
-	 */
-	CausalDomain createCausalDomain();
-
-	/**
 	 * Returns a new object of class '<em>Interface</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -119,6 +101,42 @@ public interface ProblemFrameFactory extends EFactory {
 	 * @generated
 	 */
 	MyStateMachine createMyStateMachine();
+
+	/**
+	 * Returns a new object of class '<em>Human</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Human</em>'.
+	 * @generated
+	 */
+	Human createHuman();
+
+	/**
+	 * Returns a new object of class '<em>External Causal Domain</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>External Causal Domain</em>'.
+	 * @generated
+	 */
+	ExternalCausalDomain createExternalCausalDomain();
+
+	/**
+	 * Returns a new object of class '<em>External Biddable Domain</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>External Biddable Domain</em>'.
+	 * @generated
+	 */
+	ExternalBiddableDomain createExternalBiddableDomain();
+
+	/**
+	 * Returns a new object of class '<em>Internal Causal Domain</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Internal Causal Domain</em>'.
+	 * @generated
+	 */
+	InternalCausalDomain createInternalCausalDomain();
 
 	/**
 	 * Returns the package supported by this factory.

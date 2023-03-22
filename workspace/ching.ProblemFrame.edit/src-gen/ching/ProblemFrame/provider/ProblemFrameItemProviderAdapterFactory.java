@@ -142,52 +142,6 @@ public class ProblemFrameItemProviderAdapterFactory extends ProblemFrameAdapterF
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link ching.ProblemFrame.BiddableDomain} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected BiddableDomainItemProvider biddableDomainItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link ching.ProblemFrame.BiddableDomain}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createBiddableDomainAdapter() {
-		if (biddableDomainItemProvider == null) {
-			biddableDomainItemProvider = new BiddableDomainItemProvider(this);
-		}
-
-		return biddableDomainItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link ching.ProblemFrame.CausalDomain} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected CausalDomainItemProvider causalDomainItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link ching.ProblemFrame.CausalDomain}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createCausalDomainAdapter() {
-		if (causalDomainItemProvider == null) {
-			causalDomainItemProvider = new CausalDomainItemProvider(this);
-		}
-
-		return causalDomainItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link ching.ProblemFrame.Interface} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -326,6 +280,98 @@ public class ProblemFrameItemProviderAdapterFactory extends ProblemFrameAdapterF
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link ching.ProblemFrame.Human} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected HumanItemProvider humanItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link ching.ProblemFrame.Human}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createHumanAdapter() {
+		if (humanItemProvider == null) {
+			humanItemProvider = new HumanItemProvider(this);
+		}
+
+		return humanItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link ching.ProblemFrame.ExternalCausalDomain} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExternalCausalDomainItemProvider externalCausalDomainItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link ching.ProblemFrame.ExternalCausalDomain}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createExternalCausalDomainAdapter() {
+		if (externalCausalDomainItemProvider == null) {
+			externalCausalDomainItemProvider = new ExternalCausalDomainItemProvider(this);
+		}
+
+		return externalCausalDomainItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link ching.ProblemFrame.ExternalBiddableDomain} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExternalBiddableDomainItemProvider externalBiddableDomainItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link ching.ProblemFrame.ExternalBiddableDomain}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createExternalBiddableDomainAdapter() {
+		if (externalBiddableDomainItemProvider == null) {
+			externalBiddableDomainItemProvider = new ExternalBiddableDomainItemProvider(this);
+		}
+
+		return externalBiddableDomainItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link ching.ProblemFrame.InternalCausalDomain} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InternalCausalDomainItemProvider internalCausalDomainItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link ching.ProblemFrame.InternalCausalDomain}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInternalCausalDomainAdapter() {
+		if (internalCausalDomainItemProvider == null) {
+			internalCausalDomainItemProvider = new InternalCausalDomainItemProvider(this);
+		}
+
+		return internalCausalDomainItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -430,10 +476,6 @@ public class ProblemFrameItemProviderAdapterFactory extends ProblemFrameAdapterF
 			machineItemProvider.dispose();
 		if (lexicalDomainItemProvider != null)
 			lexicalDomainItemProvider.dispose();
-		if (biddableDomainItemProvider != null)
-			biddableDomainItemProvider.dispose();
-		if (causalDomainItemProvider != null)
-			causalDomainItemProvider.dispose();
 		if (interfaceItemProvider != null)
 			interfaceItemProvider.dispose();
 		if (phenomenonItemProvider != null)
@@ -446,6 +488,14 @@ public class ProblemFrameItemProviderAdapterFactory extends ProblemFrameAdapterF
 			requirementItemProvider.dispose();
 		if (myStateMachineItemProvider != null)
 			myStateMachineItemProvider.dispose();
+		if (humanItemProvider != null)
+			humanItemProvider.dispose();
+		if (externalCausalDomainItemProvider != null)
+			externalCausalDomainItemProvider.dispose();
+		if (externalBiddableDomainItemProvider != null)
+			externalBiddableDomainItemProvider.dispose();
+		if (internalCausalDomainItemProvider != null)
+			internalCausalDomainItemProvider.dispose();
 	}
 
 }

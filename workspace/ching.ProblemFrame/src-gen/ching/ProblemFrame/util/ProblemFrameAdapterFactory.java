@@ -137,6 +137,26 @@ public class ProblemFrameAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseHuman(Human object) {
+			return createHumanAdapter();
+		}
+
+		@Override
+		public Adapter caseExternalCausalDomain(ExternalCausalDomain object) {
+			return createExternalCausalDomainAdapter();
+		}
+
+		@Override
+		public Adapter caseExternalBiddableDomain(ExternalBiddableDomain object) {
+			return createExternalBiddableDomainAdapter();
+		}
+
+		@Override
+		public Adapter caseInternalCausalDomain(InternalCausalDomain object) {
+			return createInternalCausalDomainAdapter();
+		}
+
+		@Override
 		public Adapter caseNamedElement(NamedElement object) {
 			return createNamedElementAdapter();
 		}
@@ -354,6 +374,62 @@ public class ProblemFrameAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMyStateMachineAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ching.ProblemFrame.Human <em>Human</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ching.ProblemFrame.Human
+	 * @generated
+	 */
+	public Adapter createHumanAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ching.ProblemFrame.ExternalCausalDomain <em>External Causal Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ching.ProblemFrame.ExternalCausalDomain
+	 * @generated
+	 */
+	public Adapter createExternalCausalDomainAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ching.ProblemFrame.ExternalBiddableDomain <em>External Biddable Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ching.ProblemFrame.ExternalBiddableDomain
+	 * @generated
+	 */
+	public Adapter createExternalBiddableDomainAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ching.ProblemFrame.InternalCausalDomain <em>Internal Causal Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ching.ProblemFrame.InternalCausalDomain
+	 * @generated
+	 */
+	public Adapter createInternalCausalDomainAdapter() {
 		return null;
 	}
 

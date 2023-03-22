@@ -371,6 +371,121 @@ public class UMLItemProviderAdapterFactory extends UMLAdapterFactory
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link UML.TeamDiagram} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TeamDiagramItemProvider teamDiagramItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link UML.TeamDiagram}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTeamDiagramAdapter() {
+		if (teamDiagramItemProvider == null) {
+			teamDiagramItemProvider = new TeamDiagramItemProvider(this);
+		}
+
+		return teamDiagramItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link UML.Human} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected HumanItemProvider humanItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link UML.Human}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createHumanAdapter() {
+		if (humanItemProvider == null) {
+			humanItemProvider = new HumanItemProvider(this);
+		}
+
+		return humanItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link UML.Machine} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MachineItemProvider machineItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link UML.Machine}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMachineAdapter() {
+		if (machineItemProvider == null) {
+			machineItemProvider = new MachineItemProvider(this);
+		}
+
+		return machineItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link UML.HumanToMachineRelation} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected HumanToMachineRelationItemProvider humanToMachineRelationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link UML.HumanToMachineRelation}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createHumanToMachineRelationAdapter() {
+		if (humanToMachineRelationItemProvider == null) {
+			humanToMachineRelationItemProvider = new HumanToMachineRelationItemProvider(this);
+		}
+
+		return humanToMachineRelationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link UML.MachineToHumanRelation} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MachineToHumanRelationItemProvider machineToHumanRelationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link UML.MachineToHumanRelation}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMachineToHumanRelationAdapter() {
+		if (machineToHumanRelationItemProvider == null) {
+			machineToHumanRelationItemProvider = new MachineToHumanRelationItemProvider(this);
+		}
+
+		return machineToHumanRelationItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

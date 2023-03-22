@@ -186,13 +186,19 @@ public class ProblemDiagramItemProvider extends ItemProviderAdapter implements I
 				ProblemFrameFactory.eINSTANCE.createMachine()));
 
 		newChildDescriptors.add(createChildParameter(ProblemFramePackage.Literals.PROBLEM_DIAGRAM__DOMAIN,
-				ProblemFrameFactory.eINSTANCE.createCausalDomain()));
+				ProblemFrameFactory.eINSTANCE.createInternalCausalDomain()));
 
 		newChildDescriptors.add(createChildParameter(ProblemFramePackage.Literals.PROBLEM_DIAGRAM__DOMAIN,
 				ProblemFrameFactory.eINSTANCE.createLexicalDomain()));
 
 		newChildDescriptors.add(createChildParameter(ProblemFramePackage.Literals.PROBLEM_DIAGRAM__DOMAIN,
-				ProblemFrameFactory.eINSTANCE.createBiddableDomain()));
+				ProblemFrameFactory.eINSTANCE.createHuman()));
+
+		newChildDescriptors.add(createChildParameter(ProblemFramePackage.Literals.PROBLEM_DIAGRAM__DOMAIN,
+				ProblemFrameFactory.eINSTANCE.createExternalCausalDomain()));
+
+		newChildDescriptors.add(createChildParameter(ProblemFramePackage.Literals.PROBLEM_DIAGRAM__DOMAIN,
+				ProblemFrameFactory.eINSTANCE.createExternalBiddableDomain()));
 
 		newChildDescriptors.add(createChildParameter(ProblemFramePackage.Literals.PROBLEM_DIAGRAM__REQUIREMENT,
 				ProblemFrameFactory.eINSTANCE.createRequirement()));

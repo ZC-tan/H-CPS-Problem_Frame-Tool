@@ -12,5 +12,5 @@ package ching.ProblemFrame;
  * @model
  * @generated
  */
-public interface LexicalDomain extends CausalDomain {
+public interface LexicalDomain extends InternalCausalDomain {
 } // LexicalDomain

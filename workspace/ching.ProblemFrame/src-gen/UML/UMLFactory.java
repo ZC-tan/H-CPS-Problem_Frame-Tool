@@ -139,6 +139,51 @@ public interface UMLFactory extends EFactory {
 	SendEvent createSendEvent();
 
 	/**
+	 * Returns a new object of class '<em>Team Diagram</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Team Diagram</em>'.
+	 * @generated
+	 */
+	TeamDiagram createTeamDiagram();
+
+	/**
+	 * Returns a new object of class '<em>Human</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Human</em>'.
+	 * @generated
+	 */
+	Human createHuman();
+
+	/**
+	 * Returns a new object of class '<em>Machine</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Machine</em>'.
+	 * @generated
+	 */
+	Machine createMachine();
+
+	/**
+	 * Returns a new object of class '<em>Human To Machine Relation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Human To Machine Relation</em>'.
+	 * @generated
+	 */
+	HumanToMachineRelation createHumanToMachineRelation();
+
+	/**
+	 * Returns a new object of class '<em>Machine To Human Relation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Machine To Human Relation</em>'.
+	 * @generated
+	 */
+	MachineToHumanRelation createMachineToHumanRelation();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

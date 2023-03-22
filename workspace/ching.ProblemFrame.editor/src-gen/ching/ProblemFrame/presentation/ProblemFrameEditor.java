@@ -156,6 +156,7 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 import ching.ProblemFrame.provider.ProblemFrameItemProviderAdapterFactory;
 
 import UML.provider.UMLItemProviderAdapterFactory;
+
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
 /**

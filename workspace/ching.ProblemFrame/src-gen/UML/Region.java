@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link UML.Region#getState <em>State</em>}</li>
  *   <li>{@link UML.Region#getCurrentVertex <em>Current Vertex</em>}</li>
  *   <li>{@link UML.Region#getCurrentDirectVertex <em>Current Direct Vertex</em>}</li>
+ *   <li>{@link UML.Region#getTeamdiagram <em>Teamdiagram</em>}</li>
  * </ul>
  *
  * @see UML.UMLPackage#getRegion()
@@ -145,5 +146,17 @@ public interface Region extends Namespace {
 	 * @generated
 	 */
 	void setCurrentDirectVertex(Vertex value);
+
+	/**
+	 * Returns the value of the '<em><b>Teamdiagram</b></em>' containment reference list.
+	 * The list contents are of type {@link UML.TeamDiagram}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Teamdiagram</em>' containment reference list.
+	 * @see UML.UMLPackage#getRegion_Teamdiagram()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<TeamDiagram> getTeamdiagram();
 
 } // Region

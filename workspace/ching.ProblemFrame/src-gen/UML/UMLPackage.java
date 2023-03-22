@@ -342,13 +342,22 @@ public interface UMLPackage extends EPackage {
 	int REGION__CURRENT_DIRECT_VERTEX = NAMESPACE_FEATURE_COUNT + 5;
 
 	/**
+	 * The feature id for the '<em><b>Teamdiagram</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REGION__TEAMDIAGRAM = NAMESPACE_FEATURE_COUNT + 6;
+
+	/**
 	 * The number of structural features of the '<em>Region</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REGION_FEATURE_COUNT = NAMESPACE_FEATURE_COUNT + 6;
+	int REGION_FEATURE_COUNT = NAMESPACE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of operations of the '<em>Region</em>' class.
@@ -1326,6 +1335,263 @@ public interface UMLPackage extends EPackage {
 	int SEND_EVENT_OPERATION_COUNT = BEHAVIOR_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link UML.impl.TeamDiagramImpl <em>Team Diagram</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see UML.impl.TeamDiagramImpl
+	 * @see UML.impl.UMLPackageImpl#getTeamDiagram()
+	 * @generated
+	 */
+	int TEAM_DIAGRAM = 17;
+
+	/**
+	 * The feature id for the '<em><b>Human</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_DIAGRAM__HUMAN = 0;
+
+	/**
+	 * The feature id for the '<em><b>Machine</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_DIAGRAM__MACHINE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Humantomachinerelation</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_DIAGRAM__HUMANTOMACHINERELATION = 2;
+
+	/**
+	 * The feature id for the '<em><b>Machinetohumanrelation</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_DIAGRAM__MACHINETOHUMANRELATION = 3;
+
+	/**
+	 * The number of structural features of the '<em>Team Diagram</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_DIAGRAM_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Team Diagram</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEAM_DIAGRAM_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link UML.impl.HumanImpl <em>Human</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see UML.impl.HumanImpl
+	 * @see UML.impl.UMLPackageImpl#getHuman()
+	 * @generated
+	 */
+	int HUMAN = 18;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Human</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Human</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link UML.impl.MachineImpl <em>Machine</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see UML.impl.MachineImpl
+	 * @see UML.impl.UMLPackageImpl#getMachine()
+	 * @generated
+	 */
+	int MACHINE = 19;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Machine</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Machine</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link UML.impl.HumanToMachineRelationImpl <em>Human To Machine Relation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see UML.impl.HumanToMachineRelationImpl
+	 * @see UML.impl.UMLPackageImpl#getHumanToMachineRelation()
+	 * @generated
+	 */
+	int HUMAN_TO_MACHINE_RELATION = 20;
+
+	/**
+	 * The feature id for the '<em><b>Human Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN_TO_MACHINE_RELATION__HUMAN_SOURCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Machine Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN_TO_MACHINE_RELATION__MACHINE_TARGET = 1;
+
+	/**
+	 * The feature id for the '<em><b>Relation Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN_TO_MACHINE_RELATION__RELATION_NAME = 2;
+
+	/**
+	 * The number of structural features of the '<em>Human To Machine Relation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN_TO_MACHINE_RELATION_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Human To Machine Relation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN_TO_MACHINE_RELATION_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link UML.impl.MachineToHumanRelationImpl <em>Machine To Human Relation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see UML.impl.MachineToHumanRelationImpl
+	 * @see UML.impl.UMLPackageImpl#getMachineToHumanRelation()
+	 * @generated
+	 */
+	int MACHINE_TO_HUMAN_RELATION = 21;
+
+	/**
+	 * The feature id for the '<em><b>Machine Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_TO_HUMAN_RELATION__MACHINE_SOURCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Human Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_TO_HUMAN_RELATION__HUMAN_TARGET = 1;
+
+	/**
+	 * The feature id for the '<em><b>Relation Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_TO_HUMAN_RELATION__RELATION_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Interface Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_TO_HUMAN_RELATION__INTERFACE_NAME = 3;
+
+	/**
+	 * The number of structural features of the '<em>Machine To Human Relation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_TO_HUMAN_RELATION_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Machine To Human Relation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MACHINE_TO_HUMAN_RELATION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link UML.TransitionKind <em>Transition Kind</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1333,7 +1599,7 @@ public interface UMLPackage extends EPackage {
 	 * @see UML.impl.UMLPackageImpl#getTransitionKind()
 	 * @generated
 	 */
-	int TRANSITION_KIND = 17;
+	int TRANSITION_KIND = 22;
 
 	/**
 	 * The meta object id for the '{@link UML.PseudostateKind <em>Pseudostate Kind</em>}' enum.
@@ -1343,7 +1609,7 @@ public interface UMLPackage extends EPackage {
 	 * @see UML.impl.UMLPackageImpl#getPseudostateKind()
 	 * @generated
 	 */
-	int PSEUDOSTATE_KIND = 18;
+	int PSEUDOSTATE_KIND = 23;
 
 	/**
 	 * Returns the meta object for class '{@link UML.StateMachine <em>State Machine</em>}'.
@@ -1507,6 +1773,17 @@ public interface UMLPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getRegion_CurrentDirectVertex();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link UML.Region#getTeamdiagram <em>Teamdiagram</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Teamdiagram</em>'.
+	 * @see UML.Region#getTeamdiagram()
+	 * @see #getRegion()
+	 * @generated
+	 */
+	EReference getRegion_Teamdiagram();
 
 	/**
 	 * Returns the meta object for class '{@link UML.Namespace <em>Namespace</em>}'.
@@ -2044,6 +2321,199 @@ public interface UMLPackage extends EPackage {
 	EAttribute getSendEvent_Event();
 
 	/**
+	 * Returns the meta object for class '{@link UML.TeamDiagram <em>Team Diagram</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Team Diagram</em>'.
+	 * @see UML.TeamDiagram
+	 * @generated
+	 */
+	EClass getTeamDiagram();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link UML.TeamDiagram#getHuman <em>Human</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Human</em>'.
+	 * @see UML.TeamDiagram#getHuman()
+	 * @see #getTeamDiagram()
+	 * @generated
+	 */
+	EReference getTeamDiagram_Human();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link UML.TeamDiagram#getMachine <em>Machine</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Machine</em>'.
+	 * @see UML.TeamDiagram#getMachine()
+	 * @see #getTeamDiagram()
+	 * @generated
+	 */
+	EReference getTeamDiagram_Machine();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link UML.TeamDiagram#getHumantomachinerelation <em>Humantomachinerelation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Humantomachinerelation</em>'.
+	 * @see UML.TeamDiagram#getHumantomachinerelation()
+	 * @see #getTeamDiagram()
+	 * @generated
+	 */
+	EReference getTeamDiagram_Humantomachinerelation();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link UML.TeamDiagram#getMachinetohumanrelation <em>Machinetohumanrelation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Machinetohumanrelation</em>'.
+	 * @see UML.TeamDiagram#getMachinetohumanrelation()
+	 * @see #getTeamDiagram()
+	 * @generated
+	 */
+	EReference getTeamDiagram_Machinetohumanrelation();
+
+	/**
+	 * Returns the meta object for class '{@link UML.Human <em>Human</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Human</em>'.
+	 * @see UML.Human
+	 * @generated
+	 */
+	EClass getHuman();
+
+	/**
+	 * Returns the meta object for the attribute '{@link UML.Human#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see UML.Human#getName()
+	 * @see #getHuman()
+	 * @generated
+	 */
+	EAttribute getHuman_Name();
+
+	/**
+	 * Returns the meta object for class '{@link UML.Machine <em>Machine</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Machine</em>'.
+	 * @see UML.Machine
+	 * @generated
+	 */
+	EClass getMachine();
+
+	/**
+	 * Returns the meta object for the attribute '{@link UML.Machine#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see UML.Machine#getName()
+	 * @see #getMachine()
+	 * @generated
+	 */
+	EAttribute getMachine_Name();
+
+	/**
+	 * Returns the meta object for class '{@link UML.HumanToMachineRelation <em>Human To Machine Relation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Human To Machine Relation</em>'.
+	 * @see UML.HumanToMachineRelation
+	 * @generated
+	 */
+	EClass getHumanToMachineRelation();
+
+	/**
+	 * Returns the meta object for the reference '{@link UML.HumanToMachineRelation#getHumanSource <em>Human Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Human Source</em>'.
+	 * @see UML.HumanToMachineRelation#getHumanSource()
+	 * @see #getHumanToMachineRelation()
+	 * @generated
+	 */
+	EReference getHumanToMachineRelation_HumanSource();
+
+	/**
+	 * Returns the meta object for the reference '{@link UML.HumanToMachineRelation#getMachineTarget <em>Machine Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Machine Target</em>'.
+	 * @see UML.HumanToMachineRelation#getMachineTarget()
+	 * @see #getHumanToMachineRelation()
+	 * @generated
+	 */
+	EReference getHumanToMachineRelation_MachineTarget();
+
+	/**
+	 * Returns the meta object for the attribute '{@link UML.HumanToMachineRelation#getRelationName <em>Relation Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Relation Name</em>'.
+	 * @see UML.HumanToMachineRelation#getRelationName()
+	 * @see #getHumanToMachineRelation()
+	 * @generated
+	 */
+	EAttribute getHumanToMachineRelation_RelationName();
+
+	/**
+	 * Returns the meta object for class '{@link UML.MachineToHumanRelation <em>Machine To Human Relation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Machine To Human Relation</em>'.
+	 * @see UML.MachineToHumanRelation
+	 * @generated
+	 */
+	EClass getMachineToHumanRelation();
+
+	/**
+	 * Returns the meta object for the reference '{@link UML.MachineToHumanRelation#getMachineSource <em>Machine Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Machine Source</em>'.
+	 * @see UML.MachineToHumanRelation#getMachineSource()
+	 * @see #getMachineToHumanRelation()
+	 * @generated
+	 */
+	EReference getMachineToHumanRelation_MachineSource();
+
+	/**
+	 * Returns the meta object for the reference '{@link UML.MachineToHumanRelation#getHumanTarget <em>Human Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Human Target</em>'.
+	 * @see UML.MachineToHumanRelation#getHumanTarget()
+	 * @see #getMachineToHumanRelation()
+	 * @generated
+	 */
+	EReference getMachineToHumanRelation_HumanTarget();
+
+	/**
+	 * Returns the meta object for the attribute '{@link UML.MachineToHumanRelation#getRelationName <em>Relation Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Relation Name</em>'.
+	 * @see UML.MachineToHumanRelation#getRelationName()
+	 * @see #getMachineToHumanRelation()
+	 * @generated
+	 */
+	EAttribute getMachineToHumanRelation_RelationName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link UML.MachineToHumanRelation#getInterfaceName <em>Interface Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Interface Name</em>'.
+	 * @see UML.MachineToHumanRelation#getInterfaceName()
+	 * @see #getMachineToHumanRelation()
+	 * @generated
+	 */
+	EAttribute getMachineToHumanRelation_InterfaceName();
+
+	/**
 	 * Returns the meta object for enum '{@link UML.TransitionKind <em>Transition Kind</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2209,6 +2679,14 @@ public interface UMLPackage extends EPackage {
 		 * @generated
 		 */
 		EReference REGION__CURRENT_DIRECT_VERTEX = eINSTANCE.getRegion_CurrentDirectVertex();
+
+		/**
+		 * The meta object literal for the '<em><b>Teamdiagram</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference REGION__TEAMDIAGRAM = eINSTANCE.getRegion_Teamdiagram();
 
 		/**
 		 * The meta object literal for the '{@link UML.impl.NamespaceImpl <em>Namespace</em>}' class.
@@ -2639,6 +3117,160 @@ public interface UMLPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SEND_EVENT__EVENT = eINSTANCE.getSendEvent_Event();
+
+		/**
+		 * The meta object literal for the '{@link UML.impl.TeamDiagramImpl <em>Team Diagram</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see UML.impl.TeamDiagramImpl
+		 * @see UML.impl.UMLPackageImpl#getTeamDiagram()
+		 * @generated
+		 */
+		EClass TEAM_DIAGRAM = eINSTANCE.getTeamDiagram();
+
+		/**
+		 * The meta object literal for the '<em><b>Human</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM_DIAGRAM__HUMAN = eINSTANCE.getTeamDiagram_Human();
+
+		/**
+		 * The meta object literal for the '<em><b>Machine</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM_DIAGRAM__MACHINE = eINSTANCE.getTeamDiagram_Machine();
+
+		/**
+		 * The meta object literal for the '<em><b>Humantomachinerelation</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM_DIAGRAM__HUMANTOMACHINERELATION = eINSTANCE.getTeamDiagram_Humantomachinerelation();
+
+		/**
+		 * The meta object literal for the '<em><b>Machinetohumanrelation</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEAM_DIAGRAM__MACHINETOHUMANRELATION = eINSTANCE.getTeamDiagram_Machinetohumanrelation();
+
+		/**
+		 * The meta object literal for the '{@link UML.impl.HumanImpl <em>Human</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see UML.impl.HumanImpl
+		 * @see UML.impl.UMLPackageImpl#getHuman()
+		 * @generated
+		 */
+		EClass HUMAN = eINSTANCE.getHuman();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute HUMAN__NAME = eINSTANCE.getHuman_Name();
+
+		/**
+		 * The meta object literal for the '{@link UML.impl.MachineImpl <em>Machine</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see UML.impl.MachineImpl
+		 * @see UML.impl.UMLPackageImpl#getMachine()
+		 * @generated
+		 */
+		EClass MACHINE = eINSTANCE.getMachine();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MACHINE__NAME = eINSTANCE.getMachine_Name();
+
+		/**
+		 * The meta object literal for the '{@link UML.impl.HumanToMachineRelationImpl <em>Human To Machine Relation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see UML.impl.HumanToMachineRelationImpl
+		 * @see UML.impl.UMLPackageImpl#getHumanToMachineRelation()
+		 * @generated
+		 */
+		EClass HUMAN_TO_MACHINE_RELATION = eINSTANCE.getHumanToMachineRelation();
+
+		/**
+		 * The meta object literal for the '<em><b>Human Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HUMAN_TO_MACHINE_RELATION__HUMAN_SOURCE = eINSTANCE.getHumanToMachineRelation_HumanSource();
+
+		/**
+		 * The meta object literal for the '<em><b>Machine Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HUMAN_TO_MACHINE_RELATION__MACHINE_TARGET = eINSTANCE.getHumanToMachineRelation_MachineTarget();
+
+		/**
+		 * The meta object literal for the '<em><b>Relation Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute HUMAN_TO_MACHINE_RELATION__RELATION_NAME = eINSTANCE.getHumanToMachineRelation_RelationName();
+
+		/**
+		 * The meta object literal for the '{@link UML.impl.MachineToHumanRelationImpl <em>Machine To Human Relation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see UML.impl.MachineToHumanRelationImpl
+		 * @see UML.impl.UMLPackageImpl#getMachineToHumanRelation()
+		 * @generated
+		 */
+		EClass MACHINE_TO_HUMAN_RELATION = eINSTANCE.getMachineToHumanRelation();
+
+		/**
+		 * The meta object literal for the '<em><b>Machine Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MACHINE_TO_HUMAN_RELATION__MACHINE_SOURCE = eINSTANCE.getMachineToHumanRelation_MachineSource();
+
+		/**
+		 * The meta object literal for the '<em><b>Human Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MACHINE_TO_HUMAN_RELATION__HUMAN_TARGET = eINSTANCE.getMachineToHumanRelation_HumanTarget();
+
+		/**
+		 * The meta object literal for the '<em><b>Relation Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MACHINE_TO_HUMAN_RELATION__RELATION_NAME = eINSTANCE.getMachineToHumanRelation_RelationName();
+
+		/**
+		 * The meta object literal for the '<em><b>Interface Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MACHINE_TO_HUMAN_RELATION__INTERFACE_NAME = eINSTANCE.getMachineToHumanRelation_InterfaceName();
 
 		/**
 		 * The meta object literal for the '{@link UML.TransitionKind <em>Transition Kind</em>}' enum.

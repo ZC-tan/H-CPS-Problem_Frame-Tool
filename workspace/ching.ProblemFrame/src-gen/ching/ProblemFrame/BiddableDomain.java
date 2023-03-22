@@ -9,7 +9,7 @@ package ching.ProblemFrame;
  *
  *
  * @see ching.ProblemFrame.ProblemFramePackage#getBiddableDomain()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface BiddableDomain extends Domain {

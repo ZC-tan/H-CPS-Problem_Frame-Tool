@@ -65,6 +65,10 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ProblemFrame.ecore#//Reference/source"/>
     </genClasses>
     <genClasses ecoreClass="ProblemFrame.ecore#//MyStateMachine"/>
+    <genClasses ecoreClass="ProblemFrame.ecore#//Human"/>
+    <genClasses ecoreClass="ProblemFrame.ecore#//ExternalCausalDomain"/>
+    <genClasses ecoreClass="ProblemFrame.ecore#//ExternalBiddableDomain"/>
+    <genClasses ecoreClass="ProblemFrame.ecore#//InternalCausalDomain"/>
   </genPackages>
   <genPackages prefix="UML" ecorePackage="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//TransitionKind">
@@ -100,6 +104,7 @@
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//Region/state"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//Region/currentVertex"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//Region/currentDirectVertex"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//Region/teamdiagram"/>
     </genClasses>
     <genClasses image="false" ecoreClass="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//Namespace"/>
     <genClasses image="false" ecoreClass="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//NamedElement">
@@ -161,6 +166,29 @@
     </genClasses>
     <genClasses ecoreClass="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//SendEvent">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//SendEvent/event"/>
+    </genClasses>
+    <genClasses ecoreClass="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//TeamDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//TeamDiagram/human"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//TeamDiagram/machine"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//TeamDiagram/humantomachinerelation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//TeamDiagram/machinetohumanrelation"/>
+    </genClasses>
+    <genClasses ecoreClass="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//Human">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//Human/name"/>
+    </genClasses>
+    <genClasses ecoreClass="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//Machine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//Machine/name"/>
+    </genClasses>
+    <genClasses ecoreClass="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//HumanToMachineRelation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//HumanToMachineRelation/humanSource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//HumanToMachineRelation/machineTarget"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//HumanToMachineRelation/relationName"/>
+    </genClasses>
+    <genClasses ecoreClass="../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//MachineToHumanRelation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//MachineToHumanRelation/machineSource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//MachineToHumanRelation/humanTarget"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//MachineToHumanRelation/relationName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.eclipse.gemoc.statemachine.model/model/statemachine.ecore#//MachineToHumanRelation/interfaceName"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

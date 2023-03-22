@@ -11,7 +11,11 @@ import ching.ProblemFrame.CausalDomain;
 import ching.ProblemFrame.ConstrainingRequirementReference;
 import ching.ProblemFrame.DType;
 import ching.ProblemFrame.Domain;
+import ching.ProblemFrame.ExternalBiddableDomain;
+import ching.ProblemFrame.ExternalCausalDomain;
+import ching.ProblemFrame.Human;
 import ching.ProblemFrame.Interface;
+import ching.ProblemFrame.InternalCausalDomain;
 import ching.ProblemFrame.LexicalDomain;
 import ching.ProblemFrame.Machine;
 import ching.ProblemFrame.MyStateMachine;
@@ -131,6 +135,34 @@ public class ProblemFramePackageImpl extends EPackageImpl implements ProblemFram
 	 * @generated
 	 */
 	private EClass myStateMachineEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass humanEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass externalCausalDomainEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass externalBiddableDomainEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass internalCausalDomainEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -558,6 +590,42 @@ public class ProblemFramePackageImpl extends EPackageImpl implements ProblemFram
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getHuman() {
+		return humanEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExternalCausalDomain() {
+		return externalCausalDomainEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExternalBiddableDomain() {
+		return externalBiddableDomainEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getInternalCausalDomain() {
+		return internalCausalDomainEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getDType() {
 		return dTypeEEnum;
 	}
@@ -650,6 +718,14 @@ public class ProblemFramePackageImpl extends EPackageImpl implements ProblemFram
 
 		myStateMachineEClass = createEClass(MY_STATE_MACHINE);
 
+		humanEClass = createEClass(HUMAN);
+
+		externalCausalDomainEClass = createEClass(EXTERNAL_CAUSAL_DOMAIN);
+
+		externalBiddableDomainEClass = createEClass(EXTERNAL_BIDDABLE_DOMAIN);
+
+		internalCausalDomainEClass = createEClass(INTERNAL_CAUSAL_DOMAIN);
+
 		// Create enums
 		dTypeEEnum = createEEnum(DTYPE);
 		pTypeEEnum = createEEnum(PTYPE);
@@ -690,12 +766,16 @@ public class ProblemFramePackageImpl extends EPackageImpl implements ProblemFram
 
 		// Add supertypes to classes
 		machineEClass.getESuperTypes().add(this.getDomain());
-		lexicalDomainEClass.getESuperTypes().add(this.getCausalDomain());
+		lexicalDomainEClass.getESuperTypes().add(this.getInternalCausalDomain());
 		biddableDomainEClass.getESuperTypes().add(this.getDomain());
 		causalDomainEClass.getESuperTypes().add(this.getDomain());
 		requirementReferenceEClass.getESuperTypes().add(this.getReference());
 		constrainingRequirementReferenceEClass.getESuperTypes().add(this.getReference());
 		myStateMachineEClass.getESuperTypes().add(theUMLPackage.getStateMachine());
+		humanEClass.getESuperTypes().add(this.getBiddableDomain());
+		externalCausalDomainEClass.getESuperTypes().add(this.getCausalDomain());
+		externalBiddableDomainEClass.getESuperTypes().add(this.getBiddableDomain());
+		internalCausalDomainEClass.getESuperTypes().add(this.getCausalDomain());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(problemDiagramEClass, ProblemDiagram.class, "ProblemDiagram", !IS_ABSTRACT, !IS_INTERFACE,
@@ -736,10 +816,10 @@ public class ProblemFramePackageImpl extends EPackageImpl implements ProblemFram
 		initEClass(lexicalDomainEClass, LexicalDomain.class, "LexicalDomain", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(biddableDomainEClass, BiddableDomain.class, "BiddableDomain", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(biddableDomainEClass, BiddableDomain.class, "BiddableDomain", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(causalDomainEClass, CausalDomain.class, "CausalDomain", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(causalDomainEClass, CausalDomain.class, "CausalDomain", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE,
@@ -801,6 +881,17 @@ public class ProblemFramePackageImpl extends EPackageImpl implements ProblemFram
 
 		initEClass(myStateMachineEClass, MyStateMachine.class, "MyStateMachine", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(humanEClass, Human.class, "Human", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(externalCausalDomainEClass, ExternalCausalDomain.class, "ExternalCausalDomain", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(externalBiddableDomainEClass, ExternalBiddableDomain.class, "ExternalBiddableDomain", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(internalCausalDomainEClass, InternalCausalDomain.class, "InternalCausalDomain", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Initialize enums and add enum literals
 		initEEnum(dTypeEEnum, DType.class, "DType");

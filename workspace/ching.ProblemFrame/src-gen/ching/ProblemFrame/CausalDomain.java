@@ -9,7 +9,7 @@ package ching.ProblemFrame;
  *
  *
  * @see ching.ProblemFrame.ProblemFramePackage#getCausalDomain()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface CausalDomain extends Domain {

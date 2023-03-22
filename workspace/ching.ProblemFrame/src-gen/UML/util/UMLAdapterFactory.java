@@ -152,6 +152,31 @@ public class UMLAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseTeamDiagram(TeamDiagram object) {
+			return createTeamDiagramAdapter();
+		}
+
+		@Override
+		public Adapter caseHuman(Human object) {
+			return createHumanAdapter();
+		}
+
+		@Override
+		public Adapter caseMachine(Machine object) {
+			return createMachineAdapter();
+		}
+
+		@Override
+		public Adapter caseHumanToMachineRelation(HumanToMachineRelation object) {
+			return createHumanToMachineRelationAdapter();
+		}
+
+		@Override
+		public Adapter caseMachineToHumanRelation(MachineToHumanRelation object) {
+			return createMachineToHumanRelationAdapter();
+		}
+
+		@Override
 		public Adapter defaultCase(EObject object) {
 			return createEObjectAdapter();
 		}
@@ -405,6 +430,76 @@ public class UMLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSendEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link UML.TeamDiagram <em>Team Diagram</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see UML.TeamDiagram
+	 * @generated
+	 */
+	public Adapter createTeamDiagramAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link UML.Human <em>Human</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see UML.Human
+	 * @generated
+	 */
+	public Adapter createHumanAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link UML.Machine <em>Machine</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see UML.Machine
+	 * @generated
+	 */
+	public Adapter createMachineAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link UML.HumanToMachineRelation <em>Human To Machine Relation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see UML.HumanToMachineRelation
+	 * @generated
+	 */
+	public Adapter createHumanToMachineRelationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link UML.MachineToHumanRelation <em>Machine To Human Relation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see UML.MachineToHumanRelation
+	 * @generated
+	 */
+	public Adapter createMachineToHumanRelationAdapter() {
 		return null;
 	}
 

@@ -15,12 +15,15 @@
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_eMzn0K-BEe2g0O4mBMAT6w" name="new StateMachine Diagram" repPath="#_eMzAwK-BEe2g0O4mBMAT6w" changeId="97ac9522-e21e-4a82-9b13-a9dfe2aecf90">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
-        <target xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_zBiUksinEe2rGJiUeEiAwg" name="StateMachine Diagram" repPath="#_zBiUkMinEe2rGJiUeEiAwg" changeId="749efa07-ffb6-48c4-9e9c-2c59e273a780">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+        <target xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_qj8QgK9pEe2g0O4mBMAT6w">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_rzEWEK9pEe2g0O4mBMAT6w" name="new ProblemDiagram" repPath="#_rzDH8K9pEe2g0O4mBMAT6w" changeId="82bb9951-fec8-4c81-b81c-5bb084b04199">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_rzEWEK9pEe2g0O4mBMAT6w" name="new ProblemDiagram" repPath="#_rzDH8K9pEe2g0O4mBMAT6w" changeId="35b84525-00af-4317-8b30-ff096899544c">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']"/>
         <target xmi:type="ProblemFrame:ProblemDiagram" href="车速辅助问题框架.problemframe#/"/>
       </ownedRepresentationDescriptors>
@@ -252,8 +255,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='LexicalDomain']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_iLPFQKYKEe2las4yGIen_A" name="驾驶员" outgoingEdges="_Hy7p_qYMEe2las4yGIen_A" incomingEdges="_rTqpZqYKEe2las4yGIen_A _HEE_6KYMEe2las4yGIen_A" width="-1" height="-1" resizeKind="NSEW">
-      <target xmi:type="ProblemFrame:BiddableDomain" href="车速辅助问题框架.problemframe#//@domain.2"/>
-      <semanticElements xmi:type="ProblemFrame:BiddableDomain" href="车速辅助问题框架.problemframe#//@domain.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -261,10 +262,10 @@
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']"/>
+      <target xmi:type="ProblemFrame:BiddableDomain" href="车速辅助问题框架.problemframe#//@domain.2"/>
+      <semanticElements xmi:type="ProblemFrame:BiddableDomain" href="车速辅助问题框架.problemframe#//@domain.2"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_lYIfEKYKEe2las4yGIen_A" name="警报" outgoingEdges="_HEE_6KYMEe2las4yGIen_A" incomingEdges="_rAOwAKYKEe2las4yGIen_A _GOpzsKYMEe2las4yGIen_A" width="-1" height="-1" resizeKind="NSEW">
-      <target xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.3"/>
-      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.3"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -272,10 +273,10 @@
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
+      <target xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.3"/>
+      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.3"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_6vUCkKYLEe2las4yGIen_A" name="车速计" incomingEdges="_Exq4VqYMEe2las4yGIen_A _FxG8EKYMEe2las4yGIen_A" width="-1" height="-1" resizeKind="NSEW">
-      <target xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.4"/>
-      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.4"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -283,6 +284,8 @@
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
+      <target xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.4"/>
+      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.4"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rAOwAKYKEe2las4yGIen_A" sourceNode="_Vyow4KYKEe2las4yGIen_A" targetNode="_lYIfEKYKEe2las4yGIen_A">
       <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.0"/>
@@ -295,8 +298,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rTqpZqYKEe2las4yGIen_A" sourceNode="_Vyow4KYKEe2las4yGIen_A" targetNode="_iLPFQKYKEe2las4yGIen_A">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.1"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rTqpZ6YKEe2las4yGIen_A" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_rTqpaKYKEe2las4yGIen_A" labelSize="12" showIcon="false"/>
@@ -305,8 +306,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_royk3KYKEe2las4yGIen_A" sourceNode="_Vyow4KYKEe2las4yGIen_A" targetNode="_gAoO4KYKEe2las4yGIen_A">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.2"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.2"/>
+      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.1"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_royk3aYKEe2las4yGIen_A" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_royk3qYKEe2las4yGIen_A" labelSize="12" showIcon="false"/>
@@ -326,8 +327,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Requirement']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Exq4VqYMEe2las4yGIen_A" sourceNode="_Vyow4KYKEe2las4yGIen_A" targetNode="_6vUCkKYLEe2las4yGIen_A">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.3"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.3"/>
+      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.2"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Exq4V6YMEe2las4yGIen_A" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_Exq4WKYMEe2las4yGIen_A" labelSize="12" showIcon="false"/>
@@ -354,8 +355,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqConstraint']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_HEE_6KYMEe2las4yGIen_A" sourceNode="_lYIfEKYKEe2las4yGIen_A" targetNode="_iLPFQKYKEe2las4yGIen_A">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.4"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.4"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_HEE_6aYMEe2las4yGIen_A" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_HEE_6qYMEe2las4yGIen_A" labelSize="12" showIcon="false"/>
@@ -364,8 +363,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Hy7p_qYMEe2las4yGIen_A" sourceNode="_iLPFQKYKEe2las4yGIen_A" targetNode="_gAoO4KYKEe2las4yGIen_A">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.5"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.5"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Hy7p_6YMEe2las4yGIen_A" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='problemframework']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_Hy7qAKYMEe2las4yGIen_A" labelSize="12" showIcon="false"/>
@@ -390,40 +387,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzjeRK9pEe2g0O4mBMAT6w"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_rzfz4a9pEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzfz4q9pEe2g0O4mBMAT6w" x="280" y="364" width="138" height="61"/>
-        </children>
-        <children xmi:type="notation:Node" xmi:id="_rzhCAK9pEe2g0O4mBMAT6w" type="2001" element="_rzP8QK9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_rzhCA69pEe2g0O4mBMAT6w" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_rzhCBK9pEe2g0O4mBMAT6w" y="5"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_rzkFUK9pEe2g0O4mBMAT6w" type="3005" element="_rzP8Qa9pEe2g0O4mBMAT6w">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_rzkFUa9pEe2g0O4mBMAT6w" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzkFUq9pEe2g0O4mBMAT6w"/>
-          </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_rzhCAa9pEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzhCAq9pEe2g0O4mBMAT6w" x="210" y="119" width="121" height="61"/>
-        </children>
-        <children xmi:type="notation:Node" xmi:id="_rzhCBa9pEe2g0O4mBMAT6w" type="2001" element="_rzQjUK9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_rzhpEK9pEe2g0O4mBMAT6w" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_rzhpEa9pEe2g0O4mBMAT6w" y="5"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_rzksYK9pEe2g0O4mBMAT6w" type="3005" element="_rzQjUa9pEe2g0O4mBMAT6w">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_rzksYa9pEe2g0O4mBMAT6w" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzksYq9pEe2g0O4mBMAT6w"/>
-          </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_rzhCBq9pEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzhCB69pEe2g0O4mBMAT6w" x="182" y="245" width="121" height="61"/>
-        </children>
-        <children xmi:type="notation:Node" xmi:id="_rzhpEq9pEe2g0O4mBMAT6w" type="2001" element="_rzQjU69pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_rziQIK9pEe2g0O4mBMAT6w" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_rziQIa9pEe2g0O4mBMAT6w" y="5"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_rzksY69pEe2g0O4mBMAT6w" type="3005" element="_rzRKYK9pEe2g0O4mBMAT6w">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_rzksZK9pEe2g0O4mBMAT6w" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzksZa9pEe2g0O4mBMAT6w"/>
-          </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_rzhpE69pEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzhpFK9pEe2g0O4mBMAT6w" y="245" width="121" height="61"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzfz4q9pEe2g0O4mBMAT6w" x="84" y="270" width="138" height="61"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_rziQIq9pEe2g0O4mBMAT6w" type="2001" element="_rzSYgK9pEe2g0O4mBMAT6w">
           <children xmi:type="notation:Node" xmi:id="_rzi3MK9pEe2g0O4mBMAT6w" type="5002">
@@ -434,7 +398,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzlTcq9pEe2g0O4mBMAT6w"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_rziQI69pEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rziQJK9pEe2g0O4mBMAT6w" x="315" width="121" height="61"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rziQJK9pEe2g0O4mBMAT6w" x="364" y="154" width="121" height="61"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_rzi3Mq9pEe2g0O4mBMAT6w" type="2001" element="_rzTmoK9pEe2g0O4mBMAT6w">
           <children xmi:type="notation:Node" xmi:id="_rzjeQK9pEe2g0O4mBMAT6w" type="5002">
@@ -445,313 +409,364 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzl6gq9pEe2g0O4mBMAT6w"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_rzi3M69pEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzi3NK9pEe2g0O4mBMAT6w" x="91" y="364" width="121" height="81"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzi3NK9pEe2g0O4mBMAT6w" x="735" y="343" width="121" height="81"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_sj9AcK9pEe2g0O4mBMAT6w" type="2001" element="_sj4vB69pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_sj9Ac69pEe2g0O4mBMAT6w" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_sj9AdK9pEe2g0O4mBMAT6w" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_cGhxnMinEe2rGJiUeEiAwg" type="2001" element="_cGYndcinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_cGhxn8inEe2rGJiUeEiAwg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cGhxoMinEe2rGJiUeEiAwg" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_sj9ngK9pEe2g0O4mBMAT6w" type="3005" element="_sj5WEK9pEe2g0O4mBMAT6w">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_sj9nga9pEe2g0O4mBMAT6w" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sj9ngq9pEe2g0O4mBMAT6w"/>
+          <children xmi:type="notation:Node" xmi:id="_cGhxqcinEe2rGJiUeEiAwg" type="3005" element="_cGYndsinEe2rGJiUeEiAwg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cGhxqsinEe2rGJiUeEiAwg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhxq8inEe2rGJiUeEiAwg"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_sj9Aca9pEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sj9Acq9pEe2g0O4mBMAT6w" x="574" y="224" width="121" height="61"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cGhxncinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhxnsinEe2rGJiUeEiAwg" x="343" y="420" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cGhxocinEe2rGJiUeEiAwg" type="2001" element="_cGYneMinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_cGhxpMinEe2rGJiUeEiAwg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cGhxpcinEe2rGJiUeEiAwg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cGhxrMinEe2rGJiUeEiAwg" type="3005" element="_cGYnecinEe2rGJiUeEiAwg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cGhxrcinEe2rGJiUeEiAwg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhxrsinEe2rGJiUeEiAwg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cGhxosinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhxo8inEe2rGJiUeEiAwg" x="350" y="42" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lZ9r4MinEe2rGJiUeEiAwg" type="2001" element="_lZ0hsMinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_lZ9r48inEe2rGJiUeEiAwg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_lZ9r5MinEe2rGJiUeEiAwg" x="-5" y="79"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lZ9r5cinEe2rGJiUeEiAwg" type="3005" element="_lZ0hscinEe2rGJiUeEiAwg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_lZ9r5sinEe2rGJiUeEiAwg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lZ9r58inEe2rGJiUeEiAwg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lZ9r4cinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lZ9r4sinEe2rGJiUeEiAwg" x="399" y="280" width="40" height="78"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_rzdkUMinEe2rGJiUeEiAwg" type="2001" element="_rzbIFMinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_rzdkU8inEe2rGJiUeEiAwg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_rzdkVMinEe2rGJiUeEiAwg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rzeLYMinEe2rGJiUeEiAwg" type="3005" element="_rzbIFcinEe2rGJiUeEiAwg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rzeLYcinEe2rGJiUeEiAwg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzeLYsinEe2rGJiUeEiAwg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_rzdkUcinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzdkUsinEe2rGJiUeEiAwg" x="756" y="189" width="121" height="61"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_rzFkMq9pEe2g0O4mBMAT6w"/>
-        <edges xmi:type="notation:Edge" xmi:id="_rzudYq9pEe2g0O4mBMAT6w" type="4001" element="_rzd-sK9pEe2g0O4mBMAT6w" source="_rzi3Mq9pEe2g0O4mBMAT6w" target="_rzhpEq9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_rzudZq9pEe2g0O4mBMAT6w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzudZ69pEe2g0O4mBMAT6w" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_rzudaK9pEe2g0O4mBMAT6w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzudaa9pEe2g0O4mBMAT6w" y="10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_rzvEcK9pEe2g0O4mBMAT6w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzvEca9pEe2g0O4mBMAT6w" y="10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_rzudY69pEe2g0O4mBMAT6w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_rzudZK9pEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rzudZa9pEe2g0O4mBMAT6w" points="[0, 0, 91, 60]$[-91, -60, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rzvEcq9pEe2g0O4mBMAT6w" id="(0.49586776859504134,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rzvEc69pEe2g0O4mBMAT6w" id="(0.49586776859504134,1.0)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_sj9ng69pEe2g0O4mBMAT6w" type="4001" element="_sj7yVK9pEe2g0O4mBMAT6w" source="_rzfz4K9pEe2g0O4mBMAT6w" target="_sj9AcK9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_sj9nh69pEe2g0O4mBMAT6w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sj9niK9pEe2g0O4mBMAT6w" x="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_sj9nia9pEe2g0O4mBMAT6w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sj9niq9pEe2g0O4mBMAT6w" x="13" y="-2"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_sj9ni69pEe2g0O4mBMAT6w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sj9njK9pEe2g0O4mBMAT6w" x="11" y="-1"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_sj9nhK9pEe2g0O4mBMAT6w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_sj9nha9pEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sj9nhq9pEe2g0O4mBMAT6w" points="[61, -30, -224, 110]$[225, -111, -60, 29]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sj-OkK9pEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sj-Oka9pEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_STKxcK-vEe2g0O4mBMAT6w" type="4001" element="_SOXxAK-vEe2g0O4mBMAT6w" source="_rzfz4K9pEe2g0O4mBMAT6w" target="_rzhCBa9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_STKxdK-vEe2g0O4mBMAT6w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STKxda-vEe2g0O4mBMAT6w" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_STKxdq-vEe2g0O4mBMAT6w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STKxd6-vEe2g0O4mBMAT6w" y="10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_STKxeK-vEe2g0O4mBMAT6w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STKxea-vEe2g0O4mBMAT6w" y="10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_STKxca-vEe2g0O4mBMAT6w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_STKxcq-vEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_STKxc6-vEe2g0O4mBMAT6w" points="[0, 0, 137, 119]$[-137, -119, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STLYgK-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STLYga-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_STLYgq-vEe2g0O4mBMAT6w" type="4001" element="_SOXxB6-vEe2g0O4mBMAT6w" source="_rzfz4K9pEe2g0O4mBMAT6w" target="_rzhCAK9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_STLYhq-vEe2g0O4mBMAT6w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYh6-vEe2g0O4mBMAT6w" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_STLYiK-vEe2g0O4mBMAT6w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYia-vEe2g0O4mBMAT6w" y="10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_STLYiq-vEe2g0O4mBMAT6w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYi6-vEe2g0O4mBMAT6w" y="10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_STLYg6-vEe2g0O4mBMAT6w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_STLYhK-vEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_STLYha-vEe2g0O4mBMAT6w" points="[0, 0, 109, 245]$[-109, -245, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STLYjK-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STLYja-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-        </edges>
         <edges xmi:type="notation:Edge" xmi:id="_STLYjq-vEe2g0O4mBMAT6w" type="4001" element="_SOXxDq-vEe2g0O4mBMAT6w" source="_rzfz4K9pEe2g0O4mBMAT6w" target="_rziQIq9pEe2g0O4mBMAT6w">
           <children xmi:type="notation:Node" xmi:id="_STLYkq-vEe2g0O4mBMAT6w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYk6-vEe2g0O4mBMAT6w" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYk6-vEe2g0O4mBMAT6w" x="155" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_STLYlK-vEe2g0O4mBMAT6w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYla-vEe2g0O4mBMAT6w" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYla-vEe2g0O4mBMAT6w" x="-35" y="9"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_STLYlq-vEe2g0O4mBMAT6w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYl6-vEe2g0O4mBMAT6w" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYl6-vEe2g0O4mBMAT6w" x="7" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_STLYj6-vEe2g0O4mBMAT6w"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_STLYj6-vEe2g0O4mBMAT6w" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_STLYkK-vEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_STLYka-vEe2g0O4mBMAT6w" points="[0, 0, 4, 364]$[-4, -364, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_STLYka-vEe2g0O4mBMAT6w" points="[22, -30, -249, 86]$[22, -130, -249, -14]$[211, -130, -60, -14]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STLYmK-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STLYma-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_STLYmq-vEe2g0O4mBMAT6w" type="4001" element="_SOXxFa-vEe2g0O4mBMAT6w" source="_rzfz4K9pEe2g0O4mBMAT6w" target="_rzhpEq9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_STLYnq-vEe2g0O4mBMAT6w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYn6-vEe2g0O4mBMAT6w" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_cGhxr8inEe2rGJiUeEiAwg" type="4001" element="_cGhxZsinEe2rGJiUeEiAwg" source="_rzfz4K9pEe2g0O4mBMAT6w" target="_cGhxnMinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_cGhxs8inEe2rGJiUeEiAwg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhxtMinEe2rGJiUeEiAwg" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_STLYoK-vEe2g0O4mBMAT6w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STLYoa-vEe2g0O4mBMAT6w" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_cGhxtcinEe2rGJiUeEiAwg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhxtsinEe2rGJiUeEiAwg" x="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_STL_kK-vEe2g0O4mBMAT6w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STL_ka-vEe2g0O4mBMAT6w" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_cGhxt8inEe2rGJiUeEiAwg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhxuMinEe2rGJiUeEiAwg" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_STLYm6-vEe2g0O4mBMAT6w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_STLYnK-vEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_STLYna-vEe2g0O4mBMAT6w" points="[0, 0, 319, 119]$[-319, -119, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STL_kq-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STL_k6-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cGhxsMinEe2rGJiUeEiAwg" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cGhxscinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cGhxssinEe2rGJiUeEiAwg" points="[1, 30, -249, -120]$[1, 150, -249, 0]$[190, 150, -60, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cGhxucinEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cGhxusinEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_STL_lK-vEe2g0O4mBMAT6w" type="4001" element="_SOXxHK-vEe2g0O4mBMAT6w" source="_rzhCBa9pEe2g0O4mBMAT6w" target="_rzhCAK9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_STL_mK-vEe2g0O4mBMAT6w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STL_ma-vEe2g0O4mBMAT6w" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_cGhxx8inEe2rGJiUeEiAwg" type="4001" element="_cGhxdMinEe2rGJiUeEiAwg" source="_rzfz4K9pEe2g0O4mBMAT6w" target="_cGhxocinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_cGhxy8inEe2rGJiUeEiAwg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhxzMinEe2rGJiUeEiAwg" x="-30" y="175"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_STL_mq-vEe2g0O4mBMAT6w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STL_m6-vEe2g0O4mBMAT6w" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_cGhxzcinEe2rGJiUeEiAwg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhxzsinEe2rGJiUeEiAwg" x="-52"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_STL_nK-vEe2g0O4mBMAT6w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STL_na-vEe2g0O4mBMAT6w" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_cGhxz8inEe2rGJiUeEiAwg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhx0MinEe2rGJiUeEiAwg" x="-245" y="117"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_STL_la-vEe2g0O4mBMAT6w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_STL_lq-vEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_STL_l6-vEe2g0O4mBMAT6w" points="[0, 0, -28, 126]$[28, -126, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STL_nq-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STL_n6-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cGhxyMinEe2rGJiUeEiAwg" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cGhxycinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cGhxysinEe2rGJiUeEiAwg" points="[-41, -30, -298, 198]$[-41, -228, -298, 0]$[197, -228, -60, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cGhx0cinEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cGhx0sinEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_STL_oK-vEe2g0O4mBMAT6w" type="4001" element="_SOXxI6-vEe2g0O4mBMAT6w" source="_rzhCAK9pEe2g0O4mBMAT6w" target="_rziQIq9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_STL_pK-vEe2g0O4mBMAT6w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STL_pa-vEe2g0O4mBMAT6w" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_cGhx68inEe2rGJiUeEiAwg" type="4001" element="_cGhxicinEe2rGJiUeEiAwg" source="_rzi3Mq9pEe2g0O4mBMAT6w" target="_cGhxnMinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_cGhx78inEe2rGJiUeEiAwg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhx8MinEe2rGJiUeEiAwg" x="13" y="-3"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_STL_pq-vEe2g0O4mBMAT6w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STL_p6-vEe2g0O4mBMAT6w" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_cGhx8cinEe2rGJiUeEiAwg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhx8sinEe2rGJiUeEiAwg" x="-12" y="8"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_STL_qK-vEe2g0O4mBMAT6w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STL_qa-vEe2g0O4mBMAT6w" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_cGhx88inEe2rGJiUeEiAwg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGhx9MinEe2rGJiUeEiAwg" x="-12" y="8"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_STL_oa-vEe2g0O4mBMAT6w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_STL_oq-vEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_STL_o6-vEe2g0O4mBMAT6w" points="[0, 0, -105, 119]$[105, -119, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STL_qq-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STL_q6-vEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cGhx7MinEe2rGJiUeEiAwg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cGhx7cinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cGhx7sinEe2rGJiUeEiAwg" points="[-60, 10, 332, -57]$[-331, 56, 61, -11]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cGhx9cinEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cGhx9sinEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_PSrUkK-yEe2g0O4mBMAT6w" type="4001" element="_PN3tEK-yEe2g0O4mBMAT6w" source="_rzi3Mq9pEe2g0O4mBMAT6w" target="_rzhCBa9pEe2g0O4mBMAT6w">
-          <children xmi:type="notation:Node" xmi:id="_PSrUlK-yEe2g0O4mBMAT6w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PSrUla-yEe2g0O4mBMAT6w" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_cGriYMinEe2rGJiUeEiAwg" type="4001" element="_cGhxjsinEe2rGJiUeEiAwg" source="_rzi3Mq9pEe2g0O4mBMAT6w" target="_cGhxocinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_cGriZMinEe2rGJiUeEiAwg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGriZcinEe2rGJiUeEiAwg" x="-7" y="3"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_PSrUlq-yEe2g0O4mBMAT6w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PSrUl6-yEe2g0O4mBMAT6w" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_cGriZsinEe2rGJiUeEiAwg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGriZ8inEe2rGJiUeEiAwg" x="13" y="-1"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_PSrUmK-yEe2g0O4mBMAT6w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PSrUma-yEe2g0O4mBMAT6w" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_cGriaMinEe2rGJiUeEiAwg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cGriacinEe2rGJiUeEiAwg" x="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PSrUka-yEe2g0O4mBMAT6w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_PSrUkq-yEe2g0O4mBMAT6w" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PSrUk6-yEe2g0O4mBMAT6w" points="[0, 0, -101, 119]$[101, -119, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PSrUmq-yEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PSr7oK-yEe2g0O4mBMAT6w" id="(0.5,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cGriYcinEe2rGJiUeEiAwg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cGriYsinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cGriY8inEe2rGJiUeEiAwg" points="[-50, -40, 335, 271]$[-347, -280, 38, 31]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cGriasinEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cGria8inEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_m0izQMinEe2rGJiUeEiAwg" type="4001" element="_m0cFqMinEe2rGJiUeEiAwg" source="_lZ9r4MinEe2rGJiUeEiAwg" target="_cGhxnMinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_m0izRMinEe2rGJiUeEiAwg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m0izRcinEe2rGJiUeEiAwg" x="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_m0izRsinEe2rGJiUeEiAwg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m0izR8inEe2rGJiUeEiAwg" x="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_m0izSMinEe2rGJiUeEiAwg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m0izScinEe2rGJiUeEiAwg" x="-26" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_m0izQcinEe2rGJiUeEiAwg" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_m0izQsinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_m0izQ8inEe2rGJiUeEiAwg" points="[20, 32, 20, -87]$[20, 119, 20, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m0izSsinEe2rGJiUeEiAwg" id="(0.0,0.2692307692307692)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m0izS8inEe2rGJiUeEiAwg" id="(0.4628099173553719,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_nrMu1cinEe2rGJiUeEiAwg" type="4001" element="_nrMujsinEe2rGJiUeEiAwg" source="_rziQIq9pEe2g0O4mBMAT6w" target="_lZ9r4MinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_nrMu2cinEe2rGJiUeEiAwg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrMu2sinEe2rGJiUeEiAwg" x="20" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nrMu28inEe2rGJiUeEiAwg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrMu3MinEe2rGJiUeEiAwg" x="34" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nrMu3cinEe2rGJiUeEiAwg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrMu3sinEe2rGJiUeEiAwg" x="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_nrMu1sinEe2rGJiUeEiAwg" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_nrMu18inEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nrMu2MinEe2rGJiUeEiAwg" points="[-21, -1, 14, -101]$[-21, 68, 14, -32]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nrMu38inEe2rGJiUeEiAwg" id="(0.5785123966942148,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nrMu4MinEe2rGJiUeEiAwg" id="(0.0,0.44871794871794873)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_oWu-yMinEe2rGJiUeEiAwg" type="4001" element="_oWoRLsinEe2rGJiUeEiAwg" source="_rzfz4K9pEe2g0O4mBMAT6w" target="_lZ9r4MinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_oWvl0MinEe2rGJiUeEiAwg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oWvl0cinEe2rGJiUeEiAwg" x="78" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oWvl0sinEe2rGJiUeEiAwg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oWvl08inEe2rGJiUeEiAwg" x="26" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oWvl1MinEe2rGJiUeEiAwg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oWvl1cinEe2rGJiUeEiAwg" x="20" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_oWu-ycinEe2rGJiUeEiAwg" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_oWu-ysinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oWu-y8inEe2rGJiUeEiAwg" points="[-1, -7, -178, 0]$[196, -7, 19, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oWvl1sinEe2rGJiUeEiAwg" id="(1.0,0.8524590163934426)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oWvl18inEe2rGJiUeEiAwg" id="(0.0,0.44871794871794873)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_rzeLY8inEe2rGJiUeEiAwg" type="4001" element="_rzc9RMinEe2rGJiUeEiAwg" source="_rzi3Mq9pEe2g0O4mBMAT6w" target="_rzdkUMinEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_rzeLZ8inEe2rGJiUeEiAwg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzeLaMinEe2rGJiUeEiAwg" x="-7" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rzeLacinEe2rGJiUeEiAwg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzeLasinEe2rGJiUeEiAwg" x="10" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rzeLa8inEe2rGJiUeEiAwg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzeLbMinEe2rGJiUeEiAwg" x="13" y="3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_rzeLZMinEe2rGJiUeEiAwg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_rzeLZcinEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rzeLZsinEe2rGJiUeEiAwg" points="[5, -40, -16, 124]$[17, -133, -4, 31]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rzeLbcinEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rzeLbsinEe2rGJiUeEiAwg" id="(0.5,0.5)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_rzfM0K9pEe2g0O4mBMAT6w" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_rzfM0a9pEe2g0O4mBMAT6w"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzPVMK9pEe2g0O4mBMAT6w" name="车速辅助" outgoingEdges="_sj7yVK9pEe2g0O4mBMAT6w _SOXxAK-vEe2g0O4mBMAT6w _SOXxB6-vEe2g0O4mBMAT6w _SOXxDq-vEe2g0O4mBMAT6w _SOXxFa-vEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzPVMK9pEe2g0O4mBMAT6w" name="车速辅助" outgoingEdges="_SOXxDq-vEe2g0O4mBMAT6w _cGhxZsinEe2rGJiUeEiAwg _cGhxdMinEe2rGJiUeEiAwg _oWoRLsinEe2rGJiUeEiAwg" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="ProblemFrame:Machine" href="车速辅助问题框架.problemframe#//@domain.0"/>
       <semanticElements xmi:type="ProblemFrame:Machine" href="车速辅助问题框架.problemframe#//@domain.0"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzPVMa9pEe2g0O4mBMAT6w" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Machine.png">
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzPVMa9pEe2g0O4mBMAT6w" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Machine.png">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Machine']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Machine']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzP8QK9pEe2g0O4mBMAT6w" name="驾驶员" outgoingEdges="_SOXxI6-vEe2g0O4mBMAT6w" incomingEdges="_SOXxB6-vEe2g0O4mBMAT6w _SOXxHK-vEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
-      <target xmi:type="ProblemFrame:BiddableDomain" href="车速辅助问题框架.problemframe#//@domain.2"/>
-      <semanticElements xmi:type="ProblemFrame:BiddableDomain" href="车速辅助问题框架.problemframe#//@domain.2"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzP8Qa9pEe2g0O4mBMAT6w" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/BiddableDomain.png">
-        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='BiddableDomain']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzQjUK9pEe2g0O4mBMAT6w" name="警报" outgoingEdges="_SOXxHK-vEe2g0O4mBMAT6w" incomingEdges="_SOXxAK-vEe2g0O4mBMAT6w _PN3tEK-yEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
-      <target xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.3"/>
-      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.3"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzQjUa9pEe2g0O4mBMAT6w" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
-        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzQjU69pEe2g0O4mBMAT6w" name="车速计" incomingEdges="_rzd-sK9pEe2g0O4mBMAT6w _SOXxFa-vEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
-      <target xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.4"/>
-      <semanticElements xmi:type="ProblemFrame:CausalDomain" href="车速辅助问题框架.problemframe#//@domain.4"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzRKYK9pEe2g0O4mBMAT6w" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
-        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='CausalDomain']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzSYgK9pEe2g0O4mBMAT6w" name="仪表盘" incomingEdges="_SOXxDq-vEe2g0O4mBMAT6w _SOXxI6-vEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzSYgK9pEe2g0O4mBMAT6w" name="仪表盘" outgoingEdges="_nrMujsinEe2rGJiUeEiAwg" incomingEdges="_SOXxDq-vEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="ProblemFrame:LexicalDomain" href="车速辅助问题框架.problemframe#//@domain.1"/>
       <semanticElements xmi:type="ProblemFrame:LexicalDomain" href="车速辅助问题框架.problemframe#//@domain.1"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzS_kK9pEe2g0O4mBMAT6w" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/LexicalDomain.png">
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzS_kK9pEe2g0O4mBMAT6w" labelPosition="node" workspacePath="/my.problemframe.design/images/LexicalDomain.png">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='LexicalDomain']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='LexicalDomain']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzTmoK9pEe2g0O4mBMAT6w" name="超速报警" outgoingEdges="_rzd-sK9pEe2g0O4mBMAT6w _PN3tEK-yEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzTmoK9pEe2g0O4mBMAT6w" name="超速报警" outgoingEdges="_cGhxicinEe2rGJiUeEiAwg _cGhxjsinEe2rGJiUeEiAwg _rzc9RMinEe2rGJiUeEiAwg" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="ProblemFrame:Requirement" href="车速辅助问题框架.problemframe#//@requirement.0"/>
       <semanticElements xmi:type="ProblemFrame:Requirement" href="车速辅助问题框架.problemframe#//@requirement.0"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzTmoa9pEe2g0O4mBMAT6w" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Requirement.png">
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzTmoa9pEe2g0O4mBMAT6w" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Requirement.png">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Requirement']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Requirement']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rzd-sK9pEe2g0O4mBMAT6w" sourceNode="_rzTmoK9pEe2g0O4mBMAT6w" targetNode="_rzQjU69pEe2g0O4mBMAT6w">
-      <target xmi:type="ProblemFrame:RequirementReference" href="车速辅助问题框架.problemframe#//@reference.0"/>
-      <semanticElements xmi:type="ProblemFrame:RequirementReference" href="车速辅助问题框架.problemframe#//@reference.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rzelwK9pEe2g0O4mBMAT6w" lineStyle="dash" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_rzelwa9pEe2g0O4mBMAT6w" labelSize="12"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_SOXxDq-vEe2g0O4mBMAT6w" sourceNode="_rzPVMK9pEe2g0O4mBMAT6w" targetNode="_rzSYgK9pEe2g0O4mBMAT6w">
+      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.1"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SOXxD6-vEe2g0O4mBMAT6w" targetArrow="NoDecoration" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_SOXxEK-vEe2g0O4mBMAT6w" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_SOXxEa-vEe2g0O4mBMAT6w" showIcon="false"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_sj4vB69pEe2g0O4mBMAT6w" incomingEdges="_sj7yVK9pEe2g0O4mBMAT6w" width="-1" height="-1" resizeKind="NSEW">
-      <target xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0"/>
-      <semanticElements xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0"/>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cGYndcinEe2rGJiUeEiAwg" name="警报" incomingEdges="_cGhxZsinEe2rGJiUeEiAwg _cGhxicinEe2rGJiUeEiAwg _m0cFqMinEe2rGJiUeEiAwg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:InternalCausalDomain" href="车速辅助问题框架.problemframe#//@domain.2"/>
+      <semanticElements xmi:type="ProblemFrame:InternalCausalDomain" href="车速辅助问题框架.problemframe#//@domain.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_sj5WEK9pEe2g0O4mBMAT6w" labelSize="10" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/sm_representation.drawio.png">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_cGYndsinEe2rGJiUeEiAwg" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='InternalCausalDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='InternalCausalDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cGYneMinEe2rGJiUeEiAwg" name="车速计" incomingEdges="_cGhxdMinEe2rGJiUeEiAwg _cGhxjsinEe2rGJiUeEiAwg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:InternalCausalDomain" href="车速辅助问题框架.problemframe#//@domain.3"/>
+      <semanticElements xmi:type="ProblemFrame:InternalCausalDomain" href="车速辅助问题框架.problemframe#//@domain.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_cGYnecinEe2rGJiUeEiAwg" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='InternalCausalDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='InternalCausalDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cGhxZsinEe2rGJiUeEiAwg" sourceNode="_rzPVMK9pEe2g0O4mBMAT6w" targetNode="_cGYndcinEe2rGJiUeEiAwg">
+      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.0"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cGhxZ8inEe2rGJiUeEiAwg" targetArrow="NoDecoration" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_cGhxaMinEe2rGJiUeEiAwg" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_cGhxacinEe2rGJiUeEiAwg" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cGhxdMinEe2rGJiUeEiAwg" sourceNode="_rzPVMK9pEe2g0O4mBMAT6w" targetNode="_cGYneMinEe2rGJiUeEiAwg">
+      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.2"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cGhxdcinEe2rGJiUeEiAwg" targetArrow="NoDecoration" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_cGhxdsinEe2rGJiUeEiAwg" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_cGhxd8inEe2rGJiUeEiAwg" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cGhxicinEe2rGJiUeEiAwg" sourceNode="_rzTmoK9pEe2g0O4mBMAT6w" targetNode="_cGYndcinEe2rGJiUeEiAwg">
+      <target xmi:type="ProblemFrame:ConstrainingRequirementReference" href="车速辅助问题框架.problemframe#//@reference.1"/>
+      <semanticElements xmi:type="ProblemFrame:ConstrainingRequirementReference" href="车速辅助问题框架.problemframe#//@reference.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cGhxisinEe2rGJiUeEiAwg" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqConstraint']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cGhxi8inEe2rGJiUeEiAwg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqConstraint']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cGhxjsinEe2rGJiUeEiAwg" sourceNode="_rzTmoK9pEe2g0O4mBMAT6w" targetNode="_cGYneMinEe2rGJiUeEiAwg">
+      <target xmi:type="ProblemFrame:RequirementReference" href="车速辅助问题框架.problemframe#//@reference.0"/>
+      <semanticElements xmi:type="ProblemFrame:RequirementReference" href="车速辅助问题框架.problemframe#//@reference.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cGhxj8inEe2rGJiUeEiAwg" lineStyle="dash" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cGhxkMinEe2rGJiUeEiAwg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqReference']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_lZ0hsMinEe2rGJiUeEiAwg" name="驾驶员" outgoingEdges="_m0cFqMinEe2rGJiUeEiAwg" incomingEdges="_nrMujsinEe2rGJiUeEiAwg _oWoRLsinEe2rGJiUeEiAwg" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:Human" href="车速辅助问题框架.problemframe#//@domain.4"/>
+      <semanticElements xmi:type="ProblemFrame:Human" href="车速辅助问题框架.problemframe#//@domain.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_lZ0hscinEe2rGJiUeEiAwg" showIcon="false" workspacePath="/my.problemframe.design/images/HUMAN.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Human']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Human']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_m0cFqMinEe2rGJiUeEiAwg" sourceNode="_lZ0hsMinEe2rGJiUeEiAwg" targetNode="_cGYndcinEe2rGJiUeEiAwg">
+      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.3"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_m0cFqcinEe2rGJiUeEiAwg" targetArrow="NoDecoration" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_m0cFqsinEe2rGJiUeEiAwg" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_m0cFq8inEe2rGJiUeEiAwg" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_nrMujsinEe2rGJiUeEiAwg" sourceNode="_rzSYgK9pEe2g0O4mBMAT6w" targetNode="_lZ0hsMinEe2rGJiUeEiAwg">
+      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.4"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_nrMuj8inEe2rGJiUeEiAwg" targetArrow="NoDecoration" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_nrMukMinEe2rGJiUeEiAwg" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_nrMukcinEe2rGJiUeEiAwg" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oWoRLsinEe2rGJiUeEiAwg" sourceNode="_rzPVMK9pEe2g0O4mBMAT6w" targetNode="_lZ0hsMinEe2rGJiUeEiAwg">
+      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.5"/>
+      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_oWoRL8inEe2rGJiUeEiAwg" targetArrow="NoDecoration" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_oWoRMMinEe2rGJiUeEiAwg" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_oWoRMcinEe2rGJiUeEiAwg" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_rzbIFMinEe2rGJiUeEiAwg" name="人机协作状态机" incomingEdges="_rzc9RMinEe2rGJiUeEiAwg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0"/>
+      <semanticElements xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_rzbIFcinEe2rGJiUeEiAwg" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/sm_representation.drawio.png">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='StateMachine']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='StateMachine']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sj7yVK9pEe2g0O4mBMAT6w" sourceNode="_rzPVMK9pEe2g0O4mBMAT6w" targetNode="_sj4vB69pEe2g0O4mBMAT6w">
-      <target xmi:type="ProblemFrame:Machine" href="车速辅助问题框架.problemframe#//@domain.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sj7yVa9pEe2g0O4mBMAT6w" lineStyle="dash_dot" size="2" strokeColor="39,76,114">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rzc9RMinEe2rGJiUeEiAwg" sourceNode="_rzTmoK9pEe2g0O4mBMAT6w" targetNode="_rzbIFMinEe2rGJiUeEiAwg">
+      <target xmi:type="ProblemFrame:Requirement" href="车速辅助问题框架.problemframe#//@requirement.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rzc9RcinEe2rGJiUeEiAwg" lineStyle="dash_dot" size="2" strokeColor="39,76,114">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='StateMachineReference']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sj7yVq9pEe2g0O4mBMAT6w" labelSize="12"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_rzc9RsinEe2rGJiUeEiAwg"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='StateMachineReference']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_SOXxAK-vEe2g0O4mBMAT6w" sourceNode="_rzPVMK9pEe2g0O4mBMAT6w" targetNode="_rzQjUK9pEe2g0O4mBMAT6w">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.0"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SOXxAa-vEe2g0O4mBMAT6w" targetArrow="NoDecoration" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
-        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_SOXxAq-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_SOXxA6-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_SOXxB6-vEe2g0O4mBMAT6w" sourceNode="_rzPVMK9pEe2g0O4mBMAT6w" targetNode="_rzP8QK9pEe2g0O4mBMAT6w">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.1"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.1"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SOXxCK-vEe2g0O4mBMAT6w" targetArrow="NoDecoration" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
-        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_SOXxCa-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_SOXxCq-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_SOXxDq-vEe2g0O4mBMAT6w" sourceNode="_rzPVMK9pEe2g0O4mBMAT6w" targetNode="_rzSYgK9pEe2g0O4mBMAT6w">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.2"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.2"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SOXxD6-vEe2g0O4mBMAT6w" targetArrow="NoDecoration" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
-        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_SOXxEK-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_SOXxEa-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_SOXxFa-vEe2g0O4mBMAT6w" sourceNode="_rzPVMK9pEe2g0O4mBMAT6w" targetNode="_rzQjU69pEe2g0O4mBMAT6w">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.3"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.3"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SOXxFq-vEe2g0O4mBMAT6w" targetArrow="NoDecoration" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
-        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_SOXxF6-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_SOXxGK-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_SOXxHK-vEe2g0O4mBMAT6w" sourceNode="_rzQjUK9pEe2g0O4mBMAT6w" targetNode="_rzP8QK9pEe2g0O4mBMAT6w">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.4"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.4"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SOXxHa-vEe2g0O4mBMAT6w" targetArrow="NoDecoration" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
-        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_SOXxHq-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_SOXxH6-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_SOXxI6-vEe2g0O4mBMAT6w" sourceNode="_rzP8QK9pEe2g0O4mBMAT6w" targetNode="_rzSYgK9pEe2g0O4mBMAT6w">
-      <target xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.5"/>
-      <semanticElements xmi:type="ProblemFrame:Interface" href="车速辅助问题框架.problemframe#//@interfaces.5"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SOXxJK-vEe2g0O4mBMAT6w" targetArrow="NoDecoration" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']/@style"/>
-        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_SOXxJa-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_SOXxJq-vEe2g0O4mBMAT6w" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='Interface']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PN3tEK-yEe2g0O4mBMAT6w" sourceNode="_rzTmoK9pEe2g0O4mBMAT6w" targetNode="_rzQjUK9pEe2g0O4mBMAT6w">
-      <target xmi:type="ProblemFrame:ConstrainingRequirementReference" href="车速辅助问题框架.problemframe#//@reference.1"/>
-      <semanticElements xmi:type="ProblemFrame:ConstrainingRequirementReference" href="车速辅助问题框架.problemframe#//@reference.1"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PN3tEa-yEe2g0O4mBMAT6w" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" strokeColor="0,0,0">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqConstraint']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PN3tEq-yEe2g0O4mBMAT6w" labelSize="12"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@edgeMappings[name='ReqConstraint']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_rzDH8a9pEe2g0O4mBMAT6w"/>
@@ -831,8 +846,6 @@
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_eM8xxK-BEe2g0O4mBMAT6w"/>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_eM1dAK-BEe2g0O4mBMAT6w" childrenPresentation="HorizontalStack">
-      <target xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0"/>
-      <semanticElements xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -841,23 +854,17 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_eM2EEK-BEe2g0O4mBMAT6w">
-        <target xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0"/>
-        <semanticElements xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0"/>
         <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_eM2EE6-BEe2g0O4mBMAT6w"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_eM2EEa-BEe2g0O4mBMAT6w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_eM2rIK-BEe2g0O4mBMAT6w" name="状态" outgoingEdges="_-ybVsK-uEe2g0O4mBMAT6w" childrenPresentation="HorizontalStack">
-          <target xmi:type="StateMachineModel:State" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0/@subvertex.0"/>
-          <semanticElements xmi:type="StateMachineModel:State" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0/@subvertex.0"/>
           <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_eM2rIa-BEe2g0O4mBMAT6w" labelSize="12" showIcon="false" labelColor="39,76,114" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" foregroundColor="194,239,255">
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']"/>
           <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_eM35QK-BEe2g0O4mBMAT6w" name="区域">
-            <target xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0/@subvertex.0/@region.0"/>
-            <semanticElements xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0/@subvertex.0/@region.0"/>
             <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_eM5HYK-BEe2g0O4mBMAT6w"/>
             <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_eM35Qa-BEe2g0O4mBMAT6w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true" foregroundColor="194,239,255">
               <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@conditionnalStyles.0/@style"/>
@@ -866,8 +873,6 @@
           </ownedDiagramElements>
         </ownedDiagramElements>
         <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_-Zuh0K-uEe2g0O4mBMAT6w" name="状态" incomingEdges="_-ybVsK-uEe2g0O4mBMAT6w">
-          <target xmi:type="StateMachineModel:State" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0/@subvertex.1"/>
-          <semanticElements xmi:type="StateMachineModel:State" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0/@subvertex.1"/>
           <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_-Zuh0a-uEe2g0O4mBMAT6w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@style"/>
           </ownedStyle>
@@ -876,8 +881,6 @@
       </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_-ybVsK-uEe2g0O4mBMAT6w" name="try trigger" sourceNode="_eM2rIK-BEe2g0O4mBMAT6w" targetNode="_-Zuh0K-uEe2g0O4mBMAT6w">
-      <target xmi:type="StateMachineModel:Transition" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0/@transition.0"/>
-      <semanticElements xmi:type="StateMachineModel:Transition" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0/@region.0/@transition.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_-ybVsa-uEe2g0O4mBMAT6w" routingStyle="manhattan" strokeColor="69,69,69">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_-ybVsq-uEe2g0O4mBMAT6w" showIcon="false"/>
@@ -887,6 +890,425 @@
     <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_eMzAwa-BEe2g0O4mBMAT6w"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer"/>
-    <target xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@domain.0/@statemachine.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_zBiUkMinEe2rGJiUeEiAwg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_zBiUlMinEe2rGJiUeEiAwg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_zBiUlcinEe2rGJiUeEiAwg" type="Sirius" element="_zBiUkMinEe2rGJiUeEiAwg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_zBsFksinEe2rGJiUeEiAwg" type="2002" element="_zBiUl8inEe2rGJiUeEiAwg">
+          <children xmi:type="notation:Node" xmi:id="_zBsFlcinEe2rGJiUeEiAwg" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_zBsFlsinEe2rGJiUeEiAwg" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_zycNTsinEe2rGJiUeEiAwg" type="3008" element="_zyScEMinEe2rGJiUeEiAwg">
+              <children xmi:type="notation:Node" xmi:id="_zycNUcinEe2rGJiUeEiAwg" visible="false" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_zycNUsinEe2rGJiUeEiAwg" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_caKzMMi0Ee2M28bnwjskgA" type="3008" element="_cZ3RQMi0Ee2M28bnwjskgA">
+                  <children xmi:type="notation:Node" xmi:id="_caKzM8i0Ee2M28bnwjskgA" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_caKzNMi0Ee2M28bnwjskgA" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_caKzN8i0Ee2M28bnwjskgA" type="3008" element="_cZ3RQ8i0Ee2M28bnwjskgA">
+                      <children xmi:type="notation:Node" xmi:id="_caKzOsi0Ee2M28bnwjskgA" visible="false" type="5005"/>
+                      <children xmi:type="notation:Node" xmi:id="_caKzO8i0Ee2M28bnwjskgA" type="7002">
+                        <children xmi:type="notation:Node" xmi:id="_fUuN4Mi2Ee2M28bnwjskgA" type="3008" element="_fUbS8Mi2Ee2M28bnwjskgA">
+                          <children xmi:type="notation:Node" xmi:id="_fUuN48i2Ee2M28bnwjskgA" type="5005"/>
+                          <children xmi:type="notation:Node" xmi:id="_fUuN5Mi2Ee2M28bnwjskgA" type="7002">
+                            <children xmi:type="notation:Node" xmi:id="_4BDkwMi2Ee2M28bnwjskgA" type="3007" element="_4A2JYMi2Ee2M28bnwjskgA">
+                              <children xmi:type="notation:Node" xmi:id="_4BDkw8i2Ee2M28bnwjskgA" type="5003">
+                                <layoutConstraint xmi:type="notation:Location" xmi:id="_4BDkxMi2Ee2M28bnwjskgA" x="-1" y="4"/>
+                              </children>
+                              <children xmi:type="notation:Node" xmi:id="_4BGBAMi2Ee2M28bnwjskgA" type="3005" element="_4A2JYci2Ee2M28bnwjskgA">
+                                <styles xmi:type="notation:ShapeStyle" xmi:id="_4BGBAci2Ee2M28bnwjskgA" fontName="Segoe UI"/>
+                                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4BGBAsi2Ee2M28bnwjskgA"/>
+                              </children>
+                              <styles xmi:type="notation:ShapeStyle" xmi:id="_4BDkwci2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="8"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4BDkwsi2Ee2M28bnwjskgA" x="37" y="71" width="33" height="65"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_4QUv0Mi2Ee2M28bnwjskgA" type="3007" element="_4QH7gMi2Ee2M28bnwjskgA">
+                              <children xmi:type="notation:Node" xmi:id="_4QUv08i2Ee2M28bnwjskgA" type="5003">
+                                <layoutConstraint xmi:type="notation:Location" xmi:id="_4QUv1Mi2Ee2M28bnwjskgA" y="5"/>
+                              </children>
+                              <children xmi:type="notation:Node" xmi:id="_4QVW4Mi2Ee2M28bnwjskgA" type="3005" element="_4QH7gci2Ee2M28bnwjskgA">
+                                <styles xmi:type="notation:ShapeStyle" xmi:id="_4QVW4ci2Ee2M28bnwjskgA" fontName="Segoe UI"/>
+                                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4QVW4si2Ee2M28bnwjskgA"/>
+                              </children>
+                              <styles xmi:type="notation:ShapeStyle" xmi:id="_4QUv0ci2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="8"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4QUv0si2Ee2M28bnwjskgA" x="198" y="71" width="80" height="35"/>
+                            </children>
+                            <styles xmi:type="notation:SortingStyle" xmi:id="_fUuN5ci2Ee2M28bnwjskgA"/>
+                            <styles xmi:type="notation:FilteringStyle" xmi:id="_fUuN5si2Ee2M28bnwjskgA"/>
+                          </children>
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_fUuN4ci2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="5"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUuN4si2Ee2M28bnwjskgA" x="22" y="7" width="325" height="178"/>
+                        </children>
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_caKzPMi0Ee2M28bnwjskgA"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_caKzPci0Ee2M28bnwjskgA"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_caKzPsi0Ee2M28bnwjskgA"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_caKzOMi0Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="12"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_caKzOci0Ee2M28bnwjskgA" width="391" height="202"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_caKzNci0Ee2M28bnwjskgA"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_caKzNsi0Ee2M28bnwjskgA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_caKzMci0Ee2M28bnwjskgA" fontColor="7490599" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_caKzMsi0Ee2M28bnwjskgA" x="85" y="7"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_lywBUMi2Ee2M28bnwjskgA" type="3008" element="_lywBRci2Ee2M28bnwjskgA">
+                  <children xmi:type="notation:Node" xmi:id="_lywBU8i2Ee2M28bnwjskgA" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_lywBVMi2Ee2M28bnwjskgA" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_lywBV8i2Ee2M28bnwjskgA" type="3008" element="_lywBSMi2Ee2M28bnwjskgA">
+                      <children xmi:type="notation:Node" xmi:id="_ly5LMMi2Ee2M28bnwjskgA" visible="false" type="5005"/>
+                      <children xmi:type="notation:Node" xmi:id="_ly5LMci2Ee2M28bnwjskgA" type="7002">
+                        <children xmi:type="notation:Node" xmi:id="_pVxcEMi2Ee2M28bnwjskgA" type="3008" element="_pVehIMi2Ee2M28bnwjskgA">
+                          <children xmi:type="notation:Node" xmi:id="_pVxcE8i2Ee2M28bnwjskgA" type="5005"/>
+                          <children xmi:type="notation:Node" xmi:id="_pVxcFMi2Ee2M28bnwjskgA" type="7002">
+                            <children xmi:type="notation:Node" xmi:id="_4g_CAMi2Ee2M28bnwjskgA" type="3007" element="_4gyNsMi2Ee2M28bnwjskgA">
+                              <children xmi:type="notation:Node" xmi:id="_4g_pEMi2Ee2M28bnwjskgA" type="5003">
+                                <layoutConstraint xmi:type="notation:Location" xmi:id="_4g_pEci2Ee2M28bnwjskgA" x="-1" y="4"/>
+                              </children>
+                              <children xmi:type="notation:Node" xmi:id="_4g_pEsi2Ee2M28bnwjskgA" type="3005" element="_4gyNsci2Ee2M28bnwjskgA">
+                                <styles xmi:type="notation:ShapeStyle" xmi:id="_4g_pE8i2Ee2M28bnwjskgA" fontName="Segoe UI"/>
+                                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4g_pFMi2Ee2M28bnwjskgA"/>
+                              </children>
+                              <styles xmi:type="notation:ShapeStyle" xmi:id="_4g_CAci2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="8"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4g_CAsi2Ee2M28bnwjskgA" x="30" y="57" width="33" height="65"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_4y-w8Mi2Ee2M28bnwjskgA" type="3007" element="_4ytEIMi2Ee2M28bnwjskgA">
+                              <children xmi:type="notation:Node" xmi:id="_4y-w88i2Ee2M28bnwjskgA" type="5003">
+                                <layoutConstraint xmi:type="notation:Location" xmi:id="_4y-w9Mi2Ee2M28bnwjskgA" y="5"/>
+                              </children>
+                              <children xmi:type="notation:Node" xmi:id="_4y-w9ci2Ee2M28bnwjskgA" type="3005" element="_4ytrMMi2Ee2M28bnwjskgA">
+                                <styles xmi:type="notation:ShapeStyle" xmi:id="_4y-w9si2Ee2M28bnwjskgA" fontName="Segoe UI"/>
+                                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4y-w98i2Ee2M28bnwjskgA"/>
+                              </children>
+                              <styles xmi:type="notation:ShapeStyle" xmi:id="_4y-w8ci2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="8"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4y-w8si2Ee2M28bnwjskgA" x="184" y="71" width="80" height="35"/>
+                            </children>
+                            <styles xmi:type="notation:SortingStyle" xmi:id="_pVxcFci2Ee2M28bnwjskgA"/>
+                            <styles xmi:type="notation:FilteringStyle" xmi:id="_pVxcFsi2Ee2M28bnwjskgA"/>
+                          </children>
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_pVxcEci2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="5"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pVxcEsi2Ee2M28bnwjskgA" x="15" y="14" width="318" height="164"/>
+                        </children>
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_ly5LMsi2Ee2M28bnwjskgA"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_ly5LM8i2Ee2M28bnwjskgA"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_ly5LNMi2Ee2M28bnwjskgA"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_lywBWMi2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="12"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lywBWci2Ee2M28bnwjskgA" width="363" height="209"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_lywBVci2Ee2M28bnwjskgA"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_lywBVsi2Ee2M28bnwjskgA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lywBUci2Ee2M28bnwjskgA" fontColor="7490599" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lywBUsi2Ee2M28bnwjskgA" x="512" y="7"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_p_EQwMi2Ee2M28bnwjskgA" type="3007" element="_p9sXsMi2Ee2M28bnwjskgA">
+                  <children xmi:type="notation:Node" xmi:id="_p_EQw8i2Ee2M28bnwjskgA" visible="false" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_p_EQxMi2Ee2M28bnwjskgA" x="31" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_p_OBsMi2Ee2M28bnwjskgA" type="3005" element="_p-xVwMi2Ee2M28bnwjskgA">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_p_OBsci2Ee2M28bnwjskgA" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p_OBssi2Ee2M28bnwjskgA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_p_EQwci2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p_EQwsi2Ee2M28bnwjskgA" x="8" y="98" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_zycNU8inEe2rGJiUeEiAwg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_zycNVMinEe2rGJiUeEiAwg"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_zycNVcinEe2rGJiUeEiAwg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_zycNT8inEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zycNUMinEe2rGJiUeEiAwg" width="923" height="300"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_zBsFl8inEe2rGJiUeEiAwg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_zBsFmMinEe2rGJiUeEiAwg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zBsFk8inEe2rGJiUeEiAwg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zBsFlMinEe2rGJiUeEiAwg" x="56" y="56"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_zBiUlsinEe2rGJiUeEiAwg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_q00M8Mi2Ee2M28bnwjskgA" type="4001" element="_q0rDGsi2Ee2M28bnwjskgA" source="_p_EQwMi2Ee2M28bnwjskgA" target="_caKzMMi0Ee2M28bnwjskgA">
+          <children xmi:type="notation:Node" xmi:id="_q00M9Mi2Ee2M28bnwjskgA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q00M9ci2Ee2M28bnwjskgA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_q00M9si2Ee2M28bnwjskgA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q00M98i2Ee2M28bnwjskgA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_q00M-Mi2Ee2M28bnwjskgA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q00M-ci2Ee2M28bnwjskgA" x="-10" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_q00M8ci2Ee2M28bnwjskgA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_q00M8si2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_q00M88i2Ee2M28bnwjskgA" points="[8, 14, -48, 77]$[56, 14, 0, 77]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_q00M-si2Ee2M28bnwjskgA" id="(0.7,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_q00M-8i2Ee2M28bnwjskgA" id="(0.0,0.11382113821138211)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_rleOG8i2Ee2M28bnwjskgA" type="4001" element="_rleOFsi2Ee2M28bnwjskgA" source="_caKzMMi0Ee2M28bnwjskgA" target="_lywBUMi2Ee2M28bnwjskgA">
+          <children xmi:type="notation:Node" xmi:id="_rleOH8i2Ee2M28bnwjskgA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rleOIMi2Ee2M28bnwjskgA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rleOIci2Ee2M28bnwjskgA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rleOIsi2Ee2M28bnwjskgA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rleOI8i2Ee2M28bnwjskgA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rleOJMi2Ee2M28bnwjskgA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_rleOHMi2Ee2M28bnwjskgA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_rleOHci2Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rleOHsi2Ee2M28bnwjskgA" points="[0, 93, -34, 93]$[34, 93, 0, 93]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rleOJci2Ee2M28bnwjskgA" id="(1.0,0.07723577235772358)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rleOJsi2Ee2M28bnwjskgA" id="(0.0,0.07509881422924901)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_rXEI8Mi3Ee2M28bnwjskgA" type="4001" element="_rW2GgMi3Ee2M28bnwjskgA" source="_4QUv0Mi2Ee2M28bnwjskgA" target="_4BDkwMi2Ee2M28bnwjskgA">
+          <children xmi:type="notation:Node" xmi:id="_rXEI9Mi3Ee2M28bnwjskgA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rXEI9ci3Ee2M28bnwjskgA" x="-13" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rXEI9si3Ee2M28bnwjskgA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rXEI98i3Ee2M28bnwjskgA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rXEI-Mi3Ee2M28bnwjskgA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rXEI-ci3Ee2M28bnwjskgA" x="3" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_rXEI8ci3Ee2M28bnwjskgA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_rXEI8si3Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="6"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rXEI88i3Ee2M28bnwjskgA" points="[0, -19, 128, -19]$[-142, -19, -14, -19]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rXEI-si3Ee2M28bnwjskgA" id="(0.0,0.5428571428571428)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rXEI-8i3Ee2M28bnwjskgA" id="(1.0,0.2923076923076923)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_DKJR3si6Ee2M28bnwjskgA" type="4001" element="_DJ_guMi6Ee2M28bnwjskgA" source="_4QUv0Mi2Ee2M28bnwjskgA" target="_4BDkwMi2Ee2M28bnwjskgA">
+          <children xmi:type="notation:Node" xmi:id="_DKJR4si6Ee2M28bnwjskgA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DKJR48i6Ee2M28bnwjskgA" x="-9" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_DKJR5Mi6Ee2M28bnwjskgA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DKJR5ci6Ee2M28bnwjskgA" x="-1" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_DKJR5si6Ee2M28bnwjskgA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DKJR58i6Ee2M28bnwjskgA" x="-9" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_DKJR38i6Ee2M28bnwjskgA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_DKJR4Mi6Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="6"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DKJR4ci6Ee2M28bnwjskgA" points="[0, -7, 128, -7]$[-139, -7, -11, -7]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DKJR6Mi6Ee2M28bnwjskgA" id="(0.0,0.6)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DKJR6ci6Ee2M28bnwjskgA" id="(1.0,0.3230769230769231)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_INaXsMi6Ee2M28bnwjskgA" type="4001" element="_INRNUMi6Ee2M28bnwjskgA" source="_4BDkwMi2Ee2M28bnwjskgA" target="_4QUv0Mi2Ee2M28bnwjskgA">
+          <children xmi:type="notation:Node" xmi:id="_INaXtMi6Ee2M28bnwjskgA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_INaXtci6Ee2M28bnwjskgA" x="5" y="13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_INaXtsi6Ee2M28bnwjskgA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_INaXt8i6Ee2M28bnwjskgA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_INaXuMi6Ee2M28bnwjskgA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_INaXuci6Ee2M28bnwjskgA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_INaXsci6Ee2M28bnwjskgA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_INaXssi6Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="6"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_INaXs8i6Ee2M28bnwjskgA" points="[0, 0, -128, 0]$[128, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_INaXusi6Ee2M28bnwjskgA" id="(1.0,0.4307692307692308)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_INaXu8i6Ee2M28bnwjskgA" id="(0.0,0.8)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_PTGAgMi6Ee2M28bnwjskgA" type="4001" element="_PS5zRMi6Ee2M28bnwjskgA" source="_4g_CAMi2Ee2M28bnwjskgA" target="_4y-w8Mi2Ee2M28bnwjskgA">
+          <children xmi:type="notation:Node" xmi:id="_PTGAhMi6Ee2M28bnwjskgA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PTGAhci6Ee2M28bnwjskgA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PTGAhsi6Ee2M28bnwjskgA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PTGAh8i6Ee2M28bnwjskgA" x="2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PTGAiMi6Ee2M28bnwjskgA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PTGAici6Ee2M28bnwjskgA" x="-2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PTGAgci6Ee2M28bnwjskgA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_PTGAgsi6Ee2M28bnwjskgA" fontName="Segoe UI" fontHeight="6"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PTGAg8i6Ee2M28bnwjskgA" points="[-17, 0, -138, 14]$[121, 0, 0, 14]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PTGAisi6Ee2M28bnwjskgA" id="(1.0,0.5384615384615384)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PTGAi8i6Ee2M28bnwjskgA" id="(0.0,0.2)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_zBsFkMinEe2rGJiUeEiAwg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_zBsFkcinEe2rGJiUeEiAwg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zBiUl8inEe2rGJiUeEiAwg" name="人机协作状态机" childrenPresentation="HorizontalStack">
+      <target xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0"/>
+      <semanticElements xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_zBiUmMinEe2rGJiUeEiAwg" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zyScEMinEe2rGJiUeEiAwg" name="区域">
+        <target xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0"/>
+        <semanticElements xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_zyScE8inEe2rGJiUeEiAwg"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_zyScEcinEe2rGJiUeEiAwg" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_cZ3RQMi0Ee2M28bnwjskgA" name="确定限速状态" outgoingEdges="_rleOFsi2Ee2M28bnwjskgA" incomingEdges="_q0rDGsi2Ee2M28bnwjskgA" childrenPresentation="HorizontalStack">
+          <target xmi:type="StateMachineModel:State" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0"/>
+          <semanticElements xmi:type="StateMachineModel:State" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_cZ3RQci0Ee2M28bnwjskgA" labelSize="12" showIcon="false" labelColor="39,76,114" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" foregroundColor="194,239,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_cZ3RQ8i0Ee2M28bnwjskgA" name="区域">
+            <target xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0"/>
+            <semanticElements xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0"/>
+            <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_caBCMMi0Ee2M28bnwjskgA"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_cZ3RRMi0Ee2M28bnwjskgA" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true" foregroundColor="194,239,255">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@conditionnalStyles.0/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_fUbS8Mi2Ee2M28bnwjskgA" name="HumanMachineCollaboration">
+              <target xmi:type="StateMachineModel:TeamDiagram" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0"/>
+              <semanticElements xmi:type="StateMachineModel:TeamDiagram" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0"/>
+              <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+              <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+              <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+              <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_fUbS8ci2Ee2M28bnwjskgA" labelSize="5" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+                <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']"/>
+              <ownedDiagramElements xmi:type="diagram:DNode" uid="_4A2JYMi2Ee2M28bnwjskgA" outgoingEdges="_INRNUMi6Ee2M28bnwjskgA" incomingEdges="_rW2GgMi3Ee2M28bnwjskgA _DJ_guMi6Ee2M28bnwjskgA" width="-1" height="-1" resizeKind="NSEW">
+                <target xmi:type="StateMachineModel:Human" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@human.0"/>
+                <semanticElements xmi:type="StateMachineModel:Human" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@human.0"/>
+                <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_4A2JYci2Ee2M28bnwjskgA" showIcon="false" workspacePath="/my.problemframe.design/images/HumanFinal.png">
+                  <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Human']/@style"/>
+                </ownedStyle>
+                <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Human']"/>
+              </ownedDiagramElements>
+              <ownedDiagramElements xmi:type="diagram:DNode" uid="_4QH7gMi2Ee2M28bnwjskgA" outgoingEdges="_rW2GgMi3Ee2M28bnwjskgA _DJ_guMi6Ee2M28bnwjskgA" incomingEdges="_INRNUMi6Ee2M28bnwjskgA" width="8" height="8" resizeKind="NSEW">
+                <target xmi:type="StateMachineModel:Machine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machine.0"/>
+                <semanticElements xmi:type="StateMachineModel:Machine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machine.0"/>
+                <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_4QH7gci2Ee2M28bnwjskgA" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Machine.png">
+                  <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Machine']/@style"/>
+                </ownedStyle>
+                <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Machine']"/>
+              </ownedDiagramElements>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_lywBRci2Ee2M28bnwjskgA" name="无法确定限速状态" incomingEdges="_rleOFsi2Ee2M28bnwjskgA" childrenPresentation="HorizontalStack">
+          <target xmi:type="StateMachineModel:State" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1"/>
+          <semanticElements xmi:type="StateMachineModel:State" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_lywBRsi2Ee2M28bnwjskgA" labelSize="12" showIcon="false" labelColor="39,76,114" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" foregroundColor="194,239,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_lywBSMi2Ee2M28bnwjskgA" name="区域">
+            <target xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0"/>
+            <semanticElements xmi:type="StateMachineModel:Region" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0"/>
+            <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_lywBS8i2Ee2M28bnwjskgA"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_lywBSci2Ee2M28bnwjskgA" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true" foregroundColor="194,239,255">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@conditionnalStyles.0/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_pVehIMi2Ee2M28bnwjskgA" name="HumanMachineCollaboration">
+              <target xmi:type="StateMachineModel:TeamDiagram" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0"/>
+              <semanticElements xmi:type="StateMachineModel:TeamDiagram" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0"/>
+              <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+              <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+              <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+              <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_pVehIci2Ee2M28bnwjskgA" labelSize="5" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+                <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']"/>
+              <ownedDiagramElements xmi:type="diagram:DNode" uid="_4gyNsMi2Ee2M28bnwjskgA" outgoingEdges="_PS5zRMi6Ee2M28bnwjskgA" width="-1" height="-1" resizeKind="NSEW">
+                <target xmi:type="StateMachineModel:Human" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0"/>
+                <semanticElements xmi:type="StateMachineModel:Human" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0"/>
+                <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_4gyNsci2Ee2M28bnwjskgA" showIcon="false" workspacePath="/my.problemframe.design/images/HumanFinal.png">
+                  <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Human']/@style"/>
+                </ownedStyle>
+                <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Human']"/>
+              </ownedDiagramElements>
+              <ownedDiagramElements xmi:type="diagram:DNode" uid="_4ytEIMi2Ee2M28bnwjskgA" incomingEdges="_PS5zRMi6Ee2M28bnwjskgA" width="8" height="8" resizeKind="NSEW">
+                <target xmi:type="StateMachineModel:Machine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0"/>
+                <semanticElements xmi:type="StateMachineModel:Machine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0"/>
+                <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_4ytrMMi2Ee2M28bnwjskgA" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Machine.png">
+                  <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Machine']/@style"/>
+                </ownedStyle>
+                <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Machine']"/>
+              </ownedDiagramElements>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_p9sXsMi2Ee2M28bnwjskgA" name="初始" outgoingEdges="_q0rDGsi2Ee2M28bnwjskgA" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="StateMachineModel:Pseudostate" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.2"/>
+          <semanticElements xmi:type="StateMachineModel:Pseudostate" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.2"/>
+          <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_p-xVwsi2Ee2M28bnwjskgA"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_p-xVwMi2Ee2M28bnwjskgA" labelSize="12" showIcon="false" hideLabelByDefault="true" workspacePath="/org.eclipse.gemoc.statemachine.design/images/InitNode.png">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']/@conditionnalStyles.0/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_q0rDGsi2Ee2M28bnwjskgA" sourceNode="_p9sXsMi2Ee2M28bnwjskgA" targetNode="_cZ3RQMi0Ee2M28bnwjskgA">
+      <target xmi:type="StateMachineModel:Transition" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@transition.0"/>
+      <semanticElements xmi:type="StateMachineModel:Transition" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@transition.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_q0rDG8i2Ee2M28bnwjskgA" routingStyle="manhattan" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_q0rDHMi2Ee2M28bnwjskgA" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rleOFsi2Ee2M28bnwjskgA" sourceNode="_cZ3RQMi0Ee2M28bnwjskgA" targetNode="_lywBRci2Ee2M28bnwjskgA">
+      <target xmi:type="StateMachineModel:Transition" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@transition.1"/>
+      <semanticElements xmi:type="StateMachineModel:Transition" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@transition.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rleOF8i2Ee2M28bnwjskgA" routingStyle="manhattan" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_rleOGMi2Ee2M28bnwjskgA" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rW2GgMi3Ee2M28bnwjskgA" name="检测限速" sourceNode="_4QH7gMi2Ee2M28bnwjskgA" targetNode="_4A2JYMi2Ee2M28bnwjskgA">
+      <target xmi:type="StateMachineModel:MachineToHumanRelation" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machinetohumanrelation.0"/>
+      <semanticElements xmi:type="StateMachineModel:MachineToHumanRelation" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machinetohumanrelation.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rW2tkMi3Ee2M28bnwjskgA" targetArrow="Diamond" size="2" routingStyle="manhattan" strokeColor="253,206,137">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='M2H']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_rW2tkci3Ee2M28bnwjskgA" labelSize="6" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='M2H']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_DJ_guMi6Ee2M28bnwjskgA" name="根据设定超速报警" sourceNode="_4QH7gMi2Ee2M28bnwjskgA" targetNode="_4A2JYMi2Ee2M28bnwjskgA">
+      <target xmi:type="StateMachineModel:MachineToHumanRelation" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machinetohumanrelation.1"/>
+      <semanticElements xmi:type="StateMachineModel:MachineToHumanRelation" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machinetohumanrelation.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_DJ_guci6Ee2M28bnwjskgA" targetArrow="Diamond" size="2" routingStyle="manhattan" strokeColor="253,206,137">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='M2H']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_DJ_gusi6Ee2M28bnwjskgA" labelSize="6" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='M2H']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_INRNUMi6Ee2M28bnwjskgA" name="设置限速，报警方式" sourceNode="_4A2JYMi2Ee2M28bnwjskgA" targetNode="_4QH7gMi2Ee2M28bnwjskgA">
+      <target xmi:type="StateMachineModel:HumanToMachineRelation" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@humantomachinerelation.0"/>
+      <semanticElements xmi:type="StateMachineModel:HumanToMachineRelation" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@humantomachinerelation.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_INRNUci6Ee2M28bnwjskgA" targetArrow="Diamond" size="2" routingStyle="manhattan" strokeColor="217,196,215">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='H2M']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_INRNUsi6Ee2M28bnwjskgA" labelSize="6" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='H2M']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PS5zRMi6Ee2M28bnwjskgA" name="手动输入限速" sourceNode="_4gyNsMi2Ee2M28bnwjskgA" targetNode="_4ytEIMi2Ee2M28bnwjskgA">
+      <target xmi:type="StateMachineModel:HumanToMachineRelation" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@humantomachinerelation.0"/>
+      <semanticElements xmi:type="StateMachineModel:HumanToMachineRelation" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@humantomachinerelation.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PS5zRci6Ee2M28bnwjskgA" targetArrow="Diamond" size="2" routingStyle="manhattan" strokeColor="217,196,215">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='H2M']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PS5zRsi6Ee2M28bnwjskgA" labelSize="6" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='H2M']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_zBiUkcinEe2rGJiUeEiAwg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer"/>
+    <target xmi:type="ProblemFrame:MyStateMachine" href="车速辅助问题框架.problemframe#//@requirement.0/@statemachine.0"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

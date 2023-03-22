@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class LexicalDomainImpl extends CausalDomainImpl implements LexicalDomain {
+public class LexicalDomainImpl extends InternalCausalDomainImpl implements LexicalDomain {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

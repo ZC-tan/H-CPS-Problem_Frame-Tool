@@ -6,6 +6,10 @@ import UML.Behavior;
 import UML.ConnectionPointReference;
 import UML.Constraint;
 import UML.FinalState;
+import UML.Human;
+import UML.HumanToMachineRelation;
+import UML.Machine;
+import UML.MachineToHumanRelation;
 import UML.NamedElement;
 import UML.Namespace;
 import UML.Property;
@@ -16,6 +20,7 @@ import UML.SendEvent;
 import UML.SetValue;
 import UML.State;
 import UML.StateMachine;
+import UML.TeamDiagram;
 import UML.Transition;
 import UML.TransitionKind;
 import UML.Trigger;
@@ -163,6 +168,41 @@ public class UMLPackageImpl extends EPackageImpl implements UMLPackage {
 	 * @generated
 	 */
 	private EClass sendEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass teamDiagramEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass humanEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass machineEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass humanToMachineRelationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass machineToHumanRelationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -386,6 +426,15 @@ public class UMLPackageImpl extends EPackageImpl implements UMLPackage {
 	 */
 	public EReference getRegion_CurrentDirectVertex() {
 		return (EReference) regionEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getRegion_Teamdiagram() {
+		return (EReference) regionEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -843,6 +892,168 @@ public class UMLPackageImpl extends EPackageImpl implements UMLPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getTeamDiagram() {
+		return teamDiagramEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTeamDiagram_Human() {
+		return (EReference) teamDiagramEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTeamDiagram_Machine() {
+		return (EReference) teamDiagramEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTeamDiagram_Humantomachinerelation() {
+		return (EReference) teamDiagramEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTeamDiagram_Machinetohumanrelation() {
+		return (EReference) teamDiagramEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHuman() {
+		return humanEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getHuman_Name() {
+		return (EAttribute) humanEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMachine() {
+		return machineEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMachine_Name() {
+		return (EAttribute) machineEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHumanToMachineRelation() {
+		return humanToMachineRelationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHumanToMachineRelation_HumanSource() {
+		return (EReference) humanToMachineRelationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHumanToMachineRelation_MachineTarget() {
+		return (EReference) humanToMachineRelationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getHumanToMachineRelation_RelationName() {
+		return (EAttribute) humanToMachineRelationEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMachineToHumanRelation() {
+		return machineToHumanRelationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMachineToHumanRelation_MachineSource() {
+		return (EReference) machineToHumanRelationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMachineToHumanRelation_HumanTarget() {
+		return (EReference) machineToHumanRelationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMachineToHumanRelation_RelationName() {
+		return (EAttribute) machineToHumanRelationEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMachineToHumanRelation_InterfaceName() {
+		return (EAttribute) machineToHumanRelationEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getTransitionKind() {
 		return transitionKindEEnum;
 	}
@@ -901,6 +1112,7 @@ public class UMLPackageImpl extends EPackageImpl implements UMLPackage {
 		createEReference(regionEClass, REGION__STATE);
 		createEReference(regionEClass, REGION__CURRENT_VERTEX);
 		createEReference(regionEClass, REGION__CURRENT_DIRECT_VERTEX);
+		createEReference(regionEClass, REGION__TEAMDIAGRAM);
 
 		namespaceEClass = createEClass(NAMESPACE);
 
@@ -966,6 +1178,29 @@ public class UMLPackageImpl extends EPackageImpl implements UMLPackage {
 
 		sendEventEClass = createEClass(SEND_EVENT);
 		createEAttribute(sendEventEClass, SEND_EVENT__EVENT);
+
+		teamDiagramEClass = createEClass(TEAM_DIAGRAM);
+		createEReference(teamDiagramEClass, TEAM_DIAGRAM__HUMAN);
+		createEReference(teamDiagramEClass, TEAM_DIAGRAM__MACHINE);
+		createEReference(teamDiagramEClass, TEAM_DIAGRAM__HUMANTOMACHINERELATION);
+		createEReference(teamDiagramEClass, TEAM_DIAGRAM__MACHINETOHUMANRELATION);
+
+		humanEClass = createEClass(HUMAN);
+		createEAttribute(humanEClass, HUMAN__NAME);
+
+		machineEClass = createEClass(MACHINE);
+		createEAttribute(machineEClass, MACHINE__NAME);
+
+		humanToMachineRelationEClass = createEClass(HUMAN_TO_MACHINE_RELATION);
+		createEReference(humanToMachineRelationEClass, HUMAN_TO_MACHINE_RELATION__HUMAN_SOURCE);
+		createEReference(humanToMachineRelationEClass, HUMAN_TO_MACHINE_RELATION__MACHINE_TARGET);
+		createEAttribute(humanToMachineRelationEClass, HUMAN_TO_MACHINE_RELATION__RELATION_NAME);
+
+		machineToHumanRelationEClass = createEClass(MACHINE_TO_HUMAN_RELATION);
+		createEReference(machineToHumanRelationEClass, MACHINE_TO_HUMAN_RELATION__MACHINE_SOURCE);
+		createEReference(machineToHumanRelationEClass, MACHINE_TO_HUMAN_RELATION__HUMAN_TARGET);
+		createEAttribute(machineToHumanRelationEClass, MACHINE_TO_HUMAN_RELATION__RELATION_NAME);
+		createEAttribute(machineToHumanRelationEClass, MACHINE_TO_HUMAN_RELATION__INTERFACE_NAME);
 
 		// Create enums
 		transitionKindEEnum = createEEnum(TRANSITION_KIND);
@@ -1065,6 +1300,9 @@ public class UMLPackageImpl extends EPackageImpl implements UMLPackage {
 		initEReference(getRegion_CurrentDirectVertex(), this.getVertex(), null, "currentDirectVertex", null, 0, 1,
 				Region.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRegion_Teamdiagram(), this.getTeamDiagram(), null, "teamdiagram", null, 0, -1, Region.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(namespaceEClass, Namespace.class, "Namespace", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -1204,6 +1442,56 @@ public class UMLPackageImpl extends EPackageImpl implements UMLPackage {
 				IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSendEvent_Event(), ecorePackage.getEString(), "event", null, 0, 1, SendEvent.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(teamDiagramEClass, TeamDiagram.class, "TeamDiagram", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getTeamDiagram_Human(), this.getHuman(), null, "human", null, 0, -1, TeamDiagram.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTeamDiagram_Machine(), this.getMachine(), null, "machine", null, 0, -1, TeamDiagram.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTeamDiagram_Humantomachinerelation(), this.getHumanToMachineRelation(), null,
+				"humantomachinerelation", null, 0, -1, TeamDiagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTeamDiagram_Machinetohumanrelation(), this.getMachineToHumanRelation(), null,
+				"machinetohumanrelation", null, 0, -1, TeamDiagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(humanEClass, Human.class, "Human", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getHuman_Name(), ecorePackage.getEString(), "name", null, 0, 1, Human.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(machineEClass, Machine.class, "Machine", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMachine_Name(), ecorePackage.getEString(), "name", null, 0, 1, Machine.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(humanToMachineRelationEClass, HumanToMachineRelation.class, "HumanToMachineRelation", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getHumanToMachineRelation_HumanSource(), this.getHuman(), null, "humanSource", null, 0, 1,
+				HumanToMachineRelation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHumanToMachineRelation_MachineTarget(), this.getMachine(), null, "machineTarget", null, 0, 1,
+				HumanToMachineRelation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHumanToMachineRelation_RelationName(), ecorePackage.getEString(), "relationName", null, 0, 1,
+				HumanToMachineRelation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(machineToHumanRelationEClass, MachineToHumanRelation.class, "MachineToHumanRelation", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getMachineToHumanRelation_MachineSource(), this.getMachine(), null, "machineSource", null, 0, 1,
+				MachineToHumanRelation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMachineToHumanRelation_HumanTarget(), this.getHuman(), null, "humanTarget", null, 0, 1,
+				MachineToHumanRelation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMachineToHumanRelation_RelationName(), ecorePackage.getEString(), "relationName", null, 0, 1,
+				MachineToHumanRelation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMachineToHumanRelation_InterfaceName(), ecorePackage.getEString(), "interfaceName", null, 0,
+				1, MachineToHumanRelation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(transitionKindEEnum, TransitionKind.class, "TransitionKind");

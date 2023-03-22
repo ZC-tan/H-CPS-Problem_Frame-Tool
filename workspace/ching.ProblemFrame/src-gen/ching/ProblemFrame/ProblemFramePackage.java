@@ -334,6 +334,70 @@ public interface ProblemFramePackage extends EPackage {
 	int CAUSAL_DOMAIN_OPERATION_COUNT = DOMAIN_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ching.ProblemFrame.impl.InternalCausalDomainImpl <em>Internal Causal Domain</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ching.ProblemFrame.impl.InternalCausalDomainImpl
+	 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getInternalCausalDomain()
+	 * @generated
+	 */
+	int INTERNAL_CAUSAL_DOMAIN = 16;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CAUSAL_DOMAIN__NAME = CAUSAL_DOMAIN__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Phenomena</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CAUSAL_DOMAIN__PHENOMENA = CAUSAL_DOMAIN__PHENOMENA;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CAUSAL_DOMAIN__TYPE = CAUSAL_DOMAIN__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Statemachine</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CAUSAL_DOMAIN__STATEMACHINE = CAUSAL_DOMAIN__STATEMACHINE;
+
+	/**
+	 * The number of structural features of the '<em>Internal Causal Domain</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CAUSAL_DOMAIN_FEATURE_COUNT = CAUSAL_DOMAIN_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Internal Causal Domain</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CAUSAL_DOMAIN_OPERATION_COUNT = CAUSAL_DOMAIN_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link ching.ProblemFrame.impl.LexicalDomainImpl <em>Lexical Domain</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -350,7 +414,7 @@ public interface ProblemFramePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LEXICAL_DOMAIN__NAME = CAUSAL_DOMAIN__NAME;
+	int LEXICAL_DOMAIN__NAME = INTERNAL_CAUSAL_DOMAIN__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Phenomena</b></em>' containment reference list.
@@ -359,7 +423,7 @@ public interface ProblemFramePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LEXICAL_DOMAIN__PHENOMENA = CAUSAL_DOMAIN__PHENOMENA;
+	int LEXICAL_DOMAIN__PHENOMENA = INTERNAL_CAUSAL_DOMAIN__PHENOMENA;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -368,7 +432,7 @@ public interface ProblemFramePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LEXICAL_DOMAIN__TYPE = CAUSAL_DOMAIN__TYPE;
+	int LEXICAL_DOMAIN__TYPE = INTERNAL_CAUSAL_DOMAIN__TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Statemachine</b></em>' containment reference list.
@@ -377,7 +441,7 @@ public interface ProblemFramePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LEXICAL_DOMAIN__STATEMACHINE = CAUSAL_DOMAIN__STATEMACHINE;
+	int LEXICAL_DOMAIN__STATEMACHINE = INTERNAL_CAUSAL_DOMAIN__STATEMACHINE;
 
 	/**
 	 * The number of structural features of the '<em>Lexical Domain</em>' class.
@@ -386,7 +450,7 @@ public interface ProblemFramePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LEXICAL_DOMAIN_FEATURE_COUNT = CAUSAL_DOMAIN_FEATURE_COUNT + 0;
+	int LEXICAL_DOMAIN_FEATURE_COUNT = INTERNAL_CAUSAL_DOMAIN_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Lexical Domain</em>' class.
@@ -395,7 +459,7 @@ public interface ProblemFramePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LEXICAL_DOMAIN_OPERATION_COUNT = CAUSAL_DOMAIN_OPERATION_COUNT + 0;
+	int LEXICAL_DOMAIN_OPERATION_COUNT = INTERNAL_CAUSAL_DOMAIN_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link ching.ProblemFrame.impl.BiddableDomainImpl <em>Biddable Domain</em>}' class.
@@ -874,6 +938,198 @@ public interface ProblemFramePackage extends EPackage {
 	int MY_STATE_MACHINE_OPERATION_COUNT = UMLPackage.STATE_MACHINE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ching.ProblemFrame.impl.HumanImpl <em>Human</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ching.ProblemFrame.impl.HumanImpl
+	 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getHuman()
+	 * @generated
+	 */
+	int HUMAN = 13;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN__NAME = BIDDABLE_DOMAIN__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Phenomena</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN__PHENOMENA = BIDDABLE_DOMAIN__PHENOMENA;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN__TYPE = BIDDABLE_DOMAIN__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Statemachine</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN__STATEMACHINE = BIDDABLE_DOMAIN__STATEMACHINE;
+
+	/**
+	 * The number of structural features of the '<em>Human</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN_FEATURE_COUNT = BIDDABLE_DOMAIN_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Human</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HUMAN_OPERATION_COUNT = BIDDABLE_DOMAIN_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link ching.ProblemFrame.impl.ExternalCausalDomainImpl <em>External Causal Domain</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ching.ProblemFrame.impl.ExternalCausalDomainImpl
+	 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getExternalCausalDomain()
+	 * @generated
+	 */
+	int EXTERNAL_CAUSAL_DOMAIN = 14;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_CAUSAL_DOMAIN__NAME = CAUSAL_DOMAIN__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Phenomena</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_CAUSAL_DOMAIN__PHENOMENA = CAUSAL_DOMAIN__PHENOMENA;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_CAUSAL_DOMAIN__TYPE = CAUSAL_DOMAIN__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Statemachine</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_CAUSAL_DOMAIN__STATEMACHINE = CAUSAL_DOMAIN__STATEMACHINE;
+
+	/**
+	 * The number of structural features of the '<em>External Causal Domain</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_CAUSAL_DOMAIN_FEATURE_COUNT = CAUSAL_DOMAIN_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>External Causal Domain</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_CAUSAL_DOMAIN_OPERATION_COUNT = CAUSAL_DOMAIN_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link ching.ProblemFrame.impl.ExternalBiddableDomainImpl <em>External Biddable Domain</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ching.ProblemFrame.impl.ExternalBiddableDomainImpl
+	 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getExternalBiddableDomain()
+	 * @generated
+	 */
+	int EXTERNAL_BIDDABLE_DOMAIN = 15;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_BIDDABLE_DOMAIN__NAME = BIDDABLE_DOMAIN__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Phenomena</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_BIDDABLE_DOMAIN__PHENOMENA = BIDDABLE_DOMAIN__PHENOMENA;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_BIDDABLE_DOMAIN__TYPE = BIDDABLE_DOMAIN__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Statemachine</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_BIDDABLE_DOMAIN__STATEMACHINE = BIDDABLE_DOMAIN__STATEMACHINE;
+
+	/**
+	 * The number of structural features of the '<em>External Biddable Domain</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_BIDDABLE_DOMAIN_FEATURE_COUNT = BIDDABLE_DOMAIN_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>External Biddable Domain</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_BIDDABLE_DOMAIN_OPERATION_COUNT = BIDDABLE_DOMAIN_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link ching.ProblemFrame.DType <em>DType</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -881,7 +1137,7 @@ public interface ProblemFramePackage extends EPackage {
 	 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getDType()
 	 * @generated
 	 */
-	int DTYPE = 13;
+	int DTYPE = 17;
 
 	/**
 	 * The meta object id for the '{@link ching.ProblemFrame.PType <em>PType</em>}' enum.
@@ -891,7 +1147,7 @@ public interface ProblemFramePackage extends EPackage {
 	 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getPType()
 	 * @generated
 	 */
-	int PTYPE = 14;
+	int PTYPE = 18;
 
 	/**
 	 * Returns the meta object for class '{@link ching.ProblemFrame.ProblemDiagram <em>Problem Diagram</em>}'.
@@ -1288,6 +1544,46 @@ public interface ProblemFramePackage extends EPackage {
 	EClass getMyStateMachine();
 
 	/**
+	 * Returns the meta object for class '{@link ching.ProblemFrame.Human <em>Human</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Human</em>'.
+	 * @see ching.ProblemFrame.Human
+	 * @generated
+	 */
+	EClass getHuman();
+
+	/**
+	 * Returns the meta object for class '{@link ching.ProblemFrame.ExternalCausalDomain <em>External Causal Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>External Causal Domain</em>'.
+	 * @see ching.ProblemFrame.ExternalCausalDomain
+	 * @generated
+	 */
+	EClass getExternalCausalDomain();
+
+	/**
+	 * Returns the meta object for class '{@link ching.ProblemFrame.ExternalBiddableDomain <em>External Biddable Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>External Biddable Domain</em>'.
+	 * @see ching.ProblemFrame.ExternalBiddableDomain
+	 * @generated
+	 */
+	EClass getExternalBiddableDomain();
+
+	/**
+	 * Returns the meta object for class '{@link ching.ProblemFrame.InternalCausalDomain <em>Internal Causal Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Internal Causal Domain</em>'.
+	 * @see ching.ProblemFrame.InternalCausalDomain
+	 * @generated
+	 */
+	EClass getInternalCausalDomain();
+
+	/**
 	 * Returns the meta object for enum '{@link ching.ProblemFrame.DType <em>DType</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1652,6 +1948,46 @@ public interface ProblemFramePackage extends EPackage {
 		 * @generated
 		 */
 		EClass MY_STATE_MACHINE = eINSTANCE.getMyStateMachine();
+
+		/**
+		 * The meta object literal for the '{@link ching.ProblemFrame.impl.HumanImpl <em>Human</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ching.ProblemFrame.impl.HumanImpl
+		 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getHuman()
+		 * @generated
+		 */
+		EClass HUMAN = eINSTANCE.getHuman();
+
+		/**
+		 * The meta object literal for the '{@link ching.ProblemFrame.impl.ExternalCausalDomainImpl <em>External Causal Domain</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ching.ProblemFrame.impl.ExternalCausalDomainImpl
+		 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getExternalCausalDomain()
+		 * @generated
+		 */
+		EClass EXTERNAL_CAUSAL_DOMAIN = eINSTANCE.getExternalCausalDomain();
+
+		/**
+		 * The meta object literal for the '{@link ching.ProblemFrame.impl.ExternalBiddableDomainImpl <em>External Biddable Domain</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ching.ProblemFrame.impl.ExternalBiddableDomainImpl
+		 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getExternalBiddableDomain()
+		 * @generated
+		 */
+		EClass EXTERNAL_BIDDABLE_DOMAIN = eINSTANCE.getExternalBiddableDomain();
+
+		/**
+		 * The meta object literal for the '{@link ching.ProblemFrame.impl.InternalCausalDomainImpl <em>Internal Causal Domain</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ching.ProblemFrame.impl.InternalCausalDomainImpl
+		 * @see ching.ProblemFrame.impl.ProblemFramePackageImpl#getInternalCausalDomain()
+		 * @generated
+		 */
+		EClass INTERNAL_CAUSAL_DOMAIN = eINSTANCE.getInternalCausalDomain();
 
 		/**
 		 * The meta object literal for the '{@link ching.ProblemFrame.DType <em>DType</em>}' enum.

@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class BiddableDomainImpl extends DomainImpl implements BiddableDomain {
+public abstract class BiddableDomainImpl extends DomainImpl implements BiddableDomain {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

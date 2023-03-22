@@ -82,6 +82,16 @@ public class UMLFactoryImpl extends EFactoryImpl implements UMLFactory {
 			return createProperty();
 		case UMLPackage.SEND_EVENT:
 			return createSendEvent();
+		case UMLPackage.TEAM_DIAGRAM:
+			return createTeamDiagram();
+		case UMLPackage.HUMAN:
+			return createHuman();
+		case UMLPackage.MACHINE:
+			return createMachine();
+		case UMLPackage.HUMAN_TO_MACHINE_RELATION:
+			return createHumanToMachineRelation();
+		case UMLPackage.MACHINE_TO_HUMAN_RELATION:
+			return createMachineToHumanRelation();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -249,6 +259,56 @@ public class UMLFactoryImpl extends EFactoryImpl implements UMLFactory {
 	public SendEvent createSendEvent() {
 		SendEventImpl sendEvent = new SendEventImpl();
 		return sendEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TeamDiagram createTeamDiagram() {
+		TeamDiagramImpl teamDiagram = new TeamDiagramImpl();
+		return teamDiagram;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Human createHuman() {
+		HumanImpl human = new HumanImpl();
+		return human;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Machine createMachine() {
+		MachineImpl machine = new MachineImpl();
+		return machine;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HumanToMachineRelation createHumanToMachineRelation() {
+		HumanToMachineRelationImpl humanToMachineRelation = new HumanToMachineRelationImpl();
+		return humanToMachineRelation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MachineToHumanRelation createMachineToHumanRelation() {
+		MachineToHumanRelationImpl machineToHumanRelation = new MachineToHumanRelationImpl();
+		return machineToHumanRelation;
 	}
 
 	/**

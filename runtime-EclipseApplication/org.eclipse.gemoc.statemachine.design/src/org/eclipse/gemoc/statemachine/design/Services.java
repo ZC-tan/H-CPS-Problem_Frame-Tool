@@ -7,7 +7,6 @@ import org.eclipse.emf.ecore.EObject;
 
 //import org.eclipse.gemoc.statemachine.model.UML.*;
 import UML.*;
-import UML.impl.*;
 
 /**
  * The services class used by VSM.
@@ -86,7 +85,7 @@ public class Services {
 			target = ((Region) target).getState();
 		}
 		if (source instanceof Vertex && target instanceof Vertex) {
-			final Transition transition = UMLFactoryImpl.eINSTANCE.createTransition();
+			final Transition transition = UMLFactory.eINSTANCE.createTransition();
 			transition.setSource((Vertex) source);
 			transition.setTarget((Vertex) target);
 			((Region) source.eContainer()).getTransition().add(transition);
@@ -137,5 +136,16 @@ public class Services {
 		for (String i : event.split("\n")) {
 			self.getEventPool().add(i);
 		}
+	}
+	
+	public String computeM2HLable(MachineToHumanRelation m2h) {
+		List<String> lable = new ArrayList<>();
+		if(m2h.getRelationName()!=null)
+		lable.add(m2h.getRelationName());
+		if(m2h.getInterfaceName()!=null && !m2h.getInterfaceName().isEmpty()) {
+			lable.add("["+m2h.getInterfaceName()+"]");
+		}
+		
+		return String.join("",lable);
 	}
 }

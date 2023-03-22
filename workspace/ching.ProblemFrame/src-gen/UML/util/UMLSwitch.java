@@ -247,6 +247,41 @@ public class UMLSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case UMLPackage.TEAM_DIAGRAM: {
+			TeamDiagram teamDiagram = (TeamDiagram) theEObject;
+			T result = caseTeamDiagram(teamDiagram);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case UMLPackage.HUMAN: {
+			Human human = (Human) theEObject;
+			T result = caseHuman(human);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case UMLPackage.MACHINE: {
+			Machine machine = (Machine) theEObject;
+			T result = caseMachine(machine);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case UMLPackage.HUMAN_TO_MACHINE_RELATION: {
+			HumanToMachineRelation humanToMachineRelation = (HumanToMachineRelation) theEObject;
+			T result = caseHumanToMachineRelation(humanToMachineRelation);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case UMLPackage.MACHINE_TO_HUMAN_RELATION: {
+			MachineToHumanRelation machineToHumanRelation = (MachineToHumanRelation) theEObject;
+			T result = caseMachineToHumanRelation(machineToHumanRelation);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -504,6 +539,81 @@ public class UMLSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSendEvent(SendEvent object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Team Diagram</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Team Diagram</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTeamDiagram(TeamDiagram object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Human</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Human</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHuman(Human object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Machine</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Machine</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMachine(Machine object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Human To Machine Relation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Human To Machine Relation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHumanToMachineRelation(HumanToMachineRelation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Machine To Human Relation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Machine To Human Relation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMachineToHumanRelation(MachineToHumanRelation object) {
 		return null;
 	}
 

@@ -98,6 +98,8 @@ public class ProblemFrameSwitch<T> extends Switch<T> {
 			LexicalDomain lexicalDomain = (LexicalDomain) theEObject;
 			T result = caseLexicalDomain(lexicalDomain);
 			if (result == null)
+				result = caseInternalCausalDomain(lexicalDomain);
+			if (result == null)
 				result = caseCausalDomain(lexicalDomain);
 			if (result == null)
 				result = caseDomain(lexicalDomain);
@@ -180,6 +182,50 @@ public class ProblemFrameSwitch<T> extends Switch<T> {
 				result = caseNamespace(myStateMachine);
 			if (result == null)
 				result = caseNamedElement(myStateMachine);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case ProblemFramePackage.HUMAN: {
+			Human human = (Human) theEObject;
+			T result = caseHuman(human);
+			if (result == null)
+				result = caseBiddableDomain(human);
+			if (result == null)
+				result = caseDomain(human);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case ProblemFramePackage.EXTERNAL_CAUSAL_DOMAIN: {
+			ExternalCausalDomain externalCausalDomain = (ExternalCausalDomain) theEObject;
+			T result = caseExternalCausalDomain(externalCausalDomain);
+			if (result == null)
+				result = caseCausalDomain(externalCausalDomain);
+			if (result == null)
+				result = caseDomain(externalCausalDomain);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case ProblemFramePackage.EXTERNAL_BIDDABLE_DOMAIN: {
+			ExternalBiddableDomain externalBiddableDomain = (ExternalBiddableDomain) theEObject;
+			T result = caseExternalBiddableDomain(externalBiddableDomain);
+			if (result == null)
+				result = caseBiddableDomain(externalBiddableDomain);
+			if (result == null)
+				result = caseDomain(externalBiddableDomain);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case ProblemFramePackage.INTERNAL_CAUSAL_DOMAIN: {
+			InternalCausalDomain internalCausalDomain = (InternalCausalDomain) theEObject;
+			T result = caseInternalCausalDomain(internalCausalDomain);
+			if (result == null)
+				result = caseCausalDomain(internalCausalDomain);
+			if (result == null)
+				result = caseDomain(internalCausalDomain);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -381,6 +427,66 @@ public class ProblemFrameSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMyStateMachine(MyStateMachine object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Human</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Human</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHuman(Human object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>External Causal Domain</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>External Causal Domain</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExternalCausalDomain(ExternalCausalDomain object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>External Biddable Domain</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>External Biddable Domain</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExternalBiddableDomain(ExternalBiddableDomain object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Internal Causal Domain</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Internal Causal Domain</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalCausalDomain(InternalCausalDomain object) {
 		return null;
 	}
 

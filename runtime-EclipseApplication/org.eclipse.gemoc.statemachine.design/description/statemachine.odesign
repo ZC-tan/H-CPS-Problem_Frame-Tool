@@ -11,6 +11,22 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
+        <edgeMappings name="H2M" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Human']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Machine']" targetFinderExpression="feature:machineTarget" sourceFinderExpression="feature:humanSource" domainClass="UML::HumanToMachineRelation" useDomainElement="true">
+          <style targetArrow="Diamond" sizeComputationExpression="2" routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+            <centerLabelStyleDescription labelSize="6" showIcon="false" labelExpression="feature:relationName">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="M2H" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Machine']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Human']" targetFinderExpression="feature:humanTarget" sourceFinderExpression="feature:machineSource" domainClass="UML::MachineToHumanRelation" useDomainElement="true">
+          <style targetArrow="Diamond" sizeComputationExpression="2" routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            <centerLabelStyleDescription labelSize="6" showIcon="false" labelExpression="service:computeM2HLable()">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
         <containerMappings name="StateMachineContainer" semanticCandidatesExpression="var:self" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::StateMachine" childrenPresentation="HorizontalStack">
           <borderedNodeMappings name="Connection Point" semanticCandidatesExpression="feature:connectionPoint" doubleClickDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Open%20properties%20wizard']" domainClass="UML::Pseudostate">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" workspacePath="/org.eclipse.gemoc.statemachine.design/images/InitNode.png">
@@ -138,6 +154,26 @@
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
               </style>
             </subContainerMappings>
+            <subContainerMappings name="TeamDiagram" semanticCandidatesExpression="feature:teamdiagram" domainClass="UML::TeamDiagram">
+              <subNodeMappings name="Machine" semanticCandidatesExpression="feature:eAllContents" domainClass="UML::Machine">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="8" labelPosition="node" resizeKind="NSEW" workspacePath="/my.problemframe.design/images/Machine.png">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="Human" semanticCandidatesExpression="feature:eAllContents" domainClass="UML::Human">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/my.problemframe.design/images/HumanFinal.png">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="5" showIcon="false" labelExpression="HumanMachineCollaboration" roundedCorner="true">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </subContainerMappings>
             <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" borderLineStyle="dash" labelSize="12" showIcon="false" hideLabelByDefault="true">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -160,8 +196,8 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
-        <toolSections name="Types" label="元素">
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="State" label="状态" precondition="aql:if self.oclIsTypeOf(UML::State) and self.oclAsType(UML::State).isSubmachineState() then false else true endif" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']">
+        <toolSections name="Types" label="State Machine Elements">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="State" precondition="aql:if self.oclIsTypeOf(UML::State) and self.oclAsType(UML::State).isSubmachineState() then false else true endif" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/State.gif">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -181,7 +217,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Region" label="区域" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']" extraMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Region" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Region.gif" extraMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -239,8 +275,8 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <subSections name="pseudo states" label=" 伪状态">
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Initial" label="初始状态" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate.gif">
+          <subSections name="pseudo states">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Initial" label="Initial State" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -259,7 +295,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Final" label="最终状态" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/FinalState.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Final" label="Final State" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/FinalState.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -277,7 +313,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Fork" label="分叉" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_fork.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Fork" label="Fork" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_fork.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -296,7 +332,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Join" label="联合" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_join.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Join" label="Join" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_join.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -315,7 +351,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Choice" label="选择" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_choice.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Choice" label="Choice" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_choice.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -334,7 +370,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Junction" label="连接" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_junction.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Junction" label="Junction" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_junction.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -353,7 +389,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Terminate" label="终结" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_terminate.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Terminate" label="Terminate" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_terminate.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -372,7 +408,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Shallow History" label="浅历史" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_shallowHistory.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Shallow History" label="Shallow History" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_shallowHistory.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -391,7 +427,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Deep History" label="深历史" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_deepHistory.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Deep History" label="Deep History" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_deepHistory.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -410,7 +446,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Entry Point" label="进入点" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_entryPoint.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Entry Point" label="Entry Point" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_entryPoint.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -450,7 +486,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool:NodeCreationDescription" name="Exit Point" label="退出点" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_exitPoint.gif">
+            <ownedTools xsi:type="tool:NodeCreationDescription" name="Exit Point" label="Exit Point" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Pseudostate_exitPoint.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -492,8 +528,8 @@
             </ownedTools>
           </subSections>
         </toolSections>
-        <toolSections name="Relationships" label="关系">
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Transition" label="转移" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']">
+        <toolSections name="Relationships" label="Relations">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Transition" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']" iconPath="/org.eclipse.gemoc.statemachine.design/images/obj16/Transition.gif">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -503,7 +539,7 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
-        <toolSections name="双击">
+        <toolSections name="双击" label="DoubleClicks">
           <ownedTools xsi:type="tool:DoubleClickDescription" name="Open properties wizard" mappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@borderedNodeMappings[name='Connection%20Point'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@subContainerMappings[name='Behavior%20Container'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='FinalState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subNodeMappings[name='PseudoState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='Transition']">
             <element name="element"/>
             <elementView name="elementView"/>
@@ -526,6 +562,63 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="HumanMachineCollaborations" label="Human Machine Collaborations">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="TeamDiagram" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']" iconPath="/my.problemframe.design/images/16x16img/TeamDiagramIcon.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::TeamDiagram" referenceName="teamdiagram"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateHuman" label="Human" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Human']" iconPath="/my.problemframe.design/images/16x16img/HumanIcon.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Human" referenceName="human"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateMachine" label="Machine" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='TeamDiagram']/@subNodeMappings[name='Machine']" iconPath="/my.problemframe.design/images/16x16img/MachinaIcon.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Machine" referenceName="machine"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="M2H" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='M2H']" iconPath="/my.problemframe.design/images/16x16img/m2h.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::MachineToHumanRelation" referenceName="machinetohumanrelation">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="machineSource" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="humanTarget" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="H2M" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@edgeMappings[name='H2M']" iconPath="/my.problemframe.design/images/16x16img/h2m.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::HumanToMachineRelation" referenceName="humantomachinerelation">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="humanSource" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="machineTarget" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
         </toolSections>
@@ -569,9 +662,10 @@
     <entries xsi:type="description:UserFixedColor" red="255" green="192" blue="203" name="hasBeanAnimated"/>
   </userColorsPalettes>
   <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
+    <metamodels href="http://www.example.org/ProblemFrame#/"/>
     <categories name="Default">
-      <pages name="Properties Page" label="属性" labelExpression="属性" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.2 //@extensions.0/@categories.0/@groups.3 //@extensions.0/@categories.0/@groups.1 //@extensions.0/@categories.0/@groups.4 //@extensions.0/@categories.0/@groups.5"/>
-      <groups name="General Group" labelExpression="属性" semanticCandidateExpression="var:self" preconditionExpression="">
+      <pages name="Properties Page" labelExpression="Properties" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.2 //@extensions.0/@categories.0/@groups.3 //@extensions.0/@categories.0/@groups.1 //@extensions.0/@categories.0/@groups.4 //@extensions.0/@categories.0/@groups.5"/>
+      <groups name="General Group" labelExpression="Properties" semanticCandidateExpression="var:self" preconditionExpression="">
         <controls xsi:type="properties:DynamicMappingForDescription" name="sirius_default_rules_structural_features_for" iterator="eStructuralFeature" iterableExpression="aql:input.emfEditServices(self).getEStructuralFeatures()">
           <ifs name="sirius_default_rules_mono_string_if" predicateExpression="aql:input.emfEditServices(self).needsTextWidget(eStructuralFeature) and not input.emfEditServices(self).isMultiline(eStructuralFeature)">
             <widget xsi:type="properties:TextDescription" name="sirius_default_rules_mono_string" labelExpression="aql:input.emfEditServices(self).getText(eStructuralFeature)+':'" helpExpression="aql:input.emfEditServices(self).getDescription(eStructuralFeature)" isEnabledExpression="aql:eStructuralFeature.changeable" valueExpression="aql:self.eGet(eStructuralFeature.name)">
@@ -626,20 +720,20 @@
           </ifs>
         </controls>
       </groups>
-      <groups name="Relationships Group" labelExpression="关系" domainClass="UML::Vertex" semanticCandidateExpression="var:self">
-        <controls xsi:type="properties:ListDescription" name="Relationship Origination" labelExpression="源：" valueExpression="feature:outgoing" displayExpression="aql:value.computeRelationshipLabel()">
+      <groups name="Relationships Group" labelExpression="Relationship" domainClass="UML::Vertex" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ListDescription" name="Relationship Origination" labelExpression="Source：" valueExpression="feature:outgoing" displayExpression="aql:value.computeRelationshipLabel()">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
           </onClickOperation>
         </controls>
-        <controls xsi:type="properties:ListDescription" name="Relationship Tageting" labelExpression="目标：" valueExpression="feature:incoming" displayExpression="aql:value.computeRelationshipLabel()">
+        <controls xsi:type="properties:ListDescription" name="Relationship Targeting" labelExpression="Target：" valueExpression="feature:incoming" displayExpression="aql:value.computeRelationshipLabel()">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
           </onClickOperation>
         </controls>
       </groups>
-      <groups name="Behavior Gourp" labelExpression="行为" domainClass="UML::State" semanticCandidateExpression="var:self">
-        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Entry" labelExpression="进入行为：" referenceNameExpression="entry">
+      <groups name="Behavior Group" labelExpression="Behavior" domainClass="UML::State" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Entry" labelExpression="Entry：" referenceNameExpression="entry">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:entry">
               <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Behavior">
@@ -654,7 +748,7 @@
             </firstModelOperations>
           </onClickOperation>
         </controls>
-        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Do Activity" labelExpression="执行行为：" referenceNameExpression="doActivity">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Do Activity" labelExpression="Do Activity：" referenceNameExpression="doActivity">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:doActivity">
               <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Behavior">
@@ -669,7 +763,7 @@
             </firstModelOperations>
           </onClickOperation>
         </controls>
-        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Exit" labelExpression="退出行为：" referenceNameExpression="exit">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Exit" labelExpression="Exit：" referenceNameExpression="exit">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:exit">
               <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Behavior">
@@ -684,9 +778,171 @@
             </firstModelOperations>
           </onClickOperation>
         </controls>
+        <controls xsi:type="properties:HyperlinkDescription" name="EntryHyperlink" labelExpression="Entry:" valueExpression="aql:self.entry.name" displayExpression="aql:self.entry.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:entry">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Entry">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ContainerDescription" name="EntryContainer">
+          <controls xsi:type="properties:ButtonDescription" name="create sendEventEffect" buttonLabelExpression="Add Send Event Effect">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::SendEvent" referenceName="entry">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="sendEvent"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="create setValueEffect" buttonLabelExpression="Add SetValue Effect" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::SetValue" referenceName="entry">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="setValue"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="create stateMachineEffect" buttonLabelExpression="Add StateMachine Effect" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::StateMachine" referenceName="entry">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="stateMachine"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="remove entry" buttonLabelExpression="Remove Entry" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:entry">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsKindOf(UML::Behavior)">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <layout xsi:type="properties:GridLayoutDescription" numberOfColumns="3"/>
+        </controls>
+        <controls xsi:type="properties:HyperlinkDescription" name="DoActivityHyperlink" labelExpression="Do:" valueExpression="aql:self.doActivity.name" displayExpression="aql:self.doActivity.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:doActivity">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create DoActivity">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ContainerDescription" name="DoActivityContainer">
+          <controls xsi:type="properties:ButtonDescription" name="create sendEventEffect" buttonLabelExpression="Add Send Event Effect">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::SendEvent" referenceName="doActivity">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="sendEvent"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="create setValueEffect" buttonLabelExpression="Add SetValue Effect" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::SetValue" referenceName="doActivity">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="setValue"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="create stateMachineEffect" buttonLabelExpression="Add StateMachine Effect" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::StateMachine" referenceName="doActivity">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="stateMachine"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="remove doActivity" buttonLabelExpression="Remove DoActivity" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:doActivity">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsKindOf(UML::Behavior)">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <layout xsi:type="properties:GridLayoutDescription" numberOfColumns="3"/>
+        </controls>
+        <controls xsi:type="properties:HyperlinkDescription" name="ExitHyperlink" labelExpression="Exit:" valueExpression="aql:self.exit.name" displayExpression="aql:self.exit.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:exit">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Exit">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ContainerDescription" name="EntryContainer">
+          <controls xsi:type="properties:ButtonDescription" name="create sendEventEffect" buttonLabelExpression="Add Send Event Effect">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::SendEvent" referenceName="exit">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="sendEvent"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="create setValueEffect" buttonLabelExpression="Add SetValue Effect" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::SetValue" referenceName="exit">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="setValue"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="create stateMachineEffect" buttonLabelExpression="Add StateMachine Effect" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::StateMachine" referenceName="exit">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="stateMachine"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="remove exit" buttonLabelExpression="Remove Exit" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:exit">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsKindOf(UML::Behavior)">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <layout xsi:type="properties:GridLayoutDescription" numberOfColumns="3"/>
+        </controls>
       </groups>
-      <groups name="Transition Properties" labelExpression="转移" domainClass="UML::Transition" semanticCandidateExpression="var:self">
-        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Trigger" labelExpression="触发器：" referenceNameExpression="trigger">
+      <groups name="Transition Properties" labelExpression="Transition" domainClass="UML::Transition" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Trigger" labelExpression="Trigger：" referenceNameExpression="trigger">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:selection->first()">
               <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Trigger">
@@ -701,7 +957,7 @@
             </firstModelOperations>
           </onClickOperation>
         </controls>
-        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Guard" labelExpression="条件：" referenceNameExpression="guard">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Guard" labelExpression="Guard：" referenceNameExpression="guard">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:guard">
               <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Guard">
@@ -716,7 +972,7 @@
             </firstModelOperations>
           </onClickOperation>
         </controls>
-        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Effect" labelExpression="效果：" referenceNameExpression="effect">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Effect" labelExpression="Effect：" referenceNameExpression="effect">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:effect">
               <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Effect">
@@ -731,9 +987,136 @@
             </firstModelOperations>
           </onClickOperation>
         </controls>
+        <controls xsi:type="properties:ListDescription" name="triggerList" labelExpression="Trigger List" valueExpression="feature:trigger" displayExpression="aql:value.name">
+          <actions labelExpression="create trigger">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Trigger" referenceName="trigger">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="trigger"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </actions>
+          <actions labelExpression="edit trigger">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:selection->first()">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsTypeOf(UML::Trigger)">
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Trigger">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </actions>
+          <actions labelExpression="remove trigger">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:selection->first()">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsTypeOf(UML::Trigger)">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </actions>
+        </controls>
+        <controls xsi:type="properties:HyperlinkDescription" name="GuardHyperlink" labelExpression="Guard:" valueExpression="aql:self.guard.name" displayExpression="aql:self.guard.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:guard">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Guard">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ContainerDescription" name="GuardContainer">
+          <controls xsi:type="properties:ButtonDescription" name="create guard" buttonLabelExpression="Add Guard" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::Constraint" referenceName="guard">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="constraint"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="remove guard" buttonLabelExpression="Remove Guard" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:guard">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsTypeOf(UML::Constraint)">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <layout xsi:type="properties:FillLayoutDescription" orientation="HORIZONTAL"/>
+        </controls>
+        <controls xsi:type="properties:HyperlinkDescription" name="EffectHyperlink" labelExpression="Effect:" valueExpression="aql:self.effect.name" displayExpression="aql:self.effect.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:effect">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Effect">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ContainerDescription" name="EffectContainer">
+          <controls xsi:type="properties:ButtonDescription" name="create sendEventEffect" buttonLabelExpression="Add Send Event Effect">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::SendEvent" referenceName="effect">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="sendEvent"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="create setValueEffect" buttonLabelExpression="Add SetValue Effect" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::SetValue" referenceName="effect">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="setValue"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="create stateMachineEffect" buttonLabelExpression="Add StateMachine Effect" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::StateMachine" referenceName="effect">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="stateMachine"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="remove effect" buttonLabelExpression="Remove Effect" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:effect">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsKindOf(UML::Behavior)">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <layout xsi:type="properties:GridLayoutDescription" numberOfColumns="3"/>
+        </controls>
       </groups>
-      <groups name="StateMachine Group" labelExpression="状态机属性" domainClass="UML::StateMachine" semanticCandidateExpression="var:self">
-        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Property" labelExpression="属性" referenceNameExpression="property">
+      <groups name="StateMachine Group" labelExpression="SM Properties" domainClass="UML::StateMachine" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="Property" labelExpression="Properties" referenceNameExpression="property">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:selection->first()">
               <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Property">
@@ -748,19 +1131,19 @@
             </firstModelOperations>
           </onClickOperation>
         </controls>
-        <controls xsi:type="properties:TextAreaDescription" name="Input" labelExpression="输入" valueExpression="service:self.computeInput()">
+        <controls xsi:type="properties:TextAreaDescription" name="Input" labelExpression="输入" valueExpression="service:computeInput()">
           <initialOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="service:self.setInput(newValue)"/>
           </initialOperation>
         </controls>
-        <controls xsi:type="properties:TextAreaDescription" name="Event Pool" labelExpression="事件池" valueExpression="service:self.computeEventPool()">
+        <controls xsi:type="properties:TextAreaDescription" name="Event Pool" labelExpression="事件池" valueExpression="service:computeEventPool()">
           <initialOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="service:self.setEventPool(newValue)"/>
           </initialOperation>
         </controls>
       </groups>
-      <groups name="ValueSpecification Group" labelExpression="条件" domainClass="UML::Constraint" semanticCandidateExpression="var:self">
-        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="ValueSpecification" labelExpression="表达式" referenceNameExpression="specification">
+      <groups name="ValueSpecification Group" labelExpression="Constraint" domainClass="UML::Constraint" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="ValueSpecification" labelExpression="Specification Expression" referenceNameExpression="specification">
           <onClickOperation>
             <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:specification">
               <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create specification">
@@ -774,6 +1157,42 @@
               </subModelOperations>
             </firstModelOperations>
           </onClickOperation>
+        </controls>
+        <controls xsi:type="properties:HyperlinkDescription" name="ValueSpecHyperlink" labelExpression="Expression" valueExpression="aql:self.specification.body" displayExpression="aql:self.specification.body">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:specification">
+              <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="ValueSpecGroupPop">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@pages.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:ContainerDescription" name="ValueSpecContainer">
+          <controls xsi:type="properties:ButtonDescription" name="create valueSpec" buttonLabelExpression="Add Expression" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="UML::ValueSpecification" referenceName="specification">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="body" valueExpression="expression"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:ButtonDescription" name="remove valueSpec" buttonLabelExpression="Remove Expression" imageExpression="org.eclipse.gemoc.statemachine.design/images/obj16/Guard.gif">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:specification">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsTypeOf(UML::ValueSpecification)">
+                  <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <layout xsi:type="properties:FillLayoutDescription" orientation="HORIZONTAL"/>
         </controls>
       </groups>
     </categories>

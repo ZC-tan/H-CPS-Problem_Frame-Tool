@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CausalDomainImpl extends DomainImpl implements CausalDomain {
+public abstract class CausalDomainImpl extends DomainImpl implements CausalDomain {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

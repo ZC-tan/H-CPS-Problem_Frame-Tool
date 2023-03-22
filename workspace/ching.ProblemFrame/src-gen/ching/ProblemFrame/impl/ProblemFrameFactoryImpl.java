@@ -63,10 +63,6 @@ public class ProblemFrameFactoryImpl extends EFactoryImpl implements ProblemFram
 			return createMachine();
 		case ProblemFramePackage.LEXICAL_DOMAIN:
 			return createLexicalDomain();
-		case ProblemFramePackage.BIDDABLE_DOMAIN:
-			return createBiddableDomain();
-		case ProblemFramePackage.CAUSAL_DOMAIN:
-			return createCausalDomain();
 		case ProblemFramePackage.INTERFACE:
 			return createInterface();
 		case ProblemFramePackage.PHENOMENON:
@@ -79,6 +75,14 @@ public class ProblemFrameFactoryImpl extends EFactoryImpl implements ProblemFram
 			return createRequirement();
 		case ProblemFramePackage.MY_STATE_MACHINE:
 			return createMyStateMachine();
+		case ProblemFramePackage.HUMAN:
+			return createHuman();
+		case ProblemFramePackage.EXTERNAL_CAUSAL_DOMAIN:
+			return createExternalCausalDomain();
+		case ProblemFramePackage.EXTERNAL_BIDDABLE_DOMAIN:
+			return createExternalBiddableDomain();
+		case ProblemFramePackage.INTERNAL_CAUSAL_DOMAIN:
+			return createInternalCausalDomain();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -153,26 +157,6 @@ public class ProblemFrameFactoryImpl extends EFactoryImpl implements ProblemFram
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BiddableDomain createBiddableDomain() {
-		BiddableDomainImpl biddableDomain = new BiddableDomainImpl();
-		return biddableDomain;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CausalDomain createCausalDomain() {
-		CausalDomainImpl causalDomain = new CausalDomainImpl();
-		return causalDomain;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Interface createInterface() {
 		InterfaceImpl interface_ = new InterfaceImpl();
 		return interface_;
@@ -226,6 +210,46 @@ public class ProblemFrameFactoryImpl extends EFactoryImpl implements ProblemFram
 	public MyStateMachine createMyStateMachine() {
 		MyStateMachineImpl myStateMachine = new MyStateMachineImpl();
 		return myStateMachine;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Human createHuman() {
+		HumanImpl human = new HumanImpl();
+		return human;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExternalCausalDomain createExternalCausalDomain() {
+		ExternalCausalDomainImpl externalCausalDomain = new ExternalCausalDomainImpl();
+		return externalCausalDomain;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExternalBiddableDomain createExternalBiddableDomain() {
+		ExternalBiddableDomainImpl externalBiddableDomain = new ExternalBiddableDomainImpl();
+		return externalBiddableDomain;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InternalCausalDomain createInternalCausalDomain() {
+		InternalCausalDomainImpl internalCausalDomain = new InternalCausalDomainImpl();
+		return internalCausalDomain;
 	}
 
 	/**

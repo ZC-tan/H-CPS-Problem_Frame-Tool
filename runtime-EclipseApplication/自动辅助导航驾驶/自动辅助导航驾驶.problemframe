@@ -1,24 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ProblemFrame:ProblemDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame">
+<ProblemFrame:ProblemDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame" xmlns:StateMachineModel="http://www.example.org/StateMachineModel">
   <domain xsi:type="ProblemFrame:Machine" name="自动辅助导航驾驶系统"/>
-  <domain xsi:type="ProblemFrame:BiddableDomain" name="驾驶员"/>
-  <domain xsi:type="ProblemFrame:BiddableDomain" name="道路"/>
-  <domain xsi:type="ProblemFrame:CausalDomain" name="信号灯"/>
-  <domain xsi:type="ProblemFrame:CausalDomain" name="方向盘"/>
-  <domain xsi:type="ProblemFrame:CausalDomain" name="导航"/>
-  <requirement name="自动辅助导航驾驶">
-    <statemachine>
-      <region name="区域"/>
-      <region name="区域"/>
+  <domain xsi:type="ProblemFrame:ExternalBiddableDomain" name="道路"/>
+  <domain xsi:type="ProblemFrame:InternalCausalDomain" name="信号灯"/>
+  <domain xsi:type="ProblemFrame:InternalCausalDomain" name="方向盘"/>
+  <domain xsi:type="ProblemFrame:InternalCausalDomain" name="导航"/>
+  <domain xsi:type="ProblemFrame:Human" name="驾驶员"/>
+  <domain xsi:type="ProblemFrame:InternalCausalDomain" name="感应器"/>
+  <domain xsi:type="ProblemFrame:LexicalDomain" name="仪表盘"/>
+  <requirement name="自动辅助导航驾驶（变道）">
+    <statemachine name="人机协作状态机">
+      <region name="区域">
+        <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.2" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.0"/>
+        <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.1" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.2"/>
+        <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.2" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.1"/>
+        <subvertex xsi:type="StateMachineModel:Pseudostate" name="初始" outgoing="//@requirement.0/@statemachine.0/@region.0/@transition.0"/>
+        <subvertex xsi:type="StateMachineModel:State" name="请求协助状态" incoming="//@requirement.0/@statemachine.0/@region.0/@transition.1" outgoing="//@requirement.0/@statemachine.0/@region.0/@transition.2" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <humantomachinerelation humanSource="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0" machineTarget="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0" relationName="协助完成安全操作（刹车，方向盘）"/>
+              <machinetohumanrelation machineSource="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0" relationName="执行操作（无法完全准确操作）"/>
+              <machinetohumanrelation machineSource="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0" relationName="要求驾驶员协助" interfaceName="仪表盘"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="正常状态" incoming="//@requirement.0/@statemachine.0/@region.0/@transition.0 //@requirement.0/@statemachine.0/@region.0/@transition.2" outgoing="//@requirement.0/@statemachine.0/@region.0/@transition.1" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <machinetohumanrelation machineSource="//@requirement.0/@statemachine.0/@region.0/@subvertex.2/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.0/@statemachine.0/@region.0/@subvertex.2/@region.0/@teamdiagram.0/@human.0" relationName="自动变道、转向"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+      </region>
     </statemachine>
   </requirement>
+  <interfaces targetDomain="//@domain.3" sourceDomain="//@domain.0" beginControlSharedPhenomena="根据需求引导车辆"/>
   <interfaces targetDomain="//@domain.2" sourceDomain="//@domain.0"/>
-  <interfaces targetDomain="//@domain.1" sourceDomain="//@domain.0"/>
-  <interfaces targetDomain="//@domain.4" sourceDomain="//@domain.0"/>
-  <interfaces targetDomain="//@domain.3" sourceDomain="//@domain.0"/>
+  <interfaces targetDomain="//@domain.0" sourceDomain="//@domain.4" beginControlSharedPhenomena="" endControlSharedPhenomena="获取导航路线信息"/>
   <interfaces targetDomain="//@domain.0" sourceDomain="//@domain.5"/>
-  <interfaces targetDomain="//@domain.5" sourceDomain="//@domain.1"/>
-  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@domain.2"/>
-  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@domain.5"/>
-  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.0" constrains="//@domain.4"/>
+  <interfaces targetDomain="//@domain.6" sourceDomain="//@domain.0" beginControlSharedPhenomena="获取当前道路信息"/>
+  <interfaces targetDomain="//@domain.1" sourceDomain="//@domain.6"/>
+  <interfaces targetDomain="//@domain.0" sourceDomain="//@domain.7" beginControlSharedPhenomena="" endControlSharedPhenomena="显示状态等图标"/>
+  <interfaces targetDomain="//@domain.5" sourceDomain="//@domain.7"/>
+  <interfaces targetDomain="//@domain.5" sourceDomain="//@domain.2"/>
+  <interfaces targetDomain="//@domain.5" sourceDomain="//@domain.3"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@domain.1"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@domain.4"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.0" constrains="//@domain.3"/>
 </ProblemFrame:ProblemDiagram>
