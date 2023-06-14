@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.hcps_rm.feature_1.0.0.202305190028.jar" id="org.eclipse.hcps_rm.feature" version="1.0.0.202305190028">
+      <category name="HCPS_RM"/>
+   </feature>
+   <category-def name="HCPS_RM" label="HCPS_RM"/>
+</site>
