@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProblemFrame:ProblemDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame" xmlns:StateMachineModel="http://www.example.org/StateMachineModel">
+  <domain xsi:type="ProblemFrame:ExternalCausalDomain" name="道路"/>
+  <requirement name="自动控制车灯（根据驾驶员行为）">
+    <statemachine name="人机协作状态机-便利照明系统">
+      <region name="区域">
+        <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.1" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.0"/>
+        <transition target="//@requirement.0/@statemachine.0/@region.0/@subvertex.0" source="//@requirement.0/@statemachine.0/@region.0/@subvertex.1">
+          <trigger name="驾驶员主动控制车灯"/>
+        </transition>
+        <subvertex xsi:type="StateMachineModel:State" name="驾驶员主动操控车灯" incoming="//@requirement.0/@statemachine.0/@region.0/@transition.1" outgoing="//@requirement.0/@statemachine.0/@region.0/@transition.0" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine name=""/>
+              <humantomachinerelation humanSource="//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@human.0" machineTarget="//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machine.0" relationName="操控车灯"/>
+              <machinetohumanrelation machineSource="//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@human.0" relationName="学习（当前环境，为什么操控车灯）" interfaceName="感应器"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="其他情况" incoming="//@requirement.0/@statemachine.0/@region.0/@transition.0" outgoing="//@requirement.0/@statemachine.0/@region.0/@transition.1" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine name=""/>
+              <machinetohumanrelation machineSource="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0" relationName="根据用户行为操控车灯" interfaceName="感应器"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+      </region>
+    </statemachine>
+  </requirement>
+  <requirement name="自动调整大灯的光束以改善行车视野">
+    <statemachine name="人机协作状态机-自适应前照明系统">
+      <region name="区域">
+        <transition target="//@requirement.1/@statemachine.0/@region.0/@subvertex.0" source="//@requirement.1/@statemachine.0/@region.0/@subvertex.2"/>
+        <transition target="//@requirement.1/@statemachine.0/@region.0/@subvertex.1" source="//@requirement.1/@statemachine.0/@region.0/@subvertex.2"/>
+        <transition target="//@requirement.1/@statemachine.0/@region.0/@subvertex.2" source="//@requirement.1/@statemachine.0/@region.0/@subvertex.0"/>
+        <transition target="//@requirement.1/@statemachine.0/@region.0/@subvertex.2" source="//@requirement.1/@statemachine.0/@region.0/@subvertex.1"/>
+        <subvertex xsi:type="StateMachineModel:State" name="夜间崎岖道路行驶" incoming="//@requirement.1/@statemachine.0/@region.0/@transition.0" outgoing="//@requirement.1/@statemachine.0/@region.0/@transition.2" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <machinetohumanrelation machineSource="//@requirement.1/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.1/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@human.0" relationName="按照弯道方向投射光束增加道路可见度"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="低速行驶/U型转弯/转向暗巷" incoming="//@requirement.1/@statemachine.0/@region.0/@transition.1" outgoing="//@requirement.1/@statemachine.0/@region.0/@transition.3" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <machinetohumanrelation machineSource="//@requirement.1/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.1/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0" relationName="加强横向照明"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="其他情况" incoming="//@requirement.1/@statemachine.0/@region.0/@transition.2 //@requirement.1/@statemachine.0/@region.0/@transition.3" outgoing="//@requirement.1/@statemachine.0/@region.0/@transition.0 //@requirement.1/@statemachine.0/@region.0/@transition.1" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <humantomachinerelation humanSource="//@requirement.1/@statemachine.0/@region.0/@subvertex.2/@region.0/@teamdiagram.0/@human.0" machineTarget="//@requirement.1/@statemachine.0/@region.0/@subvertex.2/@region.0/@teamdiagram.0/@machine.0" relationName="开/关大灯"/>
+              <machinetohumanrelation machineSource="//@requirement.1/@statemachine.0/@region.0/@subvertex.2/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.1/@statemachine.0/@region.0/@subvertex.2/@region.0/@teamdiagram.0/@human.0" relationName="调整车灯"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+      </region>
+    </statemachine>
+  </requirement>
+  <requirement name="转向时打信号灯">
+    <statemachine name="人机协作状态机-自动转向转向信号灯">
+      <region name="区域">
+        <transition target="//@requirement.2/@statemachine.0/@region.0/@subvertex.1" source="//@requirement.2/@statemachine.0/@region.0/@subvertex.0">
+          <trigger name="驾驶员主动打开或取消信号灯"/>
+        </transition>
+        <transition target="//@requirement.2/@statemachine.0/@region.0/@subvertex.0" source="//@requirement.2/@statemachine.0/@region.0/@subvertex.1"/>
+        <subvertex xsi:type="StateMachineModel:State" name="并线/变道/驶入岔路" incoming="//@requirement.2/@statemachine.0/@region.0/@transition.1" outgoing="//@requirement.2/@statemachine.0/@region.0/@transition.0" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <machinetohumanrelation machineSource="//@requirement.2/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.2/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@human.0" relationName="根据情况操控信号灯"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="驾驶员主动操控信号灯" incoming="//@requirement.2/@statemachine.0/@region.0/@transition.0" outgoing="//@requirement.2/@statemachine.0/@region.0/@transition.1" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <humantomachinerelation humanSource="//@requirement.2/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0" machineTarget="//@requirement.2/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0" relationName="操控信号灯"/>
+              <machinetohumanrelation machineSource="//@requirement.2/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@requirement.2/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0" relationName="学习"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+      </region>
+    </statemachine>
+  </requirement>
+  <interfaces targetDomain="//@systemregion.2/@systemDomain.1" sourceDomain="//@systemregion.2/@systemDomain.0" beginControlSharedPhenomena="系统调整车灯光束"/>
+  <interfaces targetDomain="//@systemregion.2/@systemDomain.2" sourceDomain="//@systemregion.2/@systemDomain.0" endControlSharedPhenomena="传感器发送测量信息（驾驶车速、转向角度）"/>
+  <interfaces targetDomain="//@systemregion.2/@systemDomain.1" sourceDomain="//@systemregion.2/@systemDomain.1"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.0" sourceDomain="//@systemregion.0/@systemDomain.1" beginControlSharedPhenomena="系统根据探测器结果打开或取消信号灯"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.1" sourceDomain="//@systemregion.0/@systemDomain.2" endControlSharedPhenomena="获取探测信息（并线、变道）"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.0" sourceDomain="//@systemregion.0/@systemDomain.3" beginControlSharedPhenomena="驾驶员打信号灯"/>
+  <interfaces targetDomain="//@systemregion.1/@systemDomain.1" sourceDomain="//@systemregion.1/@systemDomain.0"/>
+  <interfaces targetDomain="//@systemregion.1/@systemDomain.2" sourceDomain="//@systemregion.1/@systemDomain.0" beginControlSharedPhenomena="获取用户行为信息"/>
+  <interfaces targetDomain="//@systemregion.1/@systemDomain.3" sourceDomain="//@systemregion.1/@systemDomain.0"/>
+  <interfaces targetDomain="//@systemregion.1/@systemDomain.2" sourceDomain="//@systemregion.1/@systemDomain.3" beginControlSharedPhenomena="" endControlSharedPhenomena="感应驾驶员行为"/>
+  <interfaces targetDomain="//@systemregion.2/@systemDomain.1" sourceDomain="//@systemregion.2/@systemDomain.3"/>
+  <interfaces targetDomain="//@domain.0" sourceDomain="//@systemregion.0/@systemDomain.2"/>
+  <interfaces targetDomain="//@domain.0" sourceDomain="//@systemregion.2/@systemDomain.2"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.1" constrains="//@systemregion.2/@systemDomain.1"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.2" constrains="//@systemregion.0/@systemDomain.0"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.2" reqReference="//@systemregion.0/@systemDomain.3"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@systemregion.1/@systemDomain.3"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.0" constrains="//@systemregion.1/@systemDomain.1"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.2" reqReference="//@domain.0"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.1" reqReference="//@domain.0"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.1" reqReference="//@systemregion.2/@systemDomain.2"/>
+  <systemregion name="自动转向信号灯系统">
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="转向信号灯"/>
+    <systemDomain xsi:type="ProblemFrame:Machine" name="自动转向信号灯"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="探测器"/>
+    <systemDomain xsi:type="ProblemFrame:Human" name="驾驶员"/>
+  </systemregion>
+  <systemregion name="便利照明系统">
+    <systemDomain xsi:type="ProblemFrame:Machine" name="便利照明系统"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="车灯"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="感应器"/>
+    <systemDomain xsi:type="ProblemFrame:Human" name="驾驶员"/>
+  </systemregion>
+  <systemregion name="自适应前照明系统">
+    <systemDomain xsi:type="ProblemFrame:Machine" name="自适应前照明系统"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="外车灯"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="传感器"/>
+    <systemDomain xsi:type="ProblemFrame:Human" name="驾驶员"/>
+  </systemregion>
+</ProblemFrame:ProblemDiagram>

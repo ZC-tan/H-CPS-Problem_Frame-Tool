@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame" xmlns:StateMachineModel="http://www.example.org/StateMachineModel" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_PcklIOKvEe2KqNAQ-nhWYA" selectedViews="_XTPmcOKvEe2KqNAQ-nhWYA _rF5yMONrEe2bb-22zOzDKw" version="15.0.0.202209061200">
+    <semanticResources>My.problemframe</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_XTPmcOKvEe2KqNAQ-nhWYA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_aALGwOKvEe2KqNAQ-nhWYA" name="new ProblemDiagram" repPath="#_Z_vB4OKvEe2KqNAQ-nhWYA" changeId="2ac40324-3b57-42d5-895e-436ae3db0657">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']"/>
+        <target xmi:type="ProblemFrame:ProblemDiagram" href="My.problemframe#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6JpZ4uT6Ee2dhtGr_CYIxw" name="new Shared-Phenomena Table" repPath="#_6JfB0OT6Ee2dhtGr_CYIxw" changeId="a2b2fe5b-68b6-43d5-b2fa-362e5b88911f">
+        <description xmi:type="description_2:EditionTableDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='Shared-Phenomena%20Table']"/>
+        <target xmi:type="ProblemFrame:ProblemDiagram" href="My.problemframe#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_rF5yMONrEe2bb-22zOzDKw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Aoyr4ONsEe2GEM6x4vLXVA" name="StateMachine Diagram" repPath="#_AotzYONsEe2GEM6x4vLXVA" changeId="60a10c5e-7f93-4d60-8db8-bf168c7374a5">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_wM0tEOOJEe2Un-BY3L8d2w" name="StateMachine Diagram" repPath="#_wMxpwOOJEe2Un-BY3L8d2w" changeId="7a6b3c35-ac8c-473f-bc0f-99901c70ec6e">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_11yQsOQ5Ee296tL04Zqsig" name="StateMachine Diagram" repPath="#_11v0cOQ5Ee296tL04Zqsig" changeId="fec9132d-cb8b-461d-bc95-58ee77365085">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+        <target xmi:type="ProblemFrame:MyStateMachine" href="My.problemframe#//@requirement.0/@statemachine.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_1l8QEOT4Ee2dhtGr_CYIxw" name="StateMachine Diagram" repPath="#_1l5MwOT4Ee2dhtGr_CYIxw" changeId="119c2378-968c-48b1-aa2a-221c1472ef27">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_5Gw_YOdREe2JmNgH0zwCgg" name="StateMachine Diagram" repPath="#_5Gst8OdREe2JmNgH0zwCgg" changeId="1f68cc3f-979e-46ac-ac2b-684ef38a9499">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+        <target xmi:type="ProblemFrame:MyStateMachine" href="My.problemframe#//@systemregion.0/@statemachine.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_Z_vB4OKvEe2KqNAQ-nhWYA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_aA4RYOKvEe2KqNAQ-nhWYA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_aA4RYeKvEe2KqNAQ-nhWYA" type="Sirius" element="_Z_vB4OKvEe2KqNAQ-nhWYA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_wDPe4Ox_Ee2s0fbEWrXdgg" type="2002" element="_wDMbkOx_Ee2s0fbEWrXdgg">
+          <children xmi:type="notation:Node" xmi:id="_wDQF8Ox_Ee2s0fbEWrXdgg" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_wDQtAOx_Ee2s0fbEWrXdgg" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_wifmsOx_Ee2s0fbEWrXdgg" type="3007" element="_wieYkOx_Ee2s0fbEWrXdgg">
+              <children xmi:type="notation:Node" xmi:id="_wifms-x_Ee2s0fbEWrXdgg" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_wifmtOx_Ee2s0fbEWrXdgg" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_wifmtex_Ee2s0fbEWrXdgg" type="3005" element="_wieYkex_Ee2s0fbEWrXdgg">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_wifmtux_Ee2s0fbEWrXdgg" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wifmt-x_Ee2s0fbEWrXdgg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_wifmsex_Ee2s0fbEWrXdgg" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wifmsux_Ee2s0fbEWrXdgg" x="30" y="78" width="138" height="61"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_xzIIJux_Ee2s0fbEWrXdgg" type="3007" element="_xzG6AOx_Ee2s0fbEWrXdgg">
+              <children xmi:type="notation:Node" xmi:id="_xzIvMOx_Ee2s0fbEWrXdgg" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_xzIvMex_Ee2s0fbEWrXdgg" x="-1"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_xzIvMux_Ee2s0fbEWrXdgg" type="3005" element="_xzG6Aex_Ee2s0fbEWrXdgg">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_xzIvM-x_Ee2s0fbEWrXdgg" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xzIvNOx_Ee2s0fbEWrXdgg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_xzIIJ-x_Ee2s0fbEWrXdgg" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xzIIKOx_Ee2s0fbEWrXdgg" x="240" y="78" width="40" height="78"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_yGIjsOx_Ee2s0fbEWrXdgg" type="3007" element="_yGGugOx_Ee2s0fbEWrXdgg">
+              <children xmi:type="notation:Node" xmi:id="_yGIjs-x_Ee2s0fbEWrXdgg" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_yGIjtOx_Ee2s0fbEWrXdgg" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_yGIjtex_Ee2s0fbEWrXdgg" type="3005" element="_yGGugex_Ee2s0fbEWrXdgg">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_yGIjtux_Ee2s0fbEWrXdgg" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yGIjt-x_Ee2s0fbEWrXdgg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_yGIjsex_Ee2s0fbEWrXdgg" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yGIjsux_Ee2s0fbEWrXdgg" x="303" y="131" width="121" height="61"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_yaMvMOx_Ee2s0fbEWrXdgg" type="3007" element="_yaLhEOx_Ee2s0fbEWrXdgg">
+              <children xmi:type="notation:Node" xmi:id="_yaMvM-x_Ee2s0fbEWrXdgg" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_yaMvNOx_Ee2s0fbEWrXdgg" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_yaMvNex_Ee2s0fbEWrXdgg" type="3005" element="_yaLhEex_Ee2s0fbEWrXdgg">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_yaMvNux_Ee2s0fbEWrXdgg" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yaMvN-x_Ee2s0fbEWrXdgg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_yaMvMex_Ee2s0fbEWrXdgg" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yaMvMux_Ee2s0fbEWrXdgg" x="317" y="50" width="121" height="61"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_wDQtAex_Ee2s0fbEWrXdgg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_wDQtAux_Ee2s0fbEWrXdgg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_wDPe4ex_Ee2s0fbEWrXdgg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wDPe4ux_Ee2s0fbEWrXdgg" x="371" y="98" width="486" height="227"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zOddsOx_Ee2s0fbEWrXdgg" type="2001" element="_zObogOx_Ee2s0fbEWrXdgg">
+          <children xmi:type="notation:Node" xmi:id="_zOdds-x_Ee2s0fbEWrXdgg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zOddtOx_Ee2s0fbEWrXdgg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zOddtex_Ee2s0fbEWrXdgg" type="3005" element="_zObogex_Ee2s0fbEWrXdgg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zOddtux_Ee2s0fbEWrXdgg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zOddt-x_Ee2s0fbEWrXdgg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zOddsex_Ee2s0fbEWrXdgg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zOddsux_Ee2s0fbEWrXdgg" x="966" y="105" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zZN8MOx_Ee2s0fbEWrXdgg" type="2001" element="_zZMHAOx_Ee2s0fbEWrXdgg">
+          <children xmi:type="notation:Node" xmi:id="_zZN8M-x_Ee2s0fbEWrXdgg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zZN8NOx_Ee2s0fbEWrXdgg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zZN8Nex_Ee2s0fbEWrXdgg" type="3005" element="_zZMHAex_Ee2s0fbEWrXdgg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zZN8Nux_Ee2s0fbEWrXdgg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zZN8N-x_Ee2s0fbEWrXdgg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zZN8Mex_Ee2s0fbEWrXdgg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zZN8Mux_Ee2s0fbEWrXdgg" x="1008" y="238" width="121" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zk9SJux_Ee2s0fbEWrXdgg" type="2001" element="_zk8EAOx_Ee2s0fbEWrXdgg">
+          <children xmi:type="notation:Node" xmi:id="_zk95MOx_Ee2s0fbEWrXdgg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zk95Mex_Ee2s0fbEWrXdgg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zk95Mux_Ee2s0fbEWrXdgg" type="3005" element="_zk8EAex_Ee2s0fbEWrXdgg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zk95M-x_Ee2s0fbEWrXdgg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zk95NOx_Ee2s0fbEWrXdgg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zk9SJ-x_Ee2s0fbEWrXdgg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zk9SKOx_Ee2s0fbEWrXdgg" x="903" y="298" width="121" height="81"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_aA4RYuKvEe2KqNAQ-nhWYA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_aBIwEOKvEe2KqNAQ-nhWYA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_aBJ-MOKvEe2KqNAQ-nhWYA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_wDMbkOx_Ee2s0fbEWrXdgg" name="H-CPS">
+      <target xmi:type="ProblemFrame:SystemRegion" href="My.problemframe#//@systemregion.0"/>
+      <semanticElements xmi:type="ProblemFrame:SystemRegion" href="My.problemframe#//@systemregion.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_wDMbkex_Ee2s0fbEWrXdgg" labelSize="12" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_wieYkOx_Ee2s0fbEWrXdgg" name="Machine" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="ProblemFrame:Machine" href="My.problemframe#//@systemregion.0/@systemDomain.0"/>
+        <semanticElements xmi:type="ProblemFrame:Machine" href="My.problemframe#//@systemregion.0/@systemDomain.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_wieYkex_Ee2s0fbEWrXdgg" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Machine.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']/@subNodeMappings[name='Machine']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']/@subNodeMappings[name='Machine']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_xzG6AOx_Ee2s0fbEWrXdgg" width="4" height="4" resizeKind="NSEW">
+        <target xmi:type="ProblemFrame:Human" href="My.problemframe#//@systemregion.0/@systemDomain.1"/>
+        <semanticElements xmi:type="ProblemFrame:Human" href="My.problemframe#//@systemregion.0/@systemDomain.1"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_xzG6Aex_Ee2s0fbEWrXdgg" showIcon="false" workspacePath="/my.problemframe.design/images/HUMAN.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']/@subNodeMappings[name='Human']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']/@subNodeMappings[name='Human']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_yGGugOx_Ee2s0fbEWrXdgg" name="LexicalDomain" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="ProblemFrame:LexicalDomain" href="My.problemframe#//@systemregion.0/@systemDomain.2"/>
+        <semanticElements xmi:type="ProblemFrame:LexicalDomain" href="My.problemframe#//@systemregion.0/@systemDomain.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_yGGugex_Ee2s0fbEWrXdgg" labelPosition="node" workspacePath="/my.problemframe.design/images/LexicalDomain.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']/@subNodeMappings[name='LexicalDomain']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']/@subNodeMappings[name='LexicalDomain']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_yaLhEOx_Ee2s0fbEWrXdgg" name="CausalDomain" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="ProblemFrame:InternalCausalDomain" href="My.problemframe#//@systemregion.0/@systemDomain.3"/>
+        <semanticElements xmi:type="ProblemFrame:InternalCausalDomain" href="My.problemframe#//@systemregion.0/@systemDomain.3"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_yaLhEex_Ee2s0fbEWrXdgg" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']/@subNodeMappings[name='InternalCausalDomain']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@containerMappings[name='SystemRegion']/@subNodeMappings[name='InternalCausalDomain']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_zObogOx_Ee2s0fbEWrXdgg" name="BiddableDomain1" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:ExternalBiddableDomain" href="My.problemframe#//@domain.0"/>
+      <semanticElements xmi:type="ProblemFrame:ExternalBiddableDomain" href="My.problemframe#//@domain.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_zObogex_Ee2s0fbEWrXdgg" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/BiddableDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='ExternalBiddableDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='ExternalBiddableDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_zZMHAOx_Ee2s0fbEWrXdgg" name="CausalDomain1" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:ExternalCausalDomain" href="My.problemframe#//@domain.1"/>
+      <semanticElements xmi:type="ProblemFrame:ExternalCausalDomain" href="My.problemframe#//@domain.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_zZMHAex_Ee2s0fbEWrXdgg" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/CausalDomain.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='ExternalCausalDomain']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='ExternalCausalDomain']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_zk8EAOx_Ee2s0fbEWrXdgg" name="Requirement1" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="ProblemFrame:Requirement" href="My.problemframe#//@requirement.0"/>
+      <semanticElements xmi:type="ProblemFrame:Requirement" href="My.problemframe#//@requirement.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_zk8EAex_Ee2s0fbEWrXdgg" showIcon="false" labelPosition="node" workspacePath="/my.problemframe.design/images/Requirement.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Requirement']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer/@nodeMappings[name='Requirement']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_Z_9EUOKvEe2KqNAQ-nhWYA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='ProblemDiagram']/@defaultLayer"/>
+    <target xmi:type="ProblemFrame:ProblemDiagram" href="My.problemframe#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_AotzYONsEe2GEM6x4vLXVA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ApIDEONsEe2GEM6x4vLXVA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_ApIDEeNsEe2GEM6x4vLXVA" type="Sirius" element="_AotzYONsEe2GEM6x4vLXVA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_ApP-4ONsEe2GEM6x4vLXVA" type="2002" element="_ApJ4QONsEe2GEM6x4vLXVA">
+          <children xmi:type="notation:Node" xmi:id="_ApU3YONsEe2GEM6x4vLXVA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_ApVecONsEe2GEM6x4vLXVA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_aI7IEOQ5Ee2bcu44YFeVzw" type="3008" element="_aIu60OQ5Ee2bcu44YFeVzw">
+              <children xmi:type="notation:Node" xmi:id="_aI7vIOQ5Ee2bcu44YFeVzw" visible="false" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_aI8WMOQ5Ee2bcu44YFeVzw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_aI8WMeQ5Ee2bcu44YFeVzw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_aI8WMuQ5Ee2bcu44YFeVzw"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_aI8WM-Q5Ee2bcu44YFeVzw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_aI7IEeQ5Ee2bcu44YFeVzw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aI7IEuQ5Ee2bcu44YFeVzw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ApVeceNsEe2GEM6x4vLXVA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ApVecuNsEe2GEM6x4vLXVA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ApP-4eNsEe2GEM6x4vLXVA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ApP-4uNsEe2GEM6x4vLXVA" x="420" y="56"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_ApIqIONsEe2GEM6x4vLXVA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ApM7kONsEe2GEM6x4vLXVA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_ApM7keNsEe2GEM6x4vLXVA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ApJ4QONsEe2GEM6x4vLXVA" childrenPresentation="HorizontalStack">
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_ApKfUONsEe2GEM6x4vLXVA" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_aIu60OQ5Ee2bcu44YFeVzw" name="区域">
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_aIxXEOQ5Ee2bcu44YFeVzw"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_aIwI8OQ5Ee2bcu44YFeVzw" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_AouacONsEe2GEM6x4vLXVA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_wMxpwOOJEe2Un-BY3L8d2w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_wM7awOOJEe2Un-BY3L8d2w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_wM7aweOJEe2Un-BY3L8d2w" type="Sirius" element="_wMxpwOOJEe2Un-BY3L8d2w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_wNATQOOJEe2Un-BY3L8d2w" type="2002" element="_wM8o4OOJEe2Un-BY3L8d2w">
+          <children xmi:type="notation:Node" xmi:id="_wNCIcOOJEe2Un-BY3L8d2w" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_wND9oOOJEe2Un-BY3L8d2w" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_wND9oeOJEe2Un-BY3L8d2w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_wND9ouOJEe2Un-BY3L8d2w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_wNATQeOJEe2Un-BY3L8d2w" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wNATQuOJEe2Un-BY3L8d2w" x="357" y="105"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_wM7awuOJEe2Un-BY3L8d2w"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_wM_FIOOJEe2Un-BY3L8d2w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_wM_FIeOJEe2Un-BY3L8d2w"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_wM8o4OOJEe2Un-BY3L8d2w" childrenPresentation="HorizontalStack">
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_wM9P8OOJEe2Un-BY3L8d2w" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_wMy34OOJEe2Un-BY3L8d2w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_11v0cOQ5Ee296tL04Zqsig">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_12HA0OQ5Ee296tL04Zqsig" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_12HA0eQ5Ee296tL04Zqsig" type="Sirius" element="_11v0cOQ5Ee296tL04Zqsig" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_12OVkOQ5Ee296tL04Zqsig" type="2002" element="_12IO8OQ5Ee296tL04Zqsig">
+          <children xmi:type="notation:Node" xmi:id="_12Qx0OQ5Ee296tL04Zqsig" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_12RY4OQ5Ee296tL04Zqsig" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_2qwJ0OQ5Ee296tL04Zqsig" type="3008" element="_2qj8kOQ5Ee296tL04Zqsig">
+              <children xmi:type="notation:Node" xmi:id="_2qww4OQ5Ee296tL04Zqsig" visible="false" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_2qxX8OQ5Ee296tL04Zqsig" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_NUM-wORBEe296tL04Zqsig" type="3008" element="_NUG4IORBEe296tL04Zqsig">
+                  <children xmi:type="notation:Node" xmi:id="_NUM-w-RBEe296tL04Zqsig" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_NUM-xORBEe296tL04Zqsig" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_NUM-x-RBEe296tL04Zqsig" type="3008" element="_NUHfMORBEe296tL04Zqsig">
+                      <children xmi:type="notation:Node" xmi:id="_NUNl0ORBEe296tL04Zqsig" visible="false" type="5005"/>
+                      <children xmi:type="notation:Node" xmi:id="_NUNl0eRBEe296tL04Zqsig" type="7002">
+                        <children xmi:type="notation:Node" xmi:id="_O9nMkORBEe296tL04Zqsig" type="3008" element="_O9ge4ORBEe296tL04Zqsig">
+                          <children xmi:type="notation:Node" xmi:id="_O9nzoORBEe296tL04Zqsig" type="5005"/>
+                          <children xmi:type="notation:Node" xmi:id="_O9nzoeRBEe296tL04Zqsig" type="7002">
+                            <children xmi:type="notation:Node" xmi:id="_O9nzpORBEe296tL04Zqsig" type="3008" element="_O9hF8ORBEe296tL04Zqsig">
+                              <children xmi:type="notation:Node" xmi:id="_O9nzp-RBEe296tL04Zqsig" visible="false" type="5005"/>
+                              <children xmi:type="notation:Node" xmi:id="_O9nzqORBEe296tL04Zqsig" type="7002">
+                                <children xmi:type="notation:Node" xmi:id="_7Y1bwOT4Ee2dhtGr_CYIxw" type="3008" element="_7YxxYuT4Ee2dhtGr_CYIxw">
+                                  <children xmi:type="notation:Node" xmi:id="_7Y1bw-T4Ee2dhtGr_CYIxw" type="5005"/>
+                                  <children xmi:type="notation:Node" xmi:id="_7Y1bxOT4Ee2dhtGr_CYIxw" type="7002">
+                                    <children xmi:type="notation:Node" xmi:id="_7Y2C0OT4Ee2dhtGr_CYIxw" type="3009" element="_7YyYcOT4Ee2dhtGr_CYIxw">
+                                      <children xmi:type="notation:Node" xmi:id="_7Y2C0-T4Ee2dhtGr_CYIxw" visible="false" type="5004"/>
+                                      <children xmi:type="notation:Node" xmi:id="_7Y2C1OT4Ee2dhtGr_CYIxw" type="7003">
+                                        <children xmi:type="notation:Node" xmi:id="_7Y2C2OT4Ee2dhtGr_CYIxw" type="3010" element="_7Yy_geT4Ee2dhtGr_CYIxw">
+                                          <styles xmi:type="notation:FontStyle" xmi:id="_7Y2C2eT4Ee2dhtGr_CYIxw" fontName="Segoe UI" fontHeight="12"/>
+                                          <layoutConstraint xmi:type="notation:Location" xmi:id="_7Y2C2uT4Ee2dhtGr_CYIxw"/>
+                                        </children>
+                                        <styles xmi:type="notation:SortingStyle" xmi:id="_7Y2C1eT4Ee2dhtGr_CYIxw"/>
+                                        <styles xmi:type="notation:FilteringStyle" xmi:id="_7Y2C1uT4Ee2dhtGr_CYIxw"/>
+                                        <styles xmi:type="notation:DrawerStyle" xmi:id="_7Y2C1-T4Ee2dhtGr_CYIxw"/>
+                                      </children>
+                                      <styles xmi:type="notation:ShapeStyle" xmi:id="_7Y2C0eT4Ee2dhtGr_CYIxw" fontColor="7490599" fontName="Segoe UI" fontHeight="12"/>
+                                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Y2C0uT4Ee2dhtGr_CYIxw"/>
+                                    </children>
+                                    <styles xmi:type="notation:SortingStyle" xmi:id="_7Y1bxeT4Ee2dhtGr_CYIxw"/>
+                                    <styles xmi:type="notation:FilteringStyle" xmi:id="_7Y1bxuT4Ee2dhtGr_CYIxw"/>
+                                  </children>
+                                  <styles xmi:type="notation:ShapeStyle" xmi:id="_7Y1bweT4Ee2dhtGr_CYIxw" fontColor="7490599" fontName="Segoe UI" fontHeight="12"/>
+                                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Y1bwuT4Ee2dhtGr_CYIxw"/>
+                                </children>
+                                <styles xmi:type="notation:SortingStyle" xmi:id="_O9nzqeRBEe296tL04Zqsig"/>
+                                <styles xmi:type="notation:FilteringStyle" xmi:id="_O9nzquRBEe296tL04Zqsig"/>
+                                <styles xmi:type="notation:DrawerStyle" xmi:id="_O9nzq-RBEe296tL04Zqsig"/>
+                              </children>
+                              <styles xmi:type="notation:ShapeStyle" xmi:id="_O9nzpeRBEe296tL04Zqsig" fontName="Segoe UI" fontHeight="12"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O9nzpuRBEe296tL04Zqsig" width="385"/>
+                            </children>
+                            <styles xmi:type="notation:SortingStyle" xmi:id="_O9nzouRBEe296tL04Zqsig"/>
+                            <styles xmi:type="notation:FilteringStyle" xmi:id="_O9nzo-RBEe296tL04Zqsig"/>
+                          </children>
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_O9nMkeRBEe296tL04Zqsig" fontColor="7490599" fontName="Segoe UI" fontHeight="12"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O9nMkuRBEe296tL04Zqsig"/>
+                        </children>
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_NUNl0uRBEe296tL04Zqsig"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_NUNl0-RBEe296tL04Zqsig"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_NUNl1ORBEe296tL04Zqsig"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_NUM-yORBEe296tL04Zqsig" fontName="Segoe UI" fontHeight="12"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NUM-yeRBEe296tL04Zqsig" width="433" height="188"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_NUM-xeRBEe296tL04Zqsig"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_NUM-xuRBEe296tL04Zqsig"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_NUM-weRBEe296tL04Zqsig" fontColor="7490599" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NUM-wuRBEe296tL04Zqsig" x="15" y="-7"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_2qxX8eQ5Ee296tL04Zqsig"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_2qxX8uQ5Ee296tL04Zqsig"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_2qxX8-Q5Ee296tL04Zqsig"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_2qwJ0eQ5Ee296tL04Zqsig" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2qwJ0uQ5Ee296tL04Zqsig" width="531" height="237"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_12RY4eQ5Ee296tL04Zqsig"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_12RY4uQ5Ee296tL04Zqsig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_12OVkeQ5Ee296tL04Zqsig" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_12OVkuQ5Ee296tL04Zqsig" x="210" y="49"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_12HA0uQ5Ee296tL04Zqsig"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_12KrMOQ5Ee296tL04Zqsig" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_12KrMeQ5Ee296tL04Zqsig"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_12IO8OQ5Ee296tL04Zqsig" childrenPresentation="HorizontalStack">
+      <target xmi:type="ProblemFrame:MyStateMachine" href="My.problemframe#//@requirement.0/@statemachine.0"/>
+      <semanticElements xmi:type="ProblemFrame:MyStateMachine" href="My.problemframe#//@requirement.0/@statemachine.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_12IO8eQ5Ee296tL04Zqsig" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_2qj8kOQ5Ee296tL04Zqsig" name="区域">
+        <target xmi:type="StateMachineModel:Region" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0"/>
+        <semanticElements xmi:type="StateMachineModel:Region" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_2qlxwOQ5Ee296tL04Zqsig"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_2qkjoOQ5Ee296tL04Zqsig" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_NUG4IORBEe296tL04Zqsig" name="状态" childrenPresentation="HorizontalStack">
+          <target xmi:type="StateMachineModel:State" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0"/>
+          <semanticElements xmi:type="StateMachineModel:State" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_NUG4IeRBEe296tL04Zqsig" labelSize="12" showIcon="false" labelColor="39,76,114" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" foregroundColor="194,239,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_NUHfMORBEe296tL04Zqsig" name="区域">
+            <target xmi:type="StateMachineModel:Region" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0"/>
+            <semanticElements xmi:type="StateMachineModel:Region" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0"/>
+            <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_NUIGQORBEe296tL04Zqsig"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_NUHfMeRBEe296tL04Zqsig" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true" foregroundColor="194,239,255">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@conditionnalStyles.0/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_O9ge4ORBEe296tL04Zqsig" name="状态" childrenPresentation="HorizontalStack">
+              <target xmi:type="StateMachineModel:State" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0"/>
+              <semanticElements xmi:type="StateMachineModel:State" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0"/>
+              <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_O9ge4eRBEe296tL04Zqsig" labelSize="12" showIcon="false" labelColor="39,76,114" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" foregroundColor="194,239,255">
+                <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState']"/>
+              <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_O9hF8ORBEe296tL04Zqsig" name="区域">
+                <target xmi:type="StateMachineModel:Region" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@region.0"/>
+                <semanticElements xmi:type="StateMachineModel:Region" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@region.0"/>
+                <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_O9hF8-RBEe296tL04Zqsig"/>
+                <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_O9hF8eRBEe296tL04Zqsig" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderLineStyle="dash" hideLabelByDefault="true" foregroundColor="194,239,255">
+                  <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@conditionnalStyles.0/@style"/>
+                </ownedStyle>
+                <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']"/>
+                <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_7YxxYuT4Ee2dhtGr_CYIxw" name="状态" childrenPresentation="VerticalStack">
+                  <target xmi:type="StateMachineModel:State" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@region.0/@subvertex.0"/>
+                  <semanticElements xmi:type="StateMachineModel:State" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@region.0/@subvertex.0"/>
+                  <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_7YxxY-T4Ee2dhtGr_CYIxw" labelSize="12" showIcon="false" labelColor="39,76,114" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" foregroundColor="194,239,255">
+                    <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@style"/>
+                  </ownedStyle>
+                  <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']"/>
+                  <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_7YyYcOT4Ee2dhtGr_CYIxw" name="状态">
+                    <target xmi:type="StateMachineModel:State" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@region.0/@subvertex.0"/>
+                    <semanticElements xmi:type="StateMachineModel:State" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@region.0/@subvertex.0"/>
+                    <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_7Yy_gOT4Ee2dhtGr_CYIxw"/>
+                    <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_7YyYceT4Ee2dhtGr_CYIxw" labelSize="12" showIcon="false" labelColor="39,76,114" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" hideLabelByDefault="true" foregroundColor="194,239,255">
+                      <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@subContainerMappings[name='Behavior%20Container']/@style"/>
+                    </ownedStyle>
+                    <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='CompositeState%20with%20Behavior']/@subContainerMappings[name='Behavior%20Container']"/>
+                    <ownedElements xmi:type="diagram:DNodeListElement" uid="_7Yy_geT4Ee2dhtGr_CYIxw" name="进入行为/ setValue">
+                      <target xmi:type="StateMachineModel:SetValue" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@entry"/>
+                      <semanticElements xmi:type="StateMachineModel:SetValue" href="My.problemframe#//@requirement.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@region.0/@subvertex.0/@entry"/>
+                      <ownedStyle xmi:type="diagram:Square" uid="_7YzmkOT4Ee2dhtGr_CYIxw" labelSize="12" labelPosition="node">
+                        <description xmi:type="style:SquareDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@subNodeMappings[name='Entry']/@style"/>
+                      </ownedStyle>
+                      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@subContainerMappings[name='Region']/@subContainerMappings[name='SimpleState']/@subNodeMappings[name='Entry']"/>
+                    </ownedElements>
+                  </ownedDiagramElements>
+                </ownedDiagramElements>
+              </ownedDiagramElements>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_11v0ceQ5Ee296tL04Zqsig"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer"/>
+    <target xmi:type="ProblemFrame:MyStateMachine" href="My.problemframe#//@requirement.0/@statemachine.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_1l5MwOT4Ee2dhtGr_CYIxw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_1mGBEOT4Ee2dhtGr_CYIxw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_1mGBEeT4Ee2dhtGr_CYIxw" type="Sirius" element="_1l5MwOT4Ee2dhtGr_CYIxw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_1mH2QOT4Ee2dhtGr_CYIxw" type="2002" element="_1mGoIOT4Ee2dhtGr_CYIxw">
+          <children xmi:type="notation:Node" xmi:id="_1mJEYOT4Ee2dhtGr_CYIxw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_1mJEYeT4Ee2dhtGr_CYIxw" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_1mJEYuT4Ee2dhtGr_CYIxw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_1mJEY-T4Ee2dhtGr_CYIxw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_1mH2QeT4Ee2dhtGr_CYIxw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1mH2QuT4Ee2dhtGr_CYIxw" y="35"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_1mGBEuT4Ee2dhtGr_CYIxw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_1mHPMOT4Ee2dhtGr_CYIxw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_1mHPMeT4Ee2dhtGr_CYIxw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_1mGoIOT4Ee2dhtGr_CYIxw" name="stateMachine" childrenPresentation="HorizontalStack">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_1mGoIeT4Ee2dhtGr_CYIxw" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_1l5z0OT4Ee2dhtGr_CYIxw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer"/>
+  </diagram:DSemanticDiagram>
+  <table:DTable uid="_6JfB0OT6Ee2dhtGr_CYIxw" headerColumnWidth="277">
+    <target xmi:type="ProblemFrame:ProblemDiagram" href="My.problemframe#/"/>
+    <lines xmi:type="table:DLine" uid="_-gNxgOT6Ee2dhtGr_CYIxw" label="Phenomenon aaa1">
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='Shared-Phenomena%20Table']/@ownedLineMappings[name='Phenomenon']"/>
+      <cells xmi:type="table:DCell" uid="_-gOYkeT6Ee2dhtGr_CYIxw" label="bbbb" column="_6JmWkOT6Ee2dhtGr_CYIxw"/>
+      <cells xmi:type="table:DCell" uid="_-gOYk-T6Ee2dhtGr_CYIxw" label="state" column="_6JpZ4OT6Ee2dhtGr_CYIxw"/>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_8crzgOT6Ee2dhtGr_CYIxw" label="Phenomenon xxx">
+      <target xmi:type="ProblemFrame:Phenomenon" href="My.problemframe#//@systemregion.0/@systemDomain.2/@phenomena.0"/>
+      <semanticElements xmi:type="ProblemFrame:Phenomenon" href="My.problemframe#//@systemregion.0/@systemDomain.2/@phenomena.0"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='Shared-Phenomena%20Table']/@ownedLineMappings[name='Phenomenon']"/>
+      <cells xmi:type="table:DCell" uid="_8csak-T6Ee2dhtGr_CYIxw" label="yyy" column="_6JmWkOT6Ee2dhtGr_CYIxw">
+        <target xmi:type="ProblemFrame:Phenomenon" href="My.problemframe#//@systemregion.0/@systemDomain.2/@phenomena.0"/>
+        <semanticElements xmi:type="ProblemFrame:Phenomenon" href="My.problemframe#//@systemregion.0/@systemDomain.2/@phenomena.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_8ctoseT6Ee2dhtGr_CYIxw" label="state" column="_6JpZ4OT6Ee2dhtGr_CYIxw">
+        <target xmi:type="ProblemFrame:Phenomenon" href="My.problemframe#//@systemregion.0/@systemDomain.2/@phenomena.0"/>
+        <semanticElements xmi:type="ProblemFrame:Phenomenon" href="My.problemframe#//@systemregion.0/@systemDomain.2/@phenomena.0"/>
+      </cells>
+    </lines>
+    <columns xmi:type="table:DFeatureColumn" uid="_6JmWkOT6Ee2dhtGr_CYIxw" label="Description" cells="_8csak-T6Ee2dhtGr_CYIxw _-gOYkeT6Ee2dhtGr_CYIxw" width="105" featureName="description">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='Shared-Phenomena%20Table']/@ownedColumnMappings[name='description']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_6JpZ4OT6Ee2dhtGr_CYIxw" label="Phenomenon Type" cells="_8ctoseT6Ee2dhtGr_CYIxw _-gOYk-T6Ee2dhtGr_CYIxw" width="163" featureName="type">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='Shared-Phenomena%20Table']/@ownedColumnMappings[name='phenomenon%20type']"/>
+    </columns>
+    <description xmi:type="description_2:EditionTableDescription" href="platform:/plugin/my.problemframe.design/description/problemframe.odesign#//@ownedViewpoints[name='ProblemFrameworkViewPoint']/@ownedRepresentations[name='Shared-Phenomena%20Table']"/>
+  </table:DTable>
+  <diagram:DSemanticDiagram uid="_5Gst8OdREe2JmNgH0zwCgg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_5HZRgOdREe2JmNgH0zwCgg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_5HZ4kOdREe2JmNgH0zwCgg" type="Sirius" element="_5Gst8OdREe2JmNgH0zwCgg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_5HcU0OdREe2JmNgH0zwCgg" type="2002" element="_5HZ4kudREe2JmNgH0zwCgg">
+          <children xmi:type="notation:Node" xmi:id="_5Hc74OdREe2JmNgH0zwCgg" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_5Hc74edREe2JmNgH0zwCgg" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_5Hc74udREe2JmNgH0zwCgg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_5Hc74-dREe2JmNgH0zwCgg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_5HcU0edREe2JmNgH0zwCgg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5HcU0udREe2JmNgH0zwCgg" y="35"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_5HZ4kedREe2JmNgH0zwCgg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_5HbGsOdREe2JmNgH0zwCgg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_5HbGsedREe2JmNgH0zwCgg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_5HZ4kudREe2JmNgH0zwCgg" childrenPresentation="HorizontalStack">
+      <target xmi:type="ProblemFrame:MyStateMachine" href="My.problemframe#//@systemregion.0/@statemachine.0"/>
+      <semanticElements xmi:type="ProblemFrame:MyStateMachine" href="My.problemframe#//@systemregion.0/@statemachine.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_5HZ4k-dREe2JmNgH0zwCgg" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer/@containerMappings[name='StateMachineContainer']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_5GtVAOdREe2JmNgH0zwCgg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.gemoc.statemachine.design/description/statemachine.odesign#//@ownedViewpoints[name='SMViewpoint']/@ownedRepresentations[name='StateMachine%20Diagram']/@defaultLayer"/>
+    <target xmi:type="ProblemFrame:MyStateMachine" href="My.problemframe#//@systemregion.0/@statemachine.0"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

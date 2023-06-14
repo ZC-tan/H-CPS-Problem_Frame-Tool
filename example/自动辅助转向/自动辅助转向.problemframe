@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProblemFrame:ProblemDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame" xmlns:StateMachineModel="http://www.example.org/StateMachineModel">
+  <domain xsi:type="ProblemFrame:ExternalBiddableDomain" name="相邻车道车辆"/>
+  <domain xsi:type="ProblemFrame:ExternalBiddableDomain" name="障碍物"/>
+  <domain xsi:type="ProblemFrame:ExternalBiddableDomain" name="车道线，前方车辆"/>
+  <requirement name="保持在行车道内（视情况偏离车道中部）"/>
+  <requirement name="根据信号灯进行变道"/>
+  <requirement name="限速"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.2" sourceDomain="//@systemregion.0/@systemDomain.0"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.1" sourceDomain="//@systemregion.0/@systemDomain.0" beginControlSharedPhenomena="获取感应信息"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.3" sourceDomain="//@systemregion.0/@systemDomain.0"/>
+  <interfaces targetDomain="//@domain.1" sourceDomain="//@systemregion.0/@systemDomain.1"/>
+  <interfaces targetDomain="//@domain.0" sourceDomain="//@systemregion.0/@systemDomain.1"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.4" sourceDomain="//@systemregion.0/@systemDomain.0" beginControlSharedPhenomena="自动控制方向盘"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.4" sourceDomain="//@systemregion.0/@systemDomain.3"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.5" sourceDomain="//@systemregion.0/@systemDomain.0" beginControlSharedPhenomena="改变车速"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.5" sourceDomain="//@systemregion.0/@systemDomain.3"/>
+  <interfaces targetDomain="//@systemregion.0/@systemDomain.6" sourceDomain="//@systemregion.0/@systemDomain.3"/>
+  <interfaces targetDomain="//@domain.2" sourceDomain="//@systemregion.0/@systemDomain.1"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" reqReference="//@systemregion.0/@systemDomain.2"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@domain.1"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.0" constrains="//@systemregion.0/@systemDomain.4"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.1" reqReference="//@systemregion.0/@systemDomain.6"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.1" constrains="//@systemregion.0/@systemDomain.4"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.2" reqReference="//@systemregion.0/@systemDomain.2"/>
+  <reference xsi:type="ProblemFrame:ConstrainingRequirementReference" source="//@requirement.2" constrains="//@systemregion.0/@systemDomain.5"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.2" reqReference="//@domain.0"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.0" reqReference="//@domain.2"/>
+  <reference xsi:type="ProblemFrame:RequirementReference" source="//@requirement.2" reqReference="//@domain.2"/>
+  <systemregion>
+    <systemDomain xsi:type="ProblemFrame:Machine" name="自动转向辅助"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="感应器"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="车速表"/>
+    <systemDomain xsi:type="ProblemFrame:Human" name="驾驶员"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="方向盘"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="车速控制装置"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="信号灯"/>
+    <statemachine name="人机协作状态机">
+      <region name="区域">
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.1" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0">
+          <trigger name="检测到围栏/障碍物等"/>
+        </transition>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.1"/>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.2">
+          <trigger name="重启自动辅助转向功能"/>
+        </transition>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.5"/>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.4" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0">
+          <trigger name="驾驶员打信号灯"/>
+        </transition>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.3" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0">
+          <trigger name="没有隔离带/检测不到车道"/>
+        </transition>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.3" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.4">
+          <trigger name="车速明显高于相邻车道车速"/>
+        </transition>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.4">
+          <trigger name="完成/取消变换车道"/>
+        </transition>
+        <transition name="" target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.3"/>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.2" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.1"/>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.2" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.3"/>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.2" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.4"/>
+        <transition target="//@systemregion.0/@statemachine.0/@region.0/@subvertex.2" source="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0"/>
+        <subvertex xsi:type="StateMachineModel:State" name="正常状态" incoming="//@systemregion.0/@statemachine.0/@region.0/@transition.1 //@systemregion.0/@statemachine.0/@region.0/@transition.2 //@systemregion.0/@statemachine.0/@region.0/@transition.3 //@systemregion.0/@statemachine.0/@region.0/@transition.7 //@systemregion.0/@statemachine.0/@region.0/@transition.8" outgoing="//@systemregion.0/@statemachine.0/@region.0/@transition.0 //@systemregion.0/@statemachine.0/@region.0/@transition.4 //@systemregion.0/@statemachine.0/@region.0/@transition.5 //@systemregion.0/@statemachine.0/@region.0/@transition.12" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <humantomachinerelation humanSource="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@human.0" machineTarget="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machine.0" relationName="监督"/>
+              <machinetohumanrelation machineSource="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@systemregion.0/@statemachine.0/@region.0/@subvertex.0/@region.0/@teamdiagram.0/@human.0" relationName="保持在车道中间"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="偏离状态" incoming="//@systemregion.0/@statemachine.0/@region.0/@transition.0" outgoing="//@systemregion.0/@statemachine.0/@region.0/@transition.1 //@systemregion.0/@statemachine.0/@region.0/@transition.9" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <humantomachinerelation humanSource="//@systemregion.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0" machineTarget="//@systemregion.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0" relationName="监督"/>
+              <machinetohumanrelation machineSource="//@systemregion.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@systemregion.0/@statemachine.0/@region.0/@subvertex.1/@region.0/@teamdiagram.0/@human.0" relationName="稍微偏离车道"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="驾驶员接管状态" incoming="//@systemregion.0/@statemachine.0/@region.0/@transition.9 //@systemregion.0/@statemachine.0/@region.0/@transition.10 //@systemregion.0/@statemachine.0/@region.0/@transition.11 //@systemregion.0/@statemachine.0/@region.0/@transition.12" outgoing="//@systemregion.0/@statemachine.0/@region.0/@transition.2" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <humantomachinerelation humanSource="//@systemregion.0/@statemachine.0/@region.0/@subvertex.2/@region.0/@teamdiagram.0/@human.0" machineTarget="//@systemregion.0/@statemachine.0/@region.0/@subvertex.2/@region.0/@teamdiagram.0/@machine.0" relationName="接管转向功能"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="限速状态" incoming="//@systemregion.0/@statemachine.0/@region.0/@transition.5 //@systemregion.0/@statemachine.0/@region.0/@transition.6" outgoing="//@systemregion.0/@statemachine.0/@region.0/@transition.8 //@systemregion.0/@statemachine.0/@region.0/@transition.10" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <humantomachinerelation humanSource="//@systemregion.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@teamdiagram.0/@human.0" machineTarget="//@systemregion.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@teamdiagram.0/@machine.0" relationName="监督，取消限速"/>
+              <machinetohumanrelation machineSource="//@systemregion.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@systemregion.0/@statemachine.0/@region.0/@subvertex.3/@region.0/@teamdiagram.0/@human.0" relationName="限制或降低车速"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:State" name="变换车道" incoming="//@systemregion.0/@statemachine.0/@region.0/@transition.4" outgoing="//@systemregion.0/@statemachine.0/@region.0/@transition.6 //@systemregion.0/@statemachine.0/@region.0/@transition.7 //@systemregion.0/@statemachine.0/@region.0/@transition.11" isComposite="true" isSimple="false">
+          <region name="区域">
+            <teamdiagram>
+              <human/>
+              <machine/>
+              <humantomachinerelation humanSource="//@systemregion.0/@statemachine.0/@region.0/@subvertex.4/@region.0/@teamdiagram.0/@human.0" machineTarget="//@systemregion.0/@statemachine.0/@region.0/@subvertex.4/@region.0/@teamdiagram.0/@machine.0" relationName="监督"/>
+              <machinetohumanrelation machineSource="//@systemregion.0/@statemachine.0/@region.0/@subvertex.4/@region.0/@teamdiagram.0/@machine.0" humanTarget="//@systemregion.0/@statemachine.0/@region.0/@subvertex.4/@region.0/@teamdiagram.0/@human.0" relationName="控制方向盘，变换车道"/>
+            </teamdiagram>
+          </region>
+        </subvertex>
+        <subvertex xsi:type="StateMachineModel:Pseudostate" name="初始" outgoing="//@systemregion.0/@statemachine.0/@region.0/@transition.3"/>
+      </region>
+    </statemachine>
+  </systemregion>
+</ProblemFrame:ProblemDiagram>

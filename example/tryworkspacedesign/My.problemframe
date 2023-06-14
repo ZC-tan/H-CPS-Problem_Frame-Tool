@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProblemFrame:ProblemDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProblemFrame="http://www.example.org/ProblemFrame">
+  <domain xsi:type="ProblemFrame:ExternalBiddableDomain" name="BiddableDomain1"/>
+  <domain xsi:type="ProblemFrame:ExternalCausalDomain" name="CausalDomain1"/>
+  <requirement name="Requirement1"/>
+  <systemregion>
+    <systemDomain xsi:type="ProblemFrame:Machine" name="Machine"/>
+    <systemDomain xsi:type="ProblemFrame:Human"/>
+    <systemDomain xsi:type="ProblemFrame:LexicalDomain" name="LexicalDomain"/>
+    <systemDomain xsi:type="ProblemFrame:InternalCausalDomain" name="CausalDomain"/>
+  </systemregion>
+</ProblemFrame:ProblemDiagram>
