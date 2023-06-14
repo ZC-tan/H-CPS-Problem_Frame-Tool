@@ -7,10 +7,13 @@ Help->Install new Software -> Add -> Choose the .zip
 ### 2. Create Project
 
 i. Create a Modeling Project (Right click Model Explorer -> new)
+
 ii. Right Click on the Modeling Project in Model Explorer -> new -> Other...
 ![](./readme_pics/modelling%20projects.png)
+
 iii. Choose the ProblemFrame Model -> fill in file name -> Next...
 ![](./readme_pics/pf_model_project.png)
+
 iv. Choose Problem Diagram as first Model Object -> finish
 ![](./readme_pics/problemDiagramRoot.png)
 
@@ -18,6 +21,7 @@ iv. Choose Problem Diagram as first Model Object -> finish
 To make the models present in a visible way, we need to define the viewpoints.
 
 i. Open the representations.aird
+
 ii. Enable both ProblemFrameworkViewPoint and SMViewpoint
 ![](./readme_pics/viewpoint_enables.png)
 iii. You can now right click on the Problem Diagram you created from step 2.iv and create a new representation for it(new ProblemDiagram)
